@@ -1,0 +1,21 @@
+{
+  "projectileName" : "792x33KurzProjectile",
+  "image" : "casing.png",
+  
+  "physics" : "grenade",
+  
+  "actionOnCollide" : [
+    {
+      "action" : "sound",
+      "options" : [ "/guns/sounds/casing1.wav","/guns/sounds/casing2.wav" ]
+    }
+  ],
+  
+  "timeToLive" : 5,
+  "bounces" : -1,
+  "speed" : 5,
+  "power" : 0.0,
+  "damageType" : "NoDamage"
+}
+
+

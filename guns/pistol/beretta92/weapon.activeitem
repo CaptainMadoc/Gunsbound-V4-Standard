@@ -59,7 +59,7 @@
 		"rpm" : 666
 	},
 
-	"fireSounds" : ["/guns/pistol/beretta92/shoot.wav"],
+	"fireSounds" : ["/guns/pistol/beretta92/9mmParabellum.ogg"],
 	"fireTypes" : ["semi"],
 	"gunPart" : "gun",
 

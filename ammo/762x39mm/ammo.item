@@ -1,12 +1,12 @@
 {
-	"itemName" : "9mmAmmo",
+	"itemName" : "762x39mmAmmo",
 	"price" : 5,
 	"rarity" : "common",
 	"category" : "craftingMaterial",
-	"inventoryIcon" : "9mmParabellum.png",
+	"inventoryIcon" : "762x39mm.png",
 	"description" : "test",
-	"shortdescription" : "9mm",
-	"casingProjectile" : "9mmParabellumProjectile",
+	"shortdescription" : "7.62x39mm",
+	"casingProjectile" : "762x39mmProjectile",
 	"projectile" : "bullet-4",
 	"projectileConfig" : {"speed" : 30}
 }
