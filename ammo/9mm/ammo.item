@@ -1,0 +1,12 @@
+{
+	"itemName" : "9mmAmmo",
+	"price" : 5,
+	"rarity" : "common",
+	"category" : "craftingMaterial",
+	"inventoryIcon" : "9mmParabellum.png",
+	"description" : "test",
+	"shortdescription" : "9mm",
+	"casingProjectile" : "9mmParabellumProjectile",
+	"projectile" : "bullet-4",
+	"projectileConfig" : {"speed" : 1000}
+}

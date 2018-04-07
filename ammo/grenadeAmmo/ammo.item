@@ -1,0 +1,12 @@
+{
+	"itemName" : "grenadeAmmo",
+	"price" : 5,
+	"rarity" : "common",
+	"category" : "craftingMaterial",
+	"inventoryIcon" : "grenadeAmmo.png",
+	"description" : "test",
+	"shortdescription" : "Grenade Launcher Ammo",
+	
+	"projectile" : "grenadeimpact",
+	"projectileConfig" : {"bounces" : 0}
+}

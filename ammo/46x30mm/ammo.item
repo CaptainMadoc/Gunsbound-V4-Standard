@@ -1,0 +1,12 @@
+{
+	"itemName" : "46x30mm",
+	"price" : 5,
+	"rarity" : "common",
+	"category" : "craftingMaterial",
+	"inventoryIcon" : "46x30mm.png",
+	"description" : "test",
+	"shortdescription" : "46x30mm",
+	"casingProjectile" : "46x30mmProjectile",
+	"projectile" : "bullet-4",
+	"projectileConfig" : {"speed" : 1000}
+}
