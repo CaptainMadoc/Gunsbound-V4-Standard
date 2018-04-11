@@ -1,0 +1,12 @@
+{
+	"itemName" : "gb45ACPAmmo",
+	"price" : 5,
+	"rarity" : "common",
+	"category" : "craftingMaterial",
+	"inventoryIcon" : "gb45ACP.png",
+	"description" : "test",
+	"shortdescription" : ".45 ACP",
+	"casingProjectile" : "gb45ACPProjectile",
+	"projectile" : "bullet-4",
+	"projectileConfig" : {"speed" : 30}
+}

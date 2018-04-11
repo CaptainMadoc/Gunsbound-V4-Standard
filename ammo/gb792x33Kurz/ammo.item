@@ -1,0 +1,12 @@
+{
+	"itemName" : "gb792x33KurzAmmo",
+	"price" : 5,
+	"rarity" : "common",
+	"category" : "craftingMaterial",
+	"inventoryIcon" : "gb792x33Kurz.png",
+	"description" : "test",
+	"shortdescription" : "7.92x33mm Kurz",
+	"casingProjectile" : "gb792x33KurzProjectile",
+	"projectile" : "bullet-4",
+	"projectileConfig" : {"speed" : 30}
+}

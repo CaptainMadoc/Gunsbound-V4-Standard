@@ -1,0 +1,13 @@
+{
+	"itemName" : "gb12gaugeAmmo",
+	"price" : 5,
+	"rarity" : "common",
+	"category" : "craftingMaterial",
+	"inventoryIcon" : "gb12gauge.png",
+	"description" : "test",
+	"shortdescription" : "12 gauge",
+	"casingProjectile" : "gb12gaugeProjectile",
+	"projectile" : "bullet-4",
+	"projectileCount" : 5,
+	"projectileConfig" : {"speed" : 1000}
+}

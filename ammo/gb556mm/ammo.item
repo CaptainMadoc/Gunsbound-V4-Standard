@@ -1,0 +1,12 @@
+{
+	"itemName" : "gb556mmAmmo",
+	"price" : 5,
+	"rarity" : "common",
+	"category" : "craftingMaterial",
+	"inventoryIcon" : "gb556mm.png",
+	"description" : "test",
+	"shortdescription" : "5.56mm",
+	"casingProjectile" : "gb556mmProjectile",
+	"projectile" : "bullet-4",
+	"projectileConfig" : {"speed" : 30}
+}

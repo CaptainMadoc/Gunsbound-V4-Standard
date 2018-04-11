@@ -1,0 +1,12 @@
+{
+	"itemName" : "gb9mmAmmo",
+	"price" : 5,
+	"rarity" : "common",
+	"category" : "craftingMaterial",
+	"inventoryIcon" : "gb9mmParabellum.png",
+	"description" : "test",
+	"shortdescription" : "9mm",
+	"casingProjectile" : "gb9mmParabellumProjectile",
+	"projectile" : "bullet-4",
+	"projectileConfig" : {"speed" : 30}
+}

@@ -1,0 +1,12 @@
+{
+	"itemName" : "gb40SWAmmo",
+	"price" : 5,
+	"rarity" : "common",
+	"category" : "craftingMaterial",
+	"inventoryIcon" : "gb40SW.png",
+	"description" : "test",
+	"shortdescription" : "40SW",
+	"casingProjectile" : "gb40SWProjectile",
+	"projectile" : "bullet-4",
+	"projectileConfig" : {"speed" : 1000}
+}

@@ -1,0 +1,13 @@
+{
+	"itemName" : "gb3006ammo",
+	"price" : 5,
+	"rarity" : "common",
+	"maxStack" : 25000,
+	"category" : "craftingMaterial",
+	"inventoryIcon" : "gb3006.png",
+	"description" : "test",
+	"shortdescription" : "8mm Mauser",
+	"casingProjectile" : "gb3006Projectile",
+	"projectile" : "bullet-4",
+	"projectileConfig" : {"speed" : 30}
+}
