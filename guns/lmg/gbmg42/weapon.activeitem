@@ -145,8 +145,8 @@
 						"attachment_grip_pos" : [2.375,0.875],
 						"attachment_grip_end" : [2.5,0.875],
 
-						"muzzle_begin" : [3.875, 1.25],
-						"muzzle_end" : [4, 1.25], 
+						"muzzle_begin" : [4.875, 1.125],
+						"muzzle_end" : [5, 1.125], 
 						"transformationGroups" : ["gun", "base"]
 					}
 				},
@@ -155,7 +155,7 @@
 				"muzzleFlash" : {
 					"properties" : {
 						"transformationGroups" : ["base"],
-						"offset" : [2.75, -0.575],
+						"offset" : [3.875, -0.525],
 						"zLevel" : 20,
 						"fullbright" : true,
 						"centered" : false
