@@ -145,8 +145,8 @@
 						"attachment_grip_pos" : [2.375,0.875],
 						"attachment_grip_end" : [2.5,0.875],
 
-						"muzzle_begin" : [3.450, 1.4],
-						"muzzle_end" : [3.5, 1.4], 
+						"muzzle_begin" : [3.450, 1.25],
+						"muzzle_end" : [3.625, 1.25], 
 						"transformationGroups" : ["gun", "base"]
 					}
 				},
