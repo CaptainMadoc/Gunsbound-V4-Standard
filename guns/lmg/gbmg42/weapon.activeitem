@@ -109,7 +109,7 @@
 			"parts" : {
 				"mag" : {
 					"properties" : {
-						"zLevel" : 17,
+						"zLevel" : 16,
 						"centered" : false,
 						"image" : "<magazine>",
 						"offset" : [0.0, 0.0],
@@ -125,10 +125,19 @@
 						"transformationGroups" : ["lever", "gun", "base"]
 					}
 				},
+				"belt" : {
+					"properties" : {
+						"zLevel" : 18,
+						"centered" : false,
+						"image" : "belt.png",
+						"offset" : [0.0, 0.0],
+						"transformationGroups" : ["belt", "gun", "base"]
+					}
+				},
 				
 				"gun" : {
 					"properties" : {
-						"zLevel" : 18,
+						"zLevel" : 17,
 						"centered" : false,
 						"image" : "gun.png",
 						"offset" : [0.0, 0.0],
@@ -145,8 +154,8 @@
 						"attachment_grip_pos" : [2.375,0.875],
 						"attachment_grip_end" : [2.5,0.875],
 
-						"muzzle_begin" : [4.875, 1.125],
-						"muzzle_end" : [5, 1.125], 
+						"muzzle_begin" : [5.75, 1.125],
+						"muzzle_end" : [5.8, 1.125], 
 						"transformationGroups" : ["gun", "base"]
 					}
 				},
@@ -266,6 +275,13 @@
 			},
 			"mag" : {
 				"interpolated" : false
+			},
+			"belt" : {
+				"interpolated" : false,
+				"transform" : {
+					"scale" : [0, 0],
+					"position" : [2.375, 1.125]
+				}
 			},
 
 			//attachments

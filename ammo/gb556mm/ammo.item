@@ -7,6 +7,6 @@
 	"description" : "test",
 	"shortdescription" : "5.56mm",
 	"casingProjectile" : "gb556mmProjectile",
-	"projectile" : "bullet-4",
+	"projectile" : "bullet-2",
 	"projectileConfig" : {"speed" : 30}
 }

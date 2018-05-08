@@ -7,7 +7,7 @@
 	"description" : "test",
 	"shortdescription" : "12 gauge",
 	"casingProjectile" : "gb12gaugeProjectile",
-	"projectile" : "bullet-4",
+	"projectile" : "bullet-2",
 	"projectileCount" : 5,
 	"projectileConfig" : {"speed" : 1000}
 }

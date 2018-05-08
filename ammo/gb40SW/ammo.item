@@ -7,6 +7,6 @@
 	"description" : "test",
 	"shortdescription" : "40SW",
 	"casingProjectile" : "gb40SWProjectile",
-	"projectile" : "bullet-4",
+	"projectile" : "bullet-2",
 	"projectileConfig" : {"speed" : 1000}
 }

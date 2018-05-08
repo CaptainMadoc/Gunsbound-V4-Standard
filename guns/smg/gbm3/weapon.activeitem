@@ -72,7 +72,7 @@
 		"maxMagazine" : 30,
 		"aimLookRatio" : 0.125,
 		"burst" : 3,
-		"recoil" : 6,
+		"recoil" : 2,
 		"recoilRecovery" : 4,
 		"movingInaccuracy" : 5,
 		"standingInaccuracy" : 1,
@@ -145,8 +145,8 @@
 						"attachment_grip_pos" : [2.375,0.875],
 						"attachment_grip_end" : [2.5,0.875],
 
-						"muzzle_begin" : [2.8750, 1.12500],
-						"muzzle_end" : [3, 1.12500], 
+						"muzzle_begin" : [2.5, 1.375],
+						"muzzle_end" : [2.75, 1.375], 
 						"transformationGroups" : ["gun", "base"]
 					}
 				},
@@ -155,7 +155,7 @@
 				"muzzleFlash" : {
 					"properties" : {
 						"transformationGroups" : ["base"],
-						"offset" : [1.375, -0.625],
+						"offset" : [2, -0.5],
 						"zLevel" : 20,
 						"fullbright" : true,
 						"centered" : false
@@ -254,7 +254,7 @@
 				"interpolated" : false,
 				"transform" : {
 					"rotationPoint" : [1.5625, 0.8125],
-					"position" : [-1.375, -0.65625]
+					"position" : [-0.71875, -0.65625]
 				}
 			},
 			"lever" : {

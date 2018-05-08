@@ -8,6 +8,6 @@
 	"description" : "test",
 	"shortdescription" : "8mm Mauser",
 	"casingProjectile" : "gb8mmmauserProjectile",
-	"projectile" : "bullet-4",
+	"projectile" : "bullet-2",
 	"projectileConfig" : {"speed" : 30}
 }
