@@ -17,7 +17,7 @@
 	"rarity" : "common",
 	"maxStack" : 1,
 	"price" : 0,
-	"twoHanded" : true,
+	"twoHanded" : false,
 	
 	"animationsKeyFrames" : "default.animation",
 	"compatibleAmmo" : "/ammoGroup/gb9mm.json",
@@ -117,8 +117,8 @@
 						"attachment_tactical_pos" : [1.675, 0.625],
 						"attachment_tactical_end" : [1.87500, 0.625],
 
-						"muzzle_begin" : [1.6250, 1],
-						"muzzle_end" : [1.7500, 1], 
+						"muzzle_begin" : [1.6250, 1.18],
+						"muzzle_end" : [1.7500, 1.18], 
 						"transformationGroups" : ["gun", "base"]
 					}
 				},
@@ -127,7 +127,7 @@
 				"muzzleFlash" : {
 					"properties" : {
 						"transformationGroups" : ["base"],
-						"offset" : [1.25, -0.25],
+						"offset" : [1.125, -0.125],
 						"zLevel" : 20,
 						"fullbright" : true,
 						"centered" : false
@@ -193,7 +193,10 @@
 			
 			"gun" : {
 				"interpolated" : false,
-				"transform" : {"position" : [-0.46875, -0.28125]}
+				"transform" : {
+				"position" : [-0.46875, -0.28125],
+				"rotationPoint" : [0.5, 0.5]
+				}
 			},
 			"lever" : {
 				"interpolated" : false
