@@ -1,6 +1,6 @@
 {
   "projectileName" : "gb9mmParabellumProjectile",
-  "image" : "casing.png",
+  "image" : "gb9mmcasing.png",
   
   "physics" : "grenade",
   
@@ -11,7 +11,7 @@
     }
   ],
   
-  "timeToLive" : 5,
+  "timeToLive" : 1,
   "bounces" : -1,
   "speed" : 5,
   "power" : 0.0,
