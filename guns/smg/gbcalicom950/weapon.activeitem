@@ -69,7 +69,7 @@
 	},
 	
 	"gunStats" : {
-		"maxMagazine" : 32,
+		"maxMagazine" : 50,
 		"aimLookRatio" : 0.125,
 		"burst" : 3,
 		"recoil" : 3,
@@ -145,8 +145,8 @@
 						"attachment_grip_pos" : [2.375,0.875],
 						"attachment_grip_end" : [2.5,0.875],
 
-						"muzzle_begin" : [2.150, 1.125],
-						"muzzle_end" : [2.25, 1.125], 
+						"muzzle_begin" : [2.150, 0.8],
+						"muzzle_end" : [2.25, 0.8], 
 						"transformationGroups" : ["gun", "base"]
 					}
 				},
@@ -254,14 +254,17 @@
 				"interpolated" : false,
 				"transform" : {
 					"rotationPoint" : [1.5625, 0.8125],
-					"position" : [-0.5, -0.53125]
+					"position" : [-0.5, -0.15625]
 				}
 			},
 			"lever" : {
 				"interpolated" : false
 			},
 			"mag" : {
-				"interpolated" : false
+				"interpolated" : false,
+				"transform" : {
+					"position" : [0, 0.75]
+				}
 			},
 
 			//attachments
