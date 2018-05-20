@@ -1,7 +1,8 @@
 {
-	"itemName" : "gb792x33KurzAmmo",
+	"itemName" : "gb792x33kurzammo",
 	"price" : 5,
 	"rarity" : "common",
+	"maxStack" : 25000,
 	"category" : "craftingMaterial",
 	"inventoryIcon" : "gb792x33Kurz.png",
 	"description" : "test",

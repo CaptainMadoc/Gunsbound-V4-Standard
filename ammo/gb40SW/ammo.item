@@ -1,7 +1,8 @@
 {
-	"itemName" : "gb40SWAmmo",
+	"itemName" : "gb40swammo",
 	"price" : 5,
 	"rarity" : "common",
+	"maxStack" : 25000,
 	"category" : "craftingMaterial",
 	"inventoryIcon" : "gb40SW.png",
 	"description" : "test",

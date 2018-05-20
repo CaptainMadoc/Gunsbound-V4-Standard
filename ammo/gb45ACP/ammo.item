@@ -1,7 +1,8 @@
 {
-	"itemName" : "gb45ACPAmmo",
+	"itemName" : "gb45acpammo",
 	"price" : 5,
 	"rarity" : "common",
+	"maxStack" : 25000,
 	"category" : "craftingMaterial",
 	"inventoryIcon" : "gb45ACP.png",
 	"description" : "test",

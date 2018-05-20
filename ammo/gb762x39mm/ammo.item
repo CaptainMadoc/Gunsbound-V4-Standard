@@ -1,7 +1,8 @@
 {
-	"itemName" : "gb762x39mmAmmo",
+	"itemName" : "gb762x39mmammo",
 	"price" : 5,
 	"rarity" : "common",
+	"maxStack" : 25000,
 	"category" : "craftingMaterial",
 	"inventoryIcon" : "gb762x39mm.png",
 	"description" : "test",

@@ -1,7 +1,8 @@
 {
-	"itemName" : "gb556mmAmmo",
+	"itemName" : "gb556mmammo",
 	"price" : 5,
 	"rarity" : "common",
+	"maxStack" : 25000,
 	"category" : "craftingMaterial",
 	"inventoryIcon" : "gb556mm.png",
 	"description" : "test",

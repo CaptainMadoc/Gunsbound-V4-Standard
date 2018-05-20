@@ -1,7 +1,8 @@
 {
-	"itemName" : "gb12gaugeAmmo",
+	"itemName" : "gb12gaugeammo",
 	"price" : 5,
 	"rarity" : "common",
+	"maxStack" : 25000,
 	"category" : "craftingMaterial",
 	"inventoryIcon" : "gb12gauge.png",
 	"description" : "test",

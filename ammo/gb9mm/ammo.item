@@ -2,6 +2,7 @@
 	"itemName" : "gb9mmAmmo",
 	"price" : 5,
 	"rarity" : "common",
+	"maxStack" : 25000,
 	"category" : "craftingMaterial",
 	"inventoryIcon" : "gb9mmParabellum.png",
 	"description" : "test",
