@@ -1,5 +1,5 @@
 {
-	"itemName" : "gb9mmAmmo",
+	"itemName" : "gb9mmammo",
 	"price" : 5,
 	"rarity" : "common",
 	"maxStack" : 25000,
@@ -9,5 +9,5 @@
 	"shortdescription" : "9mm",
 	"casingProjectile" : "gb9mmParabellumProjectile",
 	"projectile" : "gb9mmproj",
-	"projectileConfig" : {"speed" : 70}
+	"projectileConfig" : {"speed" : 70, "power" : 10}
 }
