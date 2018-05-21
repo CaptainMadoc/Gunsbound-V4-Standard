@@ -39,17 +39,17 @@
 		"maxMagazine" : 7,
 		"aimLookRatio" : 0,
 		"burst" : 3,
-		"recoil" : 0,
-		"recoilRecovery" : 1,
-		"movingInaccuracy" : 18,
-		"standingInaccuracy" : 5,
+		"recoil" : 6,
+		"recoilRecovery" : 12,
+		"movingInaccuracy" : 5,
+		"standingInaccuracy" : 2,
 		"crouchInaccuracyMultiplier" : 0.25,
 		"muzzleFlash" : 1,
-		"rpm" : 250
+		"rpm" : 300
 	},
 	
 	"bypassShellEject" : true,
-	"fireSounds" : ["/guns/sounds/shotgun_shoot.wav"],
+	"fireSounds" : ["/guns/shotgun/gbm2/12Gauge.ogg"],
 	"fireTypes" : ["semi"],
 	"gunPart" : "gun",
 
@@ -91,8 +91,8 @@
 						"image" : "gun.png",
 						"offset" : [0.0, 0.0],
 
-						"muzzle_begin" : [3.75, 1],
-						"muzzle_end" : [3.875, 1], 
+						"muzzle_begin" : [3.5, 1.125],
+						"muzzle_end" : [3.75, 1.125], 
 						
 						"attachment_sight_pos" : [2.5, 1],
 						"attachment_sight_end" : [2.675, 1], 
@@ -126,7 +126,7 @@
 				"muzzleFlash" : {
 					"properties" : {
 						"transformationGroups" : ["base"],
-						"offset" : [2, -0.375],
+						"offset" : [1.8, -0.2],
 						"zLevel" : 20,
 						"fullbright" : true,
 						"centered" : false

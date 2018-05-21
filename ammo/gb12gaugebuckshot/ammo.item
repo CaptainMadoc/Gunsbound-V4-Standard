@@ -1,14 +1,13 @@
 {
-	"itemName" : "gb12gaugeammo",
+	"itemName" : "gb12gaugebuckshotammo",
 	"price" : 5,
 	"rarity" : "common",
 	"maxStack" : 25000,
 	"category" : "craftingMaterial",
 	"inventoryIcon" : "gb12gauge.png",
 	"description" : "test",
-	"shortdescription" : "12 gauge",
+	"shortdescription" : "12 Gauge Buckshot",
 	"casingProjectile" : "gb12gaugeProjectile",
-	"projectile" : "bullet-2",
-	"projectileCount" : 5,
-	"projectileConfig" : {"speed" : 1000}
+	"projectile" : "gb12gaugeproj",
+	"projectileConfig" : {"speed" : 70, "power" : 4}
 }
