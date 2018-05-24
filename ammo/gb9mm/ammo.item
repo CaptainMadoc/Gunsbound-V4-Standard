@@ -9,5 +9,5 @@
 	"shortdescription" : "9mm",
 	"casingProjectile" : "gb9mmParabellumProjectile",
 	"projectile" : "gb9mmproj",
-	"projectileConfig" : {"speed" : 70, "power" : 10}
+	"projectileConfig" : {"speed" : 100, "power" : 10}
 }

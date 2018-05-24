@@ -69,27 +69,25 @@
 	},
 	
 	"gunStats" : {
-		"maxMagazine" : 20,
+		"maxMagazine" : 8,
 		"aimLookRatio" : 0.125,
 		"burst" : 3,
-		"recoil" : 4,
-		"recoilRecovery" : 2,
+		"recoil" : 0,
+		"recoilRecovery" : 1,
 		"movingInaccuracy" : 5,
 		"standingInaccuracy" : 1,
 		"crouchInaccuracyMultiplier" : 0.25,
 		"muzzleFlash" : 1,
-		"rpm" : 650
+		"rpm" : 500
 	},
 
 	"fireSounds" : ["/guns/lmg/gbbarm1918/3006.ogg"],
-	"fireTypes" : ["auto", "semi"],
+	"fireTypes" : ["semi"],
 	"gunPart" : "gun",
 
 	"gunAnimations" : {
 		"shoot" : "shoot",
-		"cock" : "cock",
 		"dry" : "dry",
-		"reload" : "reload",
 		
 		"cock_dry" : "cock_dry",
 		"shoot_dry" : "shoot_dry",
@@ -103,7 +101,8 @@
 		},
 		"sounds" : {
 			"cock" : ["/sfx/gun/reload/shotgun_reload_clip1.ogg"],
-			"cock2" : ["/sfx/gun/reload/shotgun_reload_clip2.ogg"]
+			"cock2" : ["/sfx/gun/reload/shotgun_reload_clip2.ogg"],
+			"m1garandping" : ["/guns/rifle/gbm1garand/gbm1garandping.ogg"]
 		},
 		"animatedParts" : {
 			"parts" : {
@@ -154,8 +153,8 @@
 						"attachment_grip_pos" : [2.375,0.875],
 						"attachment_grip_end" : [2.5,0.875],
 
-						"muzzle_begin" : [3.875, 1.25],
-						"muzzle_end" : [4, 1.25], 
+						"muzzle_begin" : [4.5, 1.1],
+						"muzzle_end" : [4.625, 1.1], 
 						"transformationGroups" : ["gun", "base"]
 					}
 				},
@@ -164,7 +163,7 @@
 				"muzzleFlash" : {
 					"properties" : {
 						"transformationGroups" : ["base"],
-						"offset" : [2.75, -0.575],
+						"offset" : [2.9, -0.45],
 						"zLevel" : 20,
 						"fullbright" : true,
 						"centered" : false
@@ -234,15 +233,25 @@
 			
 			"L_offset" : {
 				"transform" : {
-					"position" : [1.21875, 0.15625]
+					"position" : [1, 0.125]
+				}
+			},
+			"R_offset" : {
+				"transform" : {
+					"position" : [-0.1875, -0.0625]
 				}
 			},
 			"R_arm1" : {
 				"transform" : {
-					"rotation" : 15
+					"rotation" : -5
 				}
 			},
 			"R_arm2" : {
+				"transform" : {
+					"rotation" : 20
+				}
+			},
+			"R_hand" : {
 				"transform" : {
 					"rotation" : -15
 				}
@@ -263,14 +272,17 @@
 				"interpolated" : false,
 				"transform" : {
 					"rotationPoint" : [1.5625, 0.8125],
-					"position" : [-1.25, -0.50625]
+					"position" : [-1.6875, -0.44375]
 				}
 			},
 			"lever" : {
 				"interpolated" : false
 			},
 			"magempty" : {
-				"interpolated" : false
+				"interpolated" : false,
+				"transform" : {
+					"position" : [0, 0.125]
+				}
 			},
 			"mag" : {
 				"interpolated" : false

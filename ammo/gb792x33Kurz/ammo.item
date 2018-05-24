@@ -9,5 +9,5 @@
 	"shortdescription" : "7.92x33mm Kurz",
 	"casingProjectile" : "gb792x33KurzProjectile",
 	"projectile" : "bullet-2",
-	"projectileConfig" : {"speed" : 30}
+	"projectileConfig" : {"speed" : 230}
 }

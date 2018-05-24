@@ -9,5 +9,5 @@
 	"shortdescription" : "5.56mm",
 	"casingProjectile" : "gb556mmProjectile",
 	"projectile" : "bullet-2",
-	"projectileConfig" : {"speed" : 30}
+	"projectileConfig" : {"speed" : 175}
 }

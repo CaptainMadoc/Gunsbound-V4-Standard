@@ -1,0 +1,13 @@
+{
+	"itemName" : "gb762x25tokarevammo",
+	"price" : 5,
+	"rarity" : "common",
+	"maxStack" : 25000,
+	"category" : "craftingMaterial",
+	"inventoryIcon" : "gb762x25tokarev.png",
+	"description" : "test",
+	"shortdescription" : "7.62x25 Tokarev",
+	"casingProjectile" : "gb762x25tokarevcasing",
+	"projectile" : "gb9mmproj",
+	"projectileConfig" : {"speed" : 100, "power" : 12}
+}

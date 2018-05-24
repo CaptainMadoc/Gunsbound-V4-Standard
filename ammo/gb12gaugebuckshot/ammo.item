@@ -9,5 +9,5 @@
 	"shortdescription" : "12 Gauge Buckshot",
 	"casingProjectile" : "gb12gaugeProjectile",
 	"projectile" : "gb12gaugeproj",
-	"projectileConfig" : {"speed" : 70, "power" : 4}
+	"projectileConfig" : {"speed" : 200, "power" : 4}
 }

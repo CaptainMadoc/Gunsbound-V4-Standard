@@ -66,10 +66,10 @@
 	"animationCustom" : {
 		"globalTagDefaults" : {},
 		"sounds" : {
-			"pump" : ["/guns/sounds/shotgun_pump.wav"],
-			"pump2" : ["/guns/sounds/shotgun_pump2.wav"],
+			"pump" : ["/guns/shotgun/gbm2/pump1.ogg"],
+			"pump2" : ["/guns/shotgun/gbm2/pump2.ogg"],
 			"cock" : ["/sfx/gun/reload/shotgun_reload_clip1.ogg"],
-			"cock2" : ["/sfx/gun/reload/shotgun_reload_clip2.ogg"]
+			"cock2" : ["/guns/shotgun/gbm2/reloadingshotgun.ogg"]
 		},
 		"animatedParts" : {
 			"parts" : {

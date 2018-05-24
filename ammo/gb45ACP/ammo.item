@@ -9,5 +9,5 @@
 	"shortdescription" : ".45 ACP",
 	"casingProjectile" : "gb45ACPProjectile",
 	"projectile" : "bullet-2",
-	"projectileConfig" : {"speed" : 30}
+	"projectileConfig" : {"speed" : 125}
 }
