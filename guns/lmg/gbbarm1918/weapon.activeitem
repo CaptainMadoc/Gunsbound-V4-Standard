@@ -155,7 +155,7 @@
 				"muzzleFlash" : {
 					"properties" : {
 						"transformationGroups" : ["base"],
-						"offset" : [4.25, -0.5],
+						"offset" : [4, -0.05],
 						"zLevel" : 20,
 						"fullbright" : true,
 						"centered" : false

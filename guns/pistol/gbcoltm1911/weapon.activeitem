@@ -1,7 +1,7 @@
 {
 	//UIinfo
-	"itemName" : "gbberetta92",
-	"shortdescription" : "Beretta 92",
+	"itemName" : "gbcoltm1911",
+	"shortdescription" : "Colt M1911",
 	"description" : "description here",
 	"category" : "base",
 	"tooltipKind" : "base",
@@ -20,7 +20,7 @@
 	"twoHanded" : false,
 	
 	"animationsKeyFrames" : "default.animation",
-	"compatibleAmmo" : "/ammoGroup/gb9mm.json",
+	"compatibleAmmo" : "/ammoGroup/gb45ACP.json",
 
 	"attachments" : {
 		"tactical" : {
@@ -47,7 +47,7 @@
 	},
 	
 	"gunStats" : {
-		"maxMagazine" : 15,
+		"maxMagazine" : 7,
 		"aimLookRatio" : 0.125,
 		"burst" : 3,
 		"recoil" : 4,
@@ -59,7 +59,7 @@
 		"rpm" : 666
 	},
 
-	"fireSounds" : ["/guns/pistol/gbberetta92/9mmParabellum.ogg"],
+	"fireSounds" : ["/guns/pistol/gbcoltm1911/45ACP.ogg"],
 	"fireTypes" : ["semi"],
 	"gunPart" : "gun",
 
@@ -117,8 +117,8 @@
 						"attachment_tactical_pos" : [1.675, 0.625],
 						"attachment_tactical_end" : [1.87500, 0.625],
 
-						"muzzle_begin" : [1.6250, 1.18],
-						"muzzle_end" : [1.7500, 1.18], 
+						"muzzle_begin" : [1.4, 1.02],
+						"muzzle_end" : [1.5, 1.02], 
 						"transformationGroups" : ["gun", "base"]
 					}
 				},
@@ -127,7 +127,7 @@
 				"muzzleFlash" : {
 					"properties" : {
 						"transformationGroups" : ["base"],
-						"offset" : [1.125, -0.125],
+						"offset" : [0.85, -0.075],
 						"zLevel" : 20,
 						"fullbright" : true,
 						"centered" : false
@@ -194,7 +194,7 @@
 			"gun" : {
 				"interpolated" : false,
 				"transform" : {
-				"position" : [-0.46875, -0.28125],
+				"position" : [-0.5, -0.15625],
 				"rotationPoint" : [0.5, 0.5]
 				}
 			},

@@ -1,7 +1,7 @@
 {
 	//UIinfo
-	"itemName" : "gbmp38",
-	"shortdescription" : "Erma MP-38",
+	"itemName" : "gbbrenmk2",
+	"shortdescription" : "Bren Mk. 2",
 	"description" : "description here",
 	"category" : "base",
 	"tooltipKind" : "base",
@@ -20,7 +20,7 @@
 	"twoHanded" : true,
 	
 	"animationsKeyFrames" : "default.animation",
-	"compatibleAmmo" : "/ammoGroup/gb9mm.json",
+	"compatibleAmmo" : "/ammoGroup/gb303british.json",
 
 	"attachments" : {
 		"grip" : {
@@ -69,11 +69,11 @@
 	},
 	
 	"gunStats" : {
-		"maxMagazine" : 32,
+		"maxMagazine" : 30,
 		"aimLookRatio" : 0.125,
 		"burst" : 3,
-		"recoil" : 2,
-		"recoilRecovery" : 4,
+		"recoil" : 4,
+		"recoilRecovery" : 2,
 		"movingInaccuracy" : 5,
 		"standingInaccuracy" : 1,
 		"crouchInaccuracyMultiplier" : 0.25,
@@ -81,8 +81,8 @@
 		"rpm" : 500
 	},
 
-	"fireSounds" : ["/guns/smg/gbmp38/9mmParabellum.ogg"],
-	"fireTypes" : ["auto"],
+	"fireSounds" : ["/guns/lmg/gbbrenmk2/303british.ogg"],
+	"fireTypes" : ["auto", "semi"],
 	"gunPart" : "gun",
 
 	"gunAnimations" : {
@@ -118,7 +118,7 @@
 				},
 				"gunlever" : {
 					"properties" : {
-						"zLevel" : 18,
+						"zLevel" : 19,
 						"centered" : false,
 						"image" : "lever.png",
 						"offset" : [0.0, 0.0],
@@ -128,13 +128,13 @@
 				
 				"gun" : {
 					"properties" : {
-						"zLevel" : 19,
+						"zLevel" : 18,
 						"centered" : false,
 						"image" : "gun.png",
 						"offset" : [0.0, 0.0],
 
-						"attachment_muzzle_pos" : [2.8750, 1.12500],
-						"attachment_muzzle_end" : [3, 1.12500],
+						"attachment_muzzle_pos" : [2.8750, 1.2500],
+						"attachment_muzzle_end" : [3, 1.2500],
 
 						"attachment_tactical_pos" : [2.5, 1.125],
 						"attachment_tactical_end" : [3, 1.125],
@@ -145,8 +145,8 @@
 						"attachment_grip_pos" : [2.375,0.875],
 						"attachment_grip_end" : [2.5,0.875],
 
-						"muzzle_begin" : [2.5, 1.3],
-						"muzzle_end" : [2.55, 1.3], 
+						"muzzle_begin" : [5.25, 1],
+						"muzzle_end" : [5.375, 1], 
 						"transformationGroups" : ["gun", "base"]
 					}
 				},
@@ -155,7 +155,7 @@
 				"muzzleFlash" : {
 					"properties" : {
 						"transformationGroups" : ["base"],
-						"offset" : [2.2, -0.3],
+						"offset" : [3.8, -0.07],
 						"zLevel" : 20,
 						"fullbright" : true,
 						"centered" : false
@@ -225,7 +225,7 @@
 			
 			"L_offset" : {
 				"transform" : {
-					"position" : [1.21875, 0.15625]
+					"position" : [1.34375, 0.15625]
 				}
 			},
 			"R_arm1" : {
@@ -240,12 +240,12 @@
 			},
 			"L_arm1" : {
 				"transform" : {
-					"rotation" : -5
+					"rotation" : 0.5
 				}
 			},
 			"L_arm2" : {
 				"transform" : {
-					"rotation" : 5
+					"rotation" : 8.25
 				}
 			},
 			
@@ -254,7 +254,7 @@
 				"interpolated" : false,
 				"transform" : {
 					"rotationPoint" : [1.5625, 0.8125],
-					"position" : [-0.34375, -0.53125]
+					"position" : [-1.375, -0.1625]
 				}
 			},
 			"lever" : {
