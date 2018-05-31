@@ -72,7 +72,7 @@
 		"maxMagazine" : 30,
 		"aimLookRatio" : 0.125,
 		"burst" : 3,
-		"recoil" : 6,
+		"recoil" : 3,
 		"recoilRecovery" : 4,
 		"movingInaccuracy" : 5,
 		"standingInaccuracy" : 1,
@@ -155,7 +155,7 @@
 				"muzzleFlash" : {
 					"properties" : {
 						"transformationGroups" : ["base"],
-						"offset" : [1.375, -0.625],
+						"offset" : [1.75, -0.35],
 						"zLevel" : 20,
 						"fullbright" : true,
 						"centered" : false
@@ -254,7 +254,7 @@
 				"interpolated" : false,
 				"transform" : {
 					"rotationPoint" : [1.5625, 0.8125],
-					"position" : [-1.375, -0.65625]
+					"position" : [-1.21875, -0.53125]
 				}
 			},
 			"lever" : {

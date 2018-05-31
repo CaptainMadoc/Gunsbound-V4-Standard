@@ -89,7 +89,6 @@
 		"shoot" : "shoot",
 		"dry" : "dry",
 		
-		"cock_dry" : "cock_dry",
 		"shoot_dry" : "shoot_dry",
 		"reload_dry" : "reload_dry"
 	},
@@ -133,6 +132,15 @@
 						"transformationGroups" : ["lever", "gun", "base"]
 					}
 				},
+				"gunlever2" : {
+					"properties" : {
+						"zLevel" : 20,
+						"centered" : false,
+						"image" : "lever2.png",
+						"offset" : [0.0, 0.0],
+						"transformationGroups" : ["lever2", "gun", "base"]
+					}
+				},
 				
 				"gun" : {
 					"properties" : {
@@ -153,8 +161,8 @@
 						"attachment_grip_pos" : [2.375,0.875],
 						"attachment_grip_end" : [2.5,0.875],
 
-						"muzzle_begin" : [4.5, 1.1],
-						"muzzle_end" : [4.625, 1.1], 
+						"muzzle_begin" : [4.5, 1],
+						"muzzle_end" : [4.625, 1], 
 						"transformationGroups" : ["gun", "base"]
 					}
 				},
@@ -276,6 +284,9 @@
 				}
 			},
 			"lever" : {
+				"interpolated" : false
+			},
+			"lever2" : {
 				"interpolated" : false
 			},
 			"magempty" : {
