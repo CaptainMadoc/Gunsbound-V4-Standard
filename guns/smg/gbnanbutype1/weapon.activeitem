@@ -1,7 +1,7 @@
 {
 	//UIinfo
-	"itemName" : "gbarmaguerraog44",
-	"shortdescription" : "Armaguerra OG-44",
+	"itemName" : "gbnanbutype1",
+	"shortdescription" : "Nanbu Type 1",
 	"description" : "description here",
 	"category" : "base",
 	"tooltipKind" : "base",
@@ -69,7 +69,7 @@
 	},
 	
 	"gunStats" : {
-		"maxMagazine" : 40,
+		"maxMagazine" : 50,
 		"aimLookRatio" : 0.125,
 		"burst" : 3,
 		"recoil" : 2,
@@ -78,10 +78,10 @@
 		"standingInaccuracy" : 1,
 		"crouchInaccuracyMultiplier" : 0.25,
 		"muzzleFlash" : 1,
-		"rpm" : 500
+		"rpm" : 900
 	},
 
-	"fireSounds" : ["/guns/smg/gbarmaguerraog44/9mmParabellum.ogg"],
+	"fireSounds" : ["/guns/smg/gbnanbutype1/8x22nanbu.ogg"],
 	"fireTypes" : ["auto"],
 	"gunPart" : "gun",
 
@@ -145,8 +145,8 @@
 						"attachment_grip_pos" : [2.375,0.875],
 						"attachment_grip_end" : [2.5,0.875],
 
-						"muzzle_begin" : [4.12, 1.1],
-						"muzzle_end" : [4.125, 1.1], 
+						"muzzle_begin" : [3.37, 1.65],
+						"muzzle_end" : [3.375, 1.65], 
 						"transformationGroups" : ["gun", "base"]
 					}
 				},
@@ -155,7 +155,7 @@
 				"muzzleFlash" : {
 					"properties" : {
 						"transformationGroups" : ["base"],
-						"offset" : [2.35, -0.3],
+						"offset" : [1.35, -0.3],
 						"zLevel" : 20,
 						"fullbright" : true,
 						"centered" : false
@@ -225,7 +225,7 @@
 			
 			"L_offset" : {
 				"transform" : {
-					"position" : [1.21875, 0.15625]
+					"position" : [0.78125, 0.125]
 				}
 			},
 			"R_arm1" : {
@@ -254,7 +254,7 @@
 				"interpolated" : false,
 				"transform" : {
 					"rotationPoint" : [1.5625, 0.8125],
-					"position" : [-1.625, -0.40625]
+					"position" : [-1.875, -1.03125]
 				}
 			},
 			"lever" : {
