@@ -20,7 +20,7 @@
 	"twoHanded" : true,
 	
 	"animationsKeyFrames" : "default.animation",
-	"compatibleAmmo" : "/ammoGroup/gb9mm.json",
+	"compatibleAmmo" : "/ammoGroup/gb8x22nanbu.json",
 
 	"attachments" : {
 		"grip" : {
