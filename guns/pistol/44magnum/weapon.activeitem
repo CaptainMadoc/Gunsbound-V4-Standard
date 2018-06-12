@@ -20,7 +20,7 @@
 	"twoHanded" : true,
 
 	"animationsKeyFrames" : "default.animation",
-	"compatibleAmmo" : ["gb9mmAmmo"],
+	"compatibleAmmo" : "/ammoGroup/gb9mm.json",
 
 	"attachments" : {},
 
@@ -49,7 +49,7 @@
 	
 	"bypassShellEject" : true,
 	
-	"fireSounds" : ["/44magnum/fire.wav"],
+	"fireSounds" : ["fire.wav"],
 	"fireTypes" : ["semi"],
 	"gunPart" : "gun",
 
