@@ -1,7 +1,7 @@
 {
 	//UIinfo
-	"itemName" : "gbmg42",
-	"shortdescription" : "MG42",
+	"itemName" : "gbmg34",
+	"shortdescription" : "MG34",
 	"description" : "description here",
 	"category" : "base",
 	"tooltipKind" : "base",
@@ -69,7 +69,7 @@
 	},
 	
 	"gunStats" : {
-		"maxMagazine" : 200,
+		"maxMagazine" : 50,
 		"aimLookRatio" : 0.125,
 		"burst" : 3,
 		"recoil" : 4,
@@ -78,10 +78,10 @@
 		"standingInaccuracy" : 1,
 		"crouchInaccuracyMultiplier" : 0.25,
 		"muzzleFlash" : 1,
-		"rpm" : 1500
+		"rpm" : 900
 	},
 
-	"fireSounds" : ["/guns/lmg/gbmg42/8mmmauserauto.ogg"],
+	"fireSounds" : ["/guns/lmg/gbmg34/8mmmauserauto.ogg"],
 	"fireTypes" : ["auto"],
 	"gunPart" : "gun",
 
