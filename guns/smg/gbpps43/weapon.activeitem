@@ -1,7 +1,7 @@
 {
 	//UIinfo
-	"itemName" : "gbstenmk2",
-	"shortdescription" : "Sten Mk.2",
+	"itemName" : "gbpps43",
+	"shortdescription" : "PPSh-41",
 	"description" : "description here",
 	"category" : "base",
 	"tooltipKind" : "base",
@@ -69,7 +69,7 @@
 	},
 	
 	"gunStats" : {
-		"maxMagazine" : 32,
+		"maxMagazine" : 35,
 		"aimLookRatio" : 0.125,
 		"burst" : 3,
 		"recoil" : 1,
@@ -81,8 +81,8 @@
 		"rpm" : 600
 	},
 
-	"fireSounds" : ["/guns/smg/gbstenmk2/9mmParabellum.ogg"],
-	"fireTypes" : ["auto"],
+	"fireSounds" : ["/guns/smg/gbpps43/762x25tokarev.ogg"],
+	"fireTypes" : ["auto", "semi"],
 	"gunPart" : "gun",
 
 	"gunAnimations" : {
@@ -112,7 +112,6 @@
 						"zLevel" : 17,
 						"centered" : false,
 						"image" : "<magazine>",
-						"casingpos" : [2,2],
 						"offset" : [0.0, 0.0],
 						"transformationGroups" : ["mag", "gun", "base"]
 					}
@@ -146,8 +145,8 @@
 						"attachment_grip_pos" : [2.375,0.875],
 						"attachment_grip_end" : [2.5,0.875],
 
-						"muzzle_begin" : [3.7, 0.95],
-						"muzzle_end" : [3.75, 0.95], 
+						"muzzle_begin" : [3.125, 0.9],
+						"muzzle_end" : [3.25, 0.9], 
 						"transformationGroups" : ["gun", "base"]
 					}
 				},
@@ -156,7 +155,7 @@
 				"muzzleFlash" : {
 					"properties" : {
 						"transformationGroups" : ["base"],
-						"offset" : [2.125, -0.25],
+						"offset" : [1.625, -0.125],
 						"zLevel" : 20,
 						"fullbright" : true,
 						"centered" : false
@@ -251,12 +250,12 @@
 			},
 			"L_arm1" : {
 				"transform" : {
-					"rotation" : 8
+					"rotation" : 0.75
 				}
 			},
 			"L_arm2" : {
 				"transform" : {
-					"rotation" : 8
+					"rotation" : 15
 				}
 			},
 			
@@ -265,7 +264,7 @@
 				"interpolated" : false,
 				"transform" : {
 					"rotationPoint" : [1.5625, 0.8125],
-					"position" : [-1.53125, -0.1875]
+					"position" : [-1.5625, -0.4375]
 				}
 			},
 			"lever" : {
