@@ -6,7 +6,7 @@
 	"attachment" : {
 		"offset" : [-1.25,0],
 		"scale" : [0.375,0.375],
-		"image" : "/attachments/sight/scope/scope.png",
+		"image" : "scope.png",
 		"stats" : {
 			"aimLookRatio" : 1
 		},

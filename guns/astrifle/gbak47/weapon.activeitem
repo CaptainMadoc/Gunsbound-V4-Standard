@@ -19,6 +19,8 @@
 	"price" : 0,
 	"twoHanded" : true,
 	
+	"uiShell" : "ammo.png",
+
 	"animationsKeyFrames" : "default.animation",
 	"compatibleAmmo" : "/ammoGroup/gb762x39mm.json",
 
@@ -91,7 +93,7 @@
 		"rpm" : 600
 	},
 
-	"fireSounds" : ["/guns/astrifle/gbak47/762x39mm.ogg"],
+	"fireSounds" : ["762x39mm.ogg"],
 	"fireTypes" : ["auto", "semi"],
 	"gunPart" : "gun",
 

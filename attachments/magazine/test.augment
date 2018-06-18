@@ -8,7 +8,7 @@
 	"attachment" : {
 		"offset" : [-0.375,-1],
 		"scale" : [1,1],
-		"image" : "/attachments/magazine/test.png",
+		"image" : "test.png",
 		"stats" : {
 			"maxMagazine" : 60
 		},
@@ -18,7 +18,7 @@
 	"attachmentType" : "magazine",
 	"maxStack" : 1,
 
-	"inventoryIcon" : "/assetmissing.png",
+	"inventoryIcon" : "test.png",
 	"description" : "",
 	"scripts" : ["/gunsbound/scripts/attach.lua"]
 }

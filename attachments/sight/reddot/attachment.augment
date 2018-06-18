@@ -6,7 +6,7 @@
 	"attachment" : {
 		"offset" : [0,0],
 		"scale" : [0.5,0.5],
-		"image" : "/attachments/sight/reddot/reddot.png",
+		"image" : "reddot.png",
 		"stats" : {
 			"aimLookRatio" : 0.125
 		},
@@ -15,7 +15,7 @@
 	"attachmentType" : "sight",
 	"maxStack" : 1,
 
-	"inventoryIcon" : "/attachments/sight/reddot/reddot.png",
+	"inventoryIcon" : "reddot.png",
 	"description" : "",
 	"shortdescription" : "Red Dot Sight",
 	"scripts" : ["/gunsbound/scripts/attach.lua"]
