@@ -69,7 +69,7 @@
 			"gunTagEnd" : "attachment_muzzle_end"
 		},
 
-		"magazine" : {
+		"magazine_762x39mm" : {
 			"item" : null,
 			"transformationGroup" : "attachment_magazine",
 			"part" : "attachment_magazine",
