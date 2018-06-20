@@ -65,6 +65,16 @@
 			"attachPart" : "gun",
 			"gunTag" : "attachment_muzzle_pos",
 			"gunTagEnd" : "attachment_muzzle_end"
+		},
+
+		"magazine_thompsonm1a1" : {
+			"item" : null,
+			"transformationGroup" : "attachment_magazine",
+			"part" : "attachment_magazine",
+
+			"attachPart" : "mag",
+			"gunTag" : "attachment_magazine",
+			"gunTagEnd" : "attachment_magazine_point"
 		}
 	},
 	
