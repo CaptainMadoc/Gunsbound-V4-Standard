@@ -1,7 +1,7 @@
 {
 	//UIinfo
-	"itemName" : "gbpps43",
-	"shortdescription" : "PPSh-41",
+	"itemName" : "gbmp18",
+	"shortdescription" : "Bergmann MP-18",
 	"description" : "description here",
 	"category" : "base",
 	"tooltipKind" : "base",
@@ -20,7 +20,7 @@
 	"twoHanded" : true,
 	
 	"animationsKeyFrames" : "default.animation",
-	"compatibleAmmo" : "/ammoGroup/gb762x25tokarev.json",
+	"compatibleAmmo" : "/ammoGroup/gb9mm.json",
 
 	"attachments" : {
 		"grip" : {
@@ -69,7 +69,7 @@
 	},
 	
 	"gunStats" : {
-		"maxMagazine" : 35,
+		"maxMagazine" : 20,
 		"aimLookRatio" : 0.125,
 		"burst" : 3,
 		"recoil" : 1,
@@ -78,11 +78,11 @@
 		"standingInaccuracy" : 5,
 		"crouchInaccuracyMultiplier" : 0.25,
 		"muzzleFlash" : 1,
-		"rpm" : 600
+		"rpm" : 450
 	},
 
-	"fireSounds" : ["/guns/smg/gbpps43/762x25tokarev.ogg"],
-	"fireTypes" : ["auto", "semi"],
+	"fireSounds" : ["/guns/smg/gbmp18/9mmParabellum.ogg"],
+	"fireTypes" : ["auto"],
 	"gunPart" : "gun",
 
 	"gunAnimations" : {
@@ -112,6 +112,7 @@
 						"zLevel" : 17,
 						"centered" : false,
 						"image" : "<magazine>",
+						"casingpos" : [2,2],
 						"offset" : [0.0, 0.0],
 						"transformationGroups" : ["mag", "gun", "base"]
 					}
@@ -145,8 +146,8 @@
 						"attachment_grip_pos" : [2.375,0.875],
 						"attachment_grip_end" : [2.5,0.875],
 
-						"muzzle_begin" : [3.6, 1.2],
-						"muzzle_end" : [3.625, 1.2], 
+						"muzzle_begin" : [3.7, 0.95],
+						"muzzle_end" : [3.75, 0.95], 
 						"transformationGroups" : ["gun", "base"]
 					}
 				},
@@ -155,8 +156,8 @@
 				"muzzleFlash" : {
 					"properties" : {
 						"transformationGroups" : ["base"],
-						"offset" : [2, -0.25],
-						"zLevel" : 16,
+						"offset" : [2.125, -0.25],
+						"zLevel" : 20,
 						"fullbright" : true,
 						"centered" : false
 					},
@@ -250,12 +251,12 @@
 			},
 			"L_arm1" : {
 				"transform" : {
-					"rotation" : 0.75
+					"rotation" : 8
 				}
 			},
 			"L_arm2" : {
 				"transform" : {
-					"rotation" : 15
+					"rotation" : 8
 				}
 			},
 			
@@ -264,7 +265,7 @@
 				"interpolated" : false,
 				"transform" : {
 					"rotationPoint" : [1.5625, 0.8125],
-					"position" : [-1.5625, -0.4375]
+					"position" : [-1.53125, -0.1875]
 				}
 			},
 			"lever" : {

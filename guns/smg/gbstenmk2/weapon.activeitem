@@ -20,7 +20,7 @@
 	"twoHanded" : true,
 	
 	"animationsKeyFrames" : "default.animation",
-	"compatibleAmmo" : "/ammoGroup/gb762x25tokarev.json",
+	"compatibleAmmo" : "/ammoGroup/gb9mm.json",
 
 	"attachments" : {
 		"grip" : {
