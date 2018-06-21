@@ -123,6 +123,8 @@
 						"centered" : false,
 						"image" : "<magazine>",
 						"offset" : [0.0, 0.0],
+						"attachment_magazine" : [2.0, 1.0],
+						"attachment_magazine_point" : [2.125, 1.0],
 						"transformationGroups" : ["mag", "gun", "base"]
 					}
 				},
@@ -226,6 +228,16 @@
 						"offset" : [0.0, 0.0],
 						"transformationGroups" : ["attachment_sight"]
 					}
+				},
+				
+				"attachment_magazine" : {
+					"properties" : {
+						"zLevel" : 23,
+						"centered" : false,
+						"image" : "<selfimage>",
+						"offset" : [0.0, 0.0],
+						"transformationGroups" : ["attachment_magazine"]
+					}
 				}
 			}
 		},
@@ -286,6 +298,11 @@
 			},
 			
 			"attachment_grip" : {
+				"ignore" : true,
+				"interpolated" : false
+			},
+			
+			"attachment_magazine" : {
 				"ignore" : true,
 				"interpolated" : false
 			},
