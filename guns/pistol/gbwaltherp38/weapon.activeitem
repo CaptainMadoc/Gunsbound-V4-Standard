@@ -1,7 +1,7 @@
 {
 	//UIinfo
-	"itemName" : "gbmp18",
-	"shortdescription" : "Bergmann MP-18",
+	"itemName" : "gbwaltherp38",
+	"shortdescription" : "Walther P38",
 	"description" : "description here",
 	"category" : "base",
 	"tooltipKind" : "base",
@@ -17,34 +17,12 @@
 	"rarity" : "common",
 	"maxStack" : 1,
 	"price" : 0,
-	"twoHanded" : true,
+	"twoHanded" : false,
 	
 	"animationsKeyFrames" : "default.animation",
 	"compatibleAmmo" : "/ammoGroup/gb9mm.json",
 
 	"attachments" : {
-		"grip" : {
-			"item" : null,
-			
-			"transformationGroup" : "attachment_grip",
-			"part" : "attachment_grip",
-			
-			"attachPart" : "gun",
-			"gunTag" : "attachment_grip_pos",
-			"gunTagEnd" : "attachment_grip_end"
-		},
-		
-		"sight" : {
-			"item" : null,
-			
-			"transformationGroup" : "attachment_sight",
-			"part" : "attachment_sight",
-			
-			"attachPart" : "gun",
-			"gunTag" : "attachment_sight_pos",
-			"gunTagEnd" : "attachment_sight_end"
-		},
-		
 		"tactical" : {
 			"item" : null,
 			
@@ -69,20 +47,20 @@
 	},
 	
 	"gunStats" : {
-		"maxMagazine" : 20,
+		"maxMagazine" : 8,
 		"aimLookRatio" : 0.125,
 		"burst" : 3,
-		"recoil" : 1,
-		"recoilRecovery" : 15,
-		"movingInaccuracy" : 14,
-		"standingInaccuracy" : 5,
+		"recoil" : 4,
+		"recoilRecovery" : 4,
+		"movingInaccuracy" : 25,
+		"standingInaccuracy" : 1,
 		"crouchInaccuracyMultiplier" : 0.25,
 		"muzzleFlash" : 1,
-		"rpm" : 450
+		"rpm" : 666
 	},
 
-	"fireSounds" : ["/guns/smg/gbmp18/9mmParabellum.ogg"],
-	"fireTypes" : ["auto"],
+	"fireSounds" : ["/guns/pistol/gbwaltherp38/9mmParabellum.ogg"],
+	"fireTypes" : ["semi"],
 	"gunPart" : "gun",
 
 	"gunAnimations" : {
@@ -112,14 +90,13 @@
 						"zLevel" : 17,
 						"centered" : false,
 						"image" : "<magazine>",
-						"casingpos" : [2,2],
 						"offset" : [0.0, 0.0],
 						"transformationGroups" : ["mag", "gun", "base"]
 					}
 				},
 				"gunlever" : {
 					"properties" : {
-						"zLevel" : 18,
+						"zLevel" : 20,
 						"centered" : false,
 						"image" : "lever.png",
 						"offset" : [0.0, 0.0],
@@ -134,20 +111,14 @@
 						"image" : "gun.png",
 						"offset" : [0.0, 0.0],
 
-						"attachment_muzzle_pos" : [2.8750, 1.12500],
-						"attachment_muzzle_end" : [3, 1.12500],
-
-						"attachment_tactical_pos" : [2.5, 1.125],
-						"attachment_tactical_end" : [3, 1.125],
+						"attachment_muzzle_pos" : [1.75, 1],
+						"attachment_muzzle_end" : [1.87500, 1],
 						
-						"attachment_sight_pos" : [1.875, 1.25],
-						"attachment_sight_end" : [2, 1.25],
-						
-						"attachment_grip_pos" : [2.375,0.875],
-						"attachment_grip_end" : [2.5,0.875],
+						"attachment_tactical_pos" : [1.675, 0.625],
+						"attachment_tactical_end" : [1.87500, 0.625],
 
-						"muzzle_begin" : [3, 0.875],
-						"muzzle_end" : [3.125, 0.875], 
+						"muzzle_begin" : [1.7, 1.02],
+						"muzzle_end" : [1.75, 1.02], 
 						"transformationGroups" : ["gun", "base"]
 					}
 				},
@@ -156,7 +127,7 @@
 				"muzzleFlash" : {
 					"properties" : {
 						"transformationGroups" : ["base"],
-						"offset" : [1.75, -0.2],
+						"offset" : [1.1, -0.09],
 						"zLevel" : 20,
 						"fullbright" : true,
 						"centered" : false
@@ -188,7 +159,6 @@
 						"transformationGroups" : ["attachment_muzzle"]
 					}
 				},
-				
 				"attachment_tactical" : {
 					"properties" : {
 						"zLevel" : 23,
@@ -196,26 +166,6 @@
 						"image" : "<selfimage>",
 						"offset" : [0.0, 0.0],
 						"transformationGroups" : ["attachment_tactical"]
-					}
-				},
-				
-				"attachment_grip" : {
-					"properties" : {
-						"zLevel" : 23,
-						"centered" : false,
-						"image" : "<selfimage>",
-						"offset" : [0.0, 0.0],
-						"transformationGroups" : ["attachment_grip"]
-					}
-				},
-				
-				"attachment_sight" : {
-					"properties" : {
-						"zLevel" : 23,
-						"centered" : false,
-						"image" : "<selfimage>",
-						"offset" : [0.0, 0.0],
-						"transformationGroups" : ["attachment_sight"]
 					}
 				}
 			}
@@ -225,47 +175,27 @@
 		"transformationGroups" : {
 			
 			"L_offset" : {
-				"transform" : {
-					"position" : [0.84375, 0.21875]
-				}
-			},
-			"R_offset" : {
-				"transform" : {
-					"position" : [-0.09375, 0.03125]
-				}
+				"transform" : {"position" : [0.15625, 0]}
 			},
 			"R_arm1" : {
-				"transform" : {
-					"rotation" : 5.375
-				}
+				"transform" : {"rotation" : 15}
 			},
 			"R_arm2" : {
-				"transform" : {
-					"rotation" : 15
-				}
-			},
-			"R_hand" : {
-				"transform" : {
-					"rotation" : -21
-				}
+				"transform" : {"rotation" : -15}
 			},
 			"L_arm1" : {
-				"transform" : {
-					"rotation" : 8
-				}
+				"transform" : {"rotation" : 15}
 			},
 			"L_arm2" : {
-				"transform" : {
-					"rotation" : 8
-				}
+				"transform" : {"rotation" : -15}
 			},
 			
 			
 			"gun" : {
 				"interpolated" : false,
 				"transform" : {
-					"rotationPoint" : [1.5625, 0.8125],
-					"position" : [-1.3125, -0.0625]
+				"position" : [-0.5, -0.15625],
+				"rotationPoint" : [0.5, 0.5]
 				}
 			},
 			"lever" : {
@@ -280,18 +210,7 @@
 				"ignore" : true,
 				"interpolated" : false
 			},
-			
 			"attachment_tactical" : {
-				"ignore" : true,
-				"interpolated" : false
-			},
-			
-			"attachment_grip" : {
-				"ignore" : true,
-				"interpolated" : false
-			},
-			
-			"attachment_sight" : {
 				"ignore" : true,
 				"interpolated" : false
 			}

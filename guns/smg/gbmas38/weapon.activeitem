@@ -1,7 +1,7 @@
 {
 	//UIinfo
-	"itemName" : "gbmp18",
-	"shortdescription" : "Bergmann MP-18",
+	"itemName" : "gbmas38",
+	"shortdescription" : "MAS-38",
 	"description" : "description here",
 	"category" : "base",
 	"tooltipKind" : "base",
@@ -20,7 +20,7 @@
 	"twoHanded" : true,
 	
 	"animationsKeyFrames" : "default.animation",
-	"compatibleAmmo" : "/ammoGroup/gb9mm.json",
+	"compatibleAmmo" : "/ammoGroup/gb45ACP.json",
 
 	"attachments" : {
 		"grip" : {
@@ -65,24 +65,34 @@
 			"attachPart" : "gun",
 			"gunTag" : "attachment_muzzle_pos",
 			"gunTagEnd" : "attachment_muzzle_end"
+		},
+
+		"magazine_mas38" : {
+			"item" : null,
+			"transformationGroup" : "attachment_magazine",
+			"part" : "attachment_magazine",
+
+			"attachPart" : "mag",
+			"gunTag" : "attachment_magazine",
+			"gunTagEnd" : "attachment_magazine_point"
 		}
 	},
 	
 	"gunStats" : {
-		"maxMagazine" : 20,
+		"maxMagazine" : 32,
 		"aimLookRatio" : 0.125,
 		"burst" : 3,
-		"recoil" : 1,
-		"recoilRecovery" : 15,
-		"movingInaccuracy" : 14,
-		"standingInaccuracy" : 5,
+		"recoil" : 3,
+		"recoilRecovery" : 7,
+		"movingInaccuracy" : 6,
+		"standingInaccuracy" : 2,
 		"crouchInaccuracyMultiplier" : 0.25,
 		"muzzleFlash" : 1,
-		"rpm" : 450
+		"rpm" : 700
 	},
 
-	"fireSounds" : ["/guns/smg/gbmp18/9mmParabellum.ogg"],
-	"fireTypes" : ["auto"],
+	"fireSounds" : ["/guns/smg/gbmas38/763x25Mauser.ogg"],
+	"fireTypes" : ["auto", "semi"],
 	"gunPart" : "gun",
 
 	"gunAnimations" : {
@@ -112,8 +122,9 @@
 						"zLevel" : 17,
 						"centered" : false,
 						"image" : "<magazine>",
-						"casingpos" : [2,2],
 						"offset" : [0.0, 0.0],
+						"attachment_magazine" : [2.0, 1.0],
+						"attachment_magazine_point" : [2.125, 1.0],
 						"transformationGroups" : ["mag", "gun", "base"]
 					}
 				},
@@ -146,8 +157,8 @@
 						"attachment_grip_pos" : [2.375,0.875],
 						"attachment_grip_end" : [2.5,0.875],
 
-						"muzzle_begin" : [3, 0.875],
-						"muzzle_end" : [3.125, 0.875], 
+						"muzzle_begin" : [3.450, 1.25],
+						"muzzle_end" : [3.625, 1.25], 
 						"transformationGroups" : ["gun", "base"]
 					}
 				},
@@ -156,7 +167,7 @@
 				"muzzleFlash" : {
 					"properties" : {
 						"transformationGroups" : ["base"],
-						"offset" : [1.75, -0.2],
+						"offset" : [2, -0.125],
 						"zLevel" : 20,
 						"fullbright" : true,
 						"centered" : false
@@ -217,6 +228,16 @@
 						"offset" : [0.0, 0.0],
 						"transformationGroups" : ["attachment_sight"]
 					}
+				},
+				
+				"attachment_magazine" : {
+					"properties" : {
+						"zLevel" : 23,
+						"centered" : false,
+						"image" : "<selfimage>",
+						"offset" : [0.0, 0.0],
+						"transformationGroups" : ["attachment_magazine"]
+					}
 				}
 			}
 		},
@@ -226,37 +247,27 @@
 			
 			"L_offset" : {
 				"transform" : {
-					"position" : [0.84375, 0.21875]
-				}
-			},
-			"R_offset" : {
-				"transform" : {
-					"position" : [-0.09375, 0.03125]
+					"position" : [1.1875, 0.28125]
 				}
 			},
 			"R_arm1" : {
 				"transform" : {
-					"rotation" : 5.375
+					"rotation" : 15
 				}
 			},
 			"R_arm2" : {
 				"transform" : {
-					"rotation" : 15
-				}
-			},
-			"R_hand" : {
-				"transform" : {
-					"rotation" : -21
+					"rotation" : -15
 				}
 			},
 			"L_arm1" : {
 				"transform" : {
-					"rotation" : 8
+					"rotation" : -5
 				}
 			},
 			"L_arm2" : {
 				"transform" : {
-					"rotation" : 8
+					"rotation" : 15
 				}
 			},
 			
@@ -265,7 +276,7 @@
 				"interpolated" : false,
 				"transform" : {
 					"rotationPoint" : [1.5625, 0.8125],
-					"position" : [-1.3125, -0.0625]
+					"position" : [-1.59375, -0.78125]
 				}
 			},
 			"lever" : {
@@ -287,6 +298,11 @@
 			},
 			
 			"attachment_grip" : {
+				"ignore" : true,
+				"interpolated" : false
+			},
+			
+			"attachment_magazine" : {
 				"ignore" : true,
 				"interpolated" : false
 			},

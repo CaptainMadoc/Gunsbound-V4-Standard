@@ -1,0 +1,16 @@
+{
+  "projectileName" : "gb9mmproj",
+  "image" : "gb9mmproj.png",
+  "animationCycle" : 0.25,
+  "frameNumber" : 1,
+  "pointLight" : false,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/bulletexplosion/bulletexplosion.config"
+    }
+  ],
+  "power" : 20.0
+}
+
+
