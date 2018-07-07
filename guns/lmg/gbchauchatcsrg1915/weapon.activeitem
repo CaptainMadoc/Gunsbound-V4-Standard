@@ -1,7 +1,7 @@
 {
 	//UIinfo
-	"itemName" : "gbmas38",
-	"shortdescription" : "MAS-38",
+	"itemName" : "gbchauchatcsrg1915",
+	"shortdescription" : "Chauchat CSRG M1915",
 	"description" : "description here",
 	"category" : "base",
 	"tooltipKind" : "base",
@@ -20,7 +20,7 @@
 	"twoHanded" : true,
 	
 	"animationsKeyFrames" : "default.animation",
-	"compatibleAmmo" : "/ammoGroup/gb765longue.json",
+	"compatibleAmmo" : "/ammoGroup/gb8x50rlebel.json",
 
 	"attachments" : {
 		"grip" : {
@@ -65,33 +65,23 @@
 			"attachPart" : "gun",
 			"gunTag" : "attachment_muzzle_pos",
 			"gunTagEnd" : "attachment_muzzle_end"
-		},
-
-		"magazine_mas38" : {
-			"item" : null,
-			"transformationGroup" : "attachment_magazine",
-			"part" : "attachment_magazine",
-
-			"attachPart" : "mag",
-			"gunTag" : "attachment_magazine",
-			"gunTagEnd" : "attachment_magazine_point"
 		}
 	},
 	
 	"gunStats" : {
-		"maxMagazine" : 32,
+		"maxMagazine" : 19,
 		"aimLookRatio" : 0.125,
 		"burst" : 3,
-		"recoil" : 3,
-		"recoilRecovery" : 7,
-		"movingInaccuracy" : 6,
-		"standingInaccuracy" : 2,
+		"recoil" : 4,
+		"recoilRecovery" : 2,
+		"movingInaccuracy" : 5,
+		"standingInaccuracy" : 1,
 		"crouchInaccuracyMultiplier" : 0.25,
 		"muzzleFlash" : 1,
-		"rpm" : 700
+		"rpm" : 240
 	},
 
-	"fireSounds" : ["/guns/smg/gbmas38/763x25Mauser.ogg"],
+	"fireSounds" : ["/guns/lmg/gbchauchatcsrg1915/3006.ogg"],
 	"fireTypes" : ["auto", "semi"],
 	"gunPart" : "gun",
 
@@ -123,8 +113,6 @@
 						"centered" : false,
 						"image" : "<magazine>",
 						"offset" : [0.0, 0.0],
-						"attachment_magazine" : [2.0, 1.0],
-						"attachment_magazine_point" : [2.125, 1.0],
 						"transformationGroups" : ["mag", "gun", "base"]
 					}
 				},
@@ -145,8 +133,8 @@
 						"image" : "gun.png",
 						"offset" : [0.0, 0.0],
 
-						"attachment_muzzle_pos" : [2.8750, 1.12500],
-						"attachment_muzzle_end" : [3, 1.12500],
+						"attachment_muzzle_pos" : [2.8750, 1.2500],
+						"attachment_muzzle_end" : [3, 1.2500],
 
 						"attachment_tactical_pos" : [2.5, 1.125],
 						"attachment_tactical_end" : [3, 1.125],
@@ -157,8 +145,8 @@
 						"attachment_grip_pos" : [2.375,0.875],
 						"attachment_grip_end" : [2.5,0.875],
 
-						"muzzle_begin" : [3.450, 1.25],
-						"muzzle_end" : [3.625, 1.25], 
+						"muzzle_begin" : [5.375, 1.2],
+						"muzzle_end" : [5.5, 1.2], 
 						"transformationGroups" : ["gun", "base"]
 					}
 				},
@@ -167,7 +155,7 @@
 				"muzzleFlash" : {
 					"properties" : {
 						"transformationGroups" : ["base"],
-						"offset" : [2, -0.125],
+						"offset" : [4, -0.05],
 						"zLevel" : 20,
 						"fullbright" : true,
 						"centered" : false
@@ -228,16 +216,6 @@
 						"offset" : [0.0, 0.0],
 						"transformationGroups" : ["attachment_sight"]
 					}
-				},
-				
-				"attachment_magazine" : {
-					"properties" : {
-						"zLevel" : 23,
-						"centered" : false,
-						"image" : "<selfimage>",
-						"offset" : [0.0, 0.0],
-						"transformationGroups" : ["attachment_magazine"]
-					}
 				}
 			}
 		},
@@ -247,7 +225,7 @@
 			
 			"L_offset" : {
 				"transform" : {
-					"position" : [1.1875, 0.28125]
+					"position" : [1.34375, 0.15625]
 				}
 			},
 			"R_arm1" : {
@@ -262,12 +240,12 @@
 			},
 			"L_arm1" : {
 				"transform" : {
-					"rotation" : -5
+					"rotation" : 0.5
 				}
 			},
 			"L_arm2" : {
 				"transform" : {
-					"rotation" : 15
+					"rotation" : 8.25
 				}
 			},
 			
@@ -276,7 +254,7 @@
 				"interpolated" : false,
 				"transform" : {
 					"rotationPoint" : [1.5625, 0.8125],
-					"position" : [-1.59375, -0.78125]
+					"position" : [-1.21875, -0.2875]
 				}
 			},
 			"lever" : {
@@ -298,11 +276,6 @@
 			},
 			
 			"attachment_grip" : {
-				"ignore" : true,
-				"interpolated" : false
-			},
-			
-			"attachment_magazine" : {
 				"ignore" : true,
 				"interpolated" : false
 			},

@@ -1,6 +1,6 @@
 {
-  "projectileName" : "gb9mmproj",
-  "image" : "gb9mmproj.png",
+  "projectileName" : "gb765longueproj",
+  "image" : "gb765longueproj.png",
   "animationCycle" : 0.25,
   "frameNumber" : 1,
   "pointLight" : false,
