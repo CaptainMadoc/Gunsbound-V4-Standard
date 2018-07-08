@@ -6,9 +6,9 @@
   
   "actionOnCollide" : [
     {
-      "action" : "sound",
-      "options" : [ "/guns/sounds/casing1.wav","/guns/sounds/casing2.wav" ]
-    }
+  	  "action" : "sound",
+  	  "options" : [ "/guns/sounds/casing1.wav","/guns/sounds/casing2.wav" ]
+  	}
   ],
   
   "timeToLive" : 1,

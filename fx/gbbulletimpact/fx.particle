@@ -1,0 +1,17 @@
+{
+  "kind" : "gbbulletimpact",
+  "definition" : {
+    "type" : "animated",
+    "animation" : "/fx/gbbulletimpact/image.animation",
+    "looping" : false,
+    "size" : 1.0,
+    "position" : [0, 0],
+    "destructionTime" : 0,
+    "fullbright" : true,
+    "initialVelocity" : [0, 0],
+    "finalVelocity" : [0, 0],
+    "approach" : [0, 0],
+    "timeToLive" : 1,
+    "layer" : "front"
+  }
+}

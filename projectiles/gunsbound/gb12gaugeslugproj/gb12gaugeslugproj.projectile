@@ -5,10 +5,14 @@
   "frameNumber" : 1,
   "damageKindImage" : "icon.png",
   "pointLight" : false,
-  "actionOnReap" : [
+  "actionOnHit" : [
     {
       "action" : "config",
       "file" : "/projectiles/explosions/bulletexplosion/bulletexplosion.config"
+    },
+    {
+      "action" : "config",
+      "file" : "/fx/gbbulletimpact/action.config"
     }
   ],
   "damageKind" : "default"

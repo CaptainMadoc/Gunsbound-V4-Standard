@@ -4,10 +4,14 @@
   "animationCycle" : 0.25,
   "frameNumber" : 1,
   "pointLight" : false,
-  "actionOnReap" : [
+  "actionOnHit" : [
     {
       "action" : "config",
       "file" : "/projectiles/explosions/bulletexplosion/bulletexplosion.config"
+    },
+    {
+      "action" : "config",
+      "file" : "/fx/gbbulletimpact/action.config"
     }
   ]
 }
