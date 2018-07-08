@@ -1,5 +1,5 @@
 {
-  "projectileName" : "gb9mmParabellumProjectile",
+  "projectileName" : "gb9mmParabellum_casing",
   "image" : "gb9mmcasing.png",
   
   "physics" : "grenade",

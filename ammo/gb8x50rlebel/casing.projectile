@@ -1,5 +1,5 @@
 {
-  "projectileName" : "gb8x50rlebelProjectile",
+  "projectileName" : "gb8x50rlebel_casing",
   "image" : "casing.png",
   
   "physics" : "grenade",

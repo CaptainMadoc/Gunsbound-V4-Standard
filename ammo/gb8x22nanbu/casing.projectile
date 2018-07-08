@@ -1,5 +1,5 @@
 {
-  "projectileName" : "gb8x22nanbuprojectile",
+  "projectileName" : "gb8x22nanbu_casing",
   "image" : "gb8x22nanbucasing.png",
   
   "physics" : "grenade",

@@ -7,7 +7,7 @@
 	"inventoryIcon" : "gb9mmParabellum.png",
 	"description" : "test",
 	"shortdescription" : "9mm",
-	"casingProjectile" : "gb9mmParabellumProjectile",
+	"casingProjectile" : "gb9mmParabellum_casing",
 	"projectile" : "gb9mmproj",
 	"projectileConfig" : {"speed" : 100, "power" : 10}
 }

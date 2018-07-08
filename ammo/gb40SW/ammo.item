@@ -7,7 +7,7 @@
 	"inventoryIcon" : "gb40SW.png",
 	"description" : "test",
 	"shortdescription" : "40SW",
-	"casingProjectile" : "gb40SWProjectile",
-	"projectile" : "bullet-2",
+	"casingProjectile" : "gb40SW_casing",
+	"projectile" : "gbbullet",
 	"projectileConfig" : {"speed" : 110}
 }

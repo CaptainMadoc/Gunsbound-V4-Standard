@@ -7,7 +7,7 @@
 	"inventoryIcon" : "gb765longue.png",
 	"description" : "test",
 	"shortdescription" : "7.65mm Longue",
-	"casingProjectile" : "gb765longueProjectile",
+	"casingProjectile" : "gb765longue_casing",
 	"projectile" : "gb765longueproj",
 	"projectileConfig" : {"speed" : 90, "power" : 7}
 }

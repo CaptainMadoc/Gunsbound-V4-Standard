@@ -7,7 +7,7 @@
 	"inventoryIcon" : "gb762x25tokarev.png",
 	"description" : "test",
 	"shortdescription" : "7.62x25 Tokarev",
-	"casingProjectile" : "gb762x25tokarevcasing",
-	"projectile" : "gb9mmproj",
+	"casingProjectile" : "gb762x25tokarev_casing",
+	"projectile" : "gbbullet",
 	"projectileConfig" : {"speed" : 100, "power" : 12}
 }

@@ -7,7 +7,7 @@
 	"inventoryIcon" : "gb792x33Kurz.png",
 	"description" : "test",
 	"shortdescription" : "7.92x33mm Kurz",
-	"casingProjectile" : "gb792x33KurzProjectile",
-	"projectile" : "bullet-2",
+	"casingProjectile" : "gb792x33Kurz_casing",
+	"projectile" : "gbbullet",
 	"projectileConfig" : {"speed" : 230}
 }

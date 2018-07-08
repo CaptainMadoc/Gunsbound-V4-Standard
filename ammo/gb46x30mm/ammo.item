@@ -7,7 +7,7 @@
 	"inventoryIcon" : "gb46x30mm.png",
 	"description" : "test",
 	"shortdescription" : "46x30mm",
-	"casingProjectile" : "gb46x30mmProjectile",
-	"projectile" : "bullet-2",
+	"casingProjectile" : "gb46x30mm_casing",
+	"projectile" : "gbbullet",
 	"projectileConfig" : {"speed" : 150}
 }

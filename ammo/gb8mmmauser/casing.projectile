@@ -1,5 +1,5 @@
 {
-  "projectileName" : "gb8mmmauserProjectile",
+  "projectileName" : "gb8mmmauser_casing",
   "image" : "casing.png",
   
   "physics" : "grenade",

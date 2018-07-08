@@ -7,7 +7,7 @@
 	"inventoryIcon" : "gb45ACP.png",
 	"description" : "test",
 	"shortdescription" : ".45 ACP",
-	"casingProjectile" : "gb45ACPProjectile",
-	"projectile" : "bullet-2",
+	"casingProjectile" : "gb45ACP_casing",
+	"projectile" : "gbbullet",
 	"projectileConfig" : {"speed" : 125}
 }

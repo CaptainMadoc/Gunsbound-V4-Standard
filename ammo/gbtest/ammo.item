@@ -7,7 +7,7 @@
 	"inventoryIcon" : "gbtestammo.png",
 	"description" : "actually testing",
 	"shortdescription" : "test ammo",
-	"casingProjectile" : "gbtestProjectile",
+	"casingProjectile" : "gbtest_casing",
 	"projectile" : "gbtestproj",
 	"projectileConfig" : {"speed" : 5, "power" : 10000}
 }
