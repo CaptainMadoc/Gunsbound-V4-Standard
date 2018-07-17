@@ -1,7 +1,7 @@
 {
 	//UIinfo
-	"itemName" : "gbbarm1918",
-	"shortdescription" : "BARM1918",
+	"itemName" : "gbsvt40",
+	"shortdescription" : "SVT-40",
 	"description" : "description here",
 	"category" : "base",
 	"tooltipKind" : "base",
@@ -20,7 +20,7 @@
 	"twoHanded" : true,
 	
 	"animationsKeyFrames" : "default.animation",
-	"compatibleAmmo" : "/ammoGroup/gb3006.json",
+	"compatibleAmmo" : "/ammoGroup/gb762x39mm.json",
 
 	"attachments" : {
 		"grip" : {
