@@ -28,7 +28,7 @@ function absoluteDir(str,dir)
 end
 
 function attemptCraft() --action something
-    if player.hasCountOfItem({name = "gbgunpart", count = 1}, false) >= 5 then
+    if player.hasCountOfItem({name = "gbgunpart", count = 1}, false) >= 2 then
         local crafted, rarity = rafflePool()
         if crafted then
             
