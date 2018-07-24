@@ -81,6 +81,8 @@
 	},
 	
 	"gunStats" : {
+		"damageMultiplier" : 2,
+
 		"maxMagazine" : 30,
 		"aimLookRatio" : 0.125,
 		"burst" : 3,

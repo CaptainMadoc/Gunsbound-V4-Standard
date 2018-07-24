@@ -59,7 +59,7 @@
 		"rpm" : 950
 	},
 
-	"fireSounds" : ["/guns/smg/uzimicro/9mmParabellum.ogg"],
+	"fireSounds" : ["9mmParabellum.ogg"],
 	"fireTypes" : ["auto"],
 	"gunPart" : "gun",
 
