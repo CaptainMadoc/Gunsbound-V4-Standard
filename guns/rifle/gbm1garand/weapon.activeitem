@@ -70,7 +70,7 @@
 	
 	"gunStats" : {
 		"maxMagazine" : 8,
-		"aimLookRatio" : 0.125,
+		"aimLookRatio" : 0.25,
 		"burst" : 3,
 		"recoil" : 0,
 		"recoilRecovery" : 1,
