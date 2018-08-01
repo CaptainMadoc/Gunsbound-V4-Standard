@@ -57,7 +57,9 @@
 		"shoot" : "shoot",
 		"cock" : "cock",
 		"dry" : "dry",
-		"reload" : "reload"
+		"reload" : "reload",
+		"reloadLoop" : "reloadLoop",
+		"reloadEnd" : "reloadEnd"
 	},
 
 	"animation" : "/gunsbound/base/base.animation",
