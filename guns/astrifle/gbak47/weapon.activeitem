@@ -95,7 +95,7 @@
 		"rpm" : 600
 	},
 
-	"fireSounds" : ["762x39mm.ogg"],
+	"fireSounds" : ["sounds/ak47.ogg"],
 	"fireTypes" : ["auto", "semi"],
 	"gunPart" : "gun",
 
@@ -122,7 +122,11 @@
 		},
 		"sounds" : {
 			"cock" : ["/sfx/gun/reload/shotgun_reload_clip1.ogg"],
-			"cock2" : ["/sfx/gun/reload/shotgun_reload_clip2.ogg"]
+			"cock2" : ["/sfx/gun/reload/shotgun_reload_clip2.ogg"],
+			"boltback" : ["sounds/boltback.ogg"],
+			"boltforward" : ["sounds/boltforward.ogg"],
+			"magin" : ["sounds/magin.ogg"],
+			"magout" : ["sounds/magout.ogg"]
 		},
 		"animatedParts" : {
 			"parts" : {
