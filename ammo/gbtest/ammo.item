@@ -9,5 +9,5 @@
 	"shortdescription" : "test ammo",
 	"casingProjectile" : "gbtest_casing",
 	"projectile" : "gbtestproj",
-	"projectileConfig" : {"speed" : 5, "power" : 10000}
+	"projectileConfig" : {"speed" : 1000, "power" : 10000}
 }
