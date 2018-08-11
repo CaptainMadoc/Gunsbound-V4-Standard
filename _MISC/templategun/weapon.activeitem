@@ -1,0 +1,304 @@
+{
+	//API scripts
+	"scriptClass" : "/gunsbound/base/scripts.json",
+	"scripts" : ["/gunsbound/scripts/main.lua"],
+	"animationScripts" : ["/gunsbound/gunUI/main.lua"],
+	"scriptDelta" : 1,
+	//API
+	"animation" : "/gunsbound/base/base.animation",
+
+	//UIinfo
+	"itemName" : "gbtemplategun",
+	"shortdescription" : "Name of your gun",
+	"description" : "Description here",
+	"category" : "SMG",
+	"tooltipKind" : "base",
+	"inventoryIcon" : "image/icon.png",
+
+	//item settings
+	"rarity" : "common",
+	"maxStack" : 1,
+	"price" : 0,
+	"twoHanded" : true,
+	
+	//gun config
+	//animations for weapon
+	"animationsKeyFrames" : "weapon.animation",
+
+	//needed to shoot stuff with
+	"compatibleAmmo" : "/ammoGroup/gbdefault.json",
+
+	//attachment.lua
+	"attachments" : {
+		"muzzle" : {
+			"item" : null,
+			
+			"transformationGroup" : "attachment_muzzle",
+			"part" : "attachment_muzzle",
+			
+			"attachPart" : "attachment_muzzle_positioning",
+			"gunTag" : "offset",
+			"gunTagEnd" : "offset_end"
+		}
+	},
+	
+	//stats here are self explainatary 
+	"gunStats" : {
+		//Dmg
+		"damageMultiplier" : 1,
+
+		//Ammo things
+		"maxMagazine" : 20,
+		"rpm" : 850,
+		"burst" : 3,
+
+		//accuracy & aim
+		"recoil" : 3,
+		"recoilRecovery" : 12,
+		"movingInaccuracy" : 10,
+		"standingInaccuracy" : 1,
+		"crouchInaccuracyMultiplier" : 0.25,
+		"aimLookRatio" : 0.125,
+
+		//FX
+		"muzzleFlash" : 1
+	},
+
+	//fire sounds here. can be overrided by silencers
+	"fireSounds" : ["sound/shoot.ogg"],
+
+	//fire mode : auto burst semi
+	"fireTypes" : ["auto","burst","semi"],
+
+	//display falling shells
+	"casingFX" : true,
+
+	//turn this on if you want bolt rifle or similar
+	"bypassShellEject" : false,
+
+	//touch this if you're a pro at this
+	"muzzlePosition" : {"part" : "muzzle_positioning", "tag" : "offset", "tag_end" : "offset_end"},
+	"casing" :		{"part" : "casing_positioning", "tag" : "offset"},
+
+	//animation to play from the animationsKeyFrames config
+	"gunAnimations" : {
+		//boom
+		"shoot" : "shoot",
+		"shoot_dry" : "shoot_dry",
+
+		//Button W to eject a bullet from chamber
+		"cock" : "cock",
+		"cock_dry" : "cock_dry",
+
+		//Initial animation
+		"draw" : "draw",
+		"draw_dry" : "draw_dry",
+
+		//idle and dry
+		"dry" : "dry",
+
+		//reloading
+		"reload" : "reload",
+		"reload_dry" : "reload_dry"
+	},
+
+	"animationCustom" : {
+		"globalTagDefaults" : {
+			"magazine" : "image/mag.png" //do not remove
+		},
+		"sounds" : { //essential sounds included
+			"click" : ["sound/click.ogg"],
+			"tock" : ["sound/tock.ogg"],
+			"lever" : ["sound/lever.ogg"],
+			"remove" : ["sound/remove.ogg"],
+			"insert" : ["sound/insert.ogg"]
+		},
+		"animatedParts" : {
+			"parts" : {
+				//define some gun seperated parts here
+				"mag" : {
+					"properties" : {
+						"zLevel" : 18,
+						"centered" : false,
+						"image" : "<magazine>",
+						"offset" : [0.0, 0.0],
+						"transformationGroups" : ["mag", "gun", "base"]
+					}
+				},
+				"gunlever" : {
+					"properties" : {
+						"zLevel" : 19,
+						"centered" : false,
+						"image" : "image/lever.png",
+						"offset" : [0.0, 0.0],
+						"transformationGroups" : ["lever", "gun", "base"]
+					}
+				},
+				"gun" : {
+					"properties" : {
+						"zLevel" : 20,
+						"centered" : false,
+						"image" : "image/gun.png",
+						"offset" : [0.0, 0.0],
+						"transformationGroups" : ["gun", "base"]
+					}
+				},
+				"butt" : {
+					"properties" : {
+						"zLevel" : 21,
+						"centered" : false,
+						"image" : "image/butt.png",
+						"offset" : [0.0, 0.0],
+						"transformationGroups" : ["butt", "gun", "base"]
+					}
+				},
+				
+				//this is a override over the api base animation
+				"muzzleFlash" : {
+					"properties" : {
+						"transformationGroups" : ["p_muzzle","gun","base"],
+						"offset" : [0.125, -1.0],
+						"zLevel" : 30,
+						"fullbright" : true,
+						"centered" : false
+					},
+					"partStates" : {
+						"firing" : {
+							"off" : {"properties" : {"image" : "/assetmissing.png"}},
+							"on" : {"properties" : {"image" : "image/muzzleflash.png:<frame>"}}
+						}
+					}
+				},
+				
+				//TAG POSITIONNERS attached with "gun"
+				"muzzle_positioning" : {
+					"properties" : {"zLevel" : 0, "centered" : false, "offset" : [0.0, 0.0], "offset_end" : [0.125, 0.0], "transformationGroups" : ["p_muzzle", "gun", "base"]}
+				},
+				"casing_positioning" : {
+					"properties" : {"zLevel" : 0, "centered" : false, "offset" : [0.0, 0.0], "offset_end" : [0.125, 0.0], "transformationGroups" : ["p_casing", "gun", "base"]}
+				},
+				"attachment_muzzle_positioning" : {
+					"properties" : {"zLevel" : 0, "centered" : false, "offset" : [0.0, 0.0], "offset_end" : [0.125, 0.0], "transformationGroups" : ["p_attachment_muzzle", "gun", "base"]}
+				},
+
+				//for attachments to use
+				"attachment_muzzle" : {
+					"properties" : {"zLevel" : 23,"centered" : false,"image" : "<selfimage>", "offset" : [0.0, 0.0],"transformationGroups" : ["attachment_muzzle"]}
+				}
+			},
+			"stateTypes" : { //you can create you own effects for your own mod
+				"smoking" : {"default" : "off",
+					"states" : {
+						"on" : {
+							"frames" : 1,
+							"mode" : "end",
+							"cycle" : 0.5,
+							"properties" : {
+								"particleEmittersOn" : ["smoke"]
+							}
+						},
+						"timer" : {
+							"frames" : 1,
+							"mode" : "transition",
+							"cycle" : 0.5,
+							"transition" : "off",
+							"properties" : {
+								"particleEmittersOn" : ["smoke"]
+							}
+						},
+						"off" : {
+							"frames" : 1,
+							"mode" : "end",
+							"cycle" : 0.5,
+							"properties" : {
+								"particleEmittersOff" : ["smoke"]
+							}
+						}
+					}
+				},
+				"vapor" : {"default" : "off",
+					"states" : {
+						"on" : {
+							"frames" : 1,
+							"mode" : "end",
+							"cycle" : 0.5,
+							"properties" : {
+								"particleEmittersOn" : ["vapor"]
+							}
+						},
+						"timer" : {
+							"frames" : 1,
+							"mode" : "transition",
+							"cycle" : 1,
+							"transition" : "vape",
+							"properties" : {
+								"particleEmittersOff" : ["vapor"]
+							}
+						},
+						"vape" : {
+							"frames" : 1,
+							"mode" : "transition",
+							"cycle" : 1,
+							"transition" : "off",
+							"properties" : {
+								"particleEmittersOn" : ["vapor"]
+							}
+						},
+						"off" : {
+							"frames" : 1,
+							"mode" : "end",
+							"cycle" : 0.5,
+							"properties" : {
+								"particleEmittersOff" : ["vapor"]
+							}
+						}
+					}
+				}
+            }
+		},
+		"particleEmitters" : { //you can create you own effects for your own mod
+			"smoke" : {
+				"transformationGroups" : ["p_casing", "gun", "base"],
+				"emissionRate" : 32.0,
+				"zLevel" : 100,
+				"particles" : [
+					{ "particle" : "gbsmoke", "offset" : [0,0]}
+				]
+			},
+			"vapor" : {
+				"transformationGroups" : ["p_muzzle", "gun", "base"],
+				"emissionRate" : 128.0,
+				"zLevel" : 100,
+				"particles" : [
+					{ "particle" : "gbvapor", "offset" : [0,0]}
+				]
+			},
+			"spark" : {
+				"transformationGroups" : ["p_muzzle", "gun", "base"],
+				"emissionRate" : 32.0,
+				"zLevel" : 100,
+				"particles" : [
+					{ "particle" : "gbspark1", "offset" : [0,0]},
+					{ "particle" : "gbspark1", "offset" : [0,0]},
+					{ "particle" : "gbspark1", "offset" : [0,0]}
+				]
+			}
+		},
+		"transformationGroups" : {
+			"gun": {},
+			"lever": {},
+			"mag": {},
+			"base": {"interpolated": false},
+			"butt": {},
+
+			//TAG POSITIONERS	
+			"p_casing":{},
+			"p_muzzle":{},
+			"p_attachment_muzzle":{},
+
+			//for attachments
+			"attachment_muzzle":{"ignore":true}
+		}
+	}
+
+}

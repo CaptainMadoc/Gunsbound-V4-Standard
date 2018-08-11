@@ -1,0 +1,15 @@
+{
+	"reload" : [],
+	"reload_dry" : [],
+	
+	"shoot" : [{"burstParticle":["spark"],"animationState":{"vapor":"timer","smoking":"timer"},"wait":0.0,"transforms":{}}],
+	"shoot_dry" : [{"burstParticle":["spark"],"animationState":{"vapor":"timer","smoking":"timer"},"wait":0.0,"transforms":{}}],
+	
+	"cock" : [],
+	"cock_dry" : [],
+
+	"draw" : [],
+	"draw_dry" : [],
+	
+	"dry" : []
+}
