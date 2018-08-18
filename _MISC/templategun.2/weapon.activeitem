@@ -8,8 +8,8 @@
 	"animation" : "/gunsbound/base/base.animation",
 
 	//UIinfo
-	"itemName" : "gbtemplategun",
-	"shortdescription" : "Name of your gun",
+	"itemName" : "gbtemplategun2",
+	"shortdescription" : "Name of your gun part2",
 	"description" : "Description here",
 	"category" : "Category of your gun",
 	"tooltipKind" : "base",
@@ -48,17 +48,17 @@
 		"damageMultiplier" : 1,
 
 		//Ammo things
-		"maxMagazine" : 20,
-		"rpm" : 850,
+		"maxMagazine" : 15,
+		"rpm" : 1200,
 		"burst" : 3,
 
 		//accuracy & aim
-		"recoil" : 3,
-		"recoilRecovery" : 12,
+		"recoil" : 8,
+		"recoilRecovery" : 4,
 		"movingInaccuracy" : 10,
 		"standingInaccuracy" : 1,
 		"crouchInaccuracyMultiplier" : 0.25,
-		"aimLookRatio" : 0.125,
+		"aimLookRatio" : 0.0625,
 
 		//FX
 		"muzzleFlash" : 1
@@ -68,7 +68,7 @@
 	"fireSounds" : ["sound/shoot.ogg"],
 
 	//fire mode : auto burst semi
-	"fireTypes" : ["auto","burst","semi"],
+	"fireTypes" : ["semi","burst","auto"],
 
 	//display falling shells
 	"casingFX" : true,
@@ -275,20 +275,7 @@
 				]
 			}
 		},
-		"transformationGroups" : {
-			"gun": {},
-			"lever": {},
-			"mag": {},
-			"base": {"interpolated": false},
-
-			//TAG POSITIONERS	
-			"p_casing":{},
-			"p_muzzle":{},
-			"p_attachment_muzzle":{},
-
-			//for attachments
-			"attachment_muzzle":{"ignore":true}
-		}
+		"transformationGroups" : {"muzzleFlashLight":{"ignore":true,"interpolated":true,"transform":{}},"attachment_muzzle":{"ignore":true,"transform":{}},"gun":{"transform":{"rotationPoint":[0.5625,0.4375],"rotation":0,"position":[-0.4375,-0.25]}},"L_offset":{"ignore":true,"interpolated":true,"transform":{"curve":1,"position":[0.125,0]}},"p_casing":{"transform":{"rotation":0,"position":[0.625,0.875]}},"lever":{"transform":{}},"p_attachment_muzzle":{"transform":{"position":[1.4375,0.875]}},"mag":{"transform":{"rotationPoint":[0.375,0.3125],"rotation":0,"position":[0,0]}},"R_hand":{"ignore":true,"interpolated":true,"transform":{}},"global":{"ignore":true,"interpolated":true,"transform":{}},"L_hand":{"ignore":true,"interpolated":true,"transform":{}},"base":{"interpolated":false,"transform":{"position":[0,0]}},"R_offset":{"ignore":true,"interpolated":true,"transform":{"curve":1}},"p_muzzle":{"transform":{"position":[1.4375,0.875]}},"R_arm1":{"ignore":true,"interpolated":true,"transform":{"rotation":15}},"R_arm2":{"ignore":true,"interpolated":true,"transform":{"rotation":-15}},"L_arm1":{"ignore":true,"interpolated":true,"transform":{}},"L_arm2":{"ignore":true,"interpolated":true,"transform":{}}}
 	}
 
 }
