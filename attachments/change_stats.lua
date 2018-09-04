@@ -5,13 +5,10 @@ module = {
 function module:create(attachment)
 	local newClass = {} 
 	
-	for i,v in pairs(attachment.stats) do
-		if i == "fireSounds" then
-			animator.setSoundPool("fireSounds", v)
-		elseif weapon.stats[i] then
-			weapon.stats[i] = math.max(v, 0)
-		end
-	end	
+	if attachmentConfig.stats.fireSounds then
+		animator.setSoundPool("fireSounds", attachmentConfig.stats.fireSounds)
+	end
+	attachment:setStats(attachmentConfig.stats)
 	
 	function newClass:update(dt)
 	
