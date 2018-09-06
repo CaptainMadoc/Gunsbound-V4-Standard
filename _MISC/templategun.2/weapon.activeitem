@@ -3,6 +3,7 @@
 	"scriptClass" : "/gunsbound/base/scripts.json",
 	"scripts" : ["/gunsbound/scripts/main.lua"],
 	"animationScripts" : ["/gunsbound/gunUI/main.lua"],
+	"gunScript" : "/gunsbound/base/default.lua", 
 	"scriptDelta" : 1,
 	//API
 	"animation" : "/gunsbound/base/base.animation",
