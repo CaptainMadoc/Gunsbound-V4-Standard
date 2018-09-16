@@ -8,8 +8,10 @@ function module:create(attachmentConfig)
 	if attachmentConfig.stats.fireSounds then
 		animator.setSoundPool("fireSounds", attachmentConfig.stats.fireSounds)
 	end
-	
-	attachment:addStats(attachmentConfig.stats)
+
+	function selfAttachment:refreshStats()
+		attachment:addStats(attachmentConfig.stats)
+	end
 	
 	function selfAttachment:update(dt)
 	
