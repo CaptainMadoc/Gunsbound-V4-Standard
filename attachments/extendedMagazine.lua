@@ -2,23 +2,26 @@ module = {
 	
 }
 
-function module:create(attachment)
-	local newClass = {} 
+function module:create(attachmentConfig)
+	local selfAttachment = {} 
 	
 	if attachmentConfig.stats.fireSounds then
 		animator.setSoundPool("fireSounds", attachmentConfig.stats.fireSounds)
 	end
-	attachment:setStats(attachmentConfig.stats)
+	
+	function selfAttachment:refreshStats()
+		attachment:setStats(attachmentConfig.stats)
+	end
 	
 	animator.setGlobalTag("magazine","/assetmissing.png")
 	
-	function newClass:update(dt)
+	function selfAttachment:update(dt)
 	
 	end
 	
-	function newClass:uninit()
+	function selfAttachment:uninit()
 		animator.setGlobalTag("magazine", "mag.png")
 	end
 	
-	return newClass
+	return selfAttachment
 end

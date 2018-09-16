@@ -3,6 +3,7 @@
 	"rarity" : "common",
 	"shortdescription" : "Grenade Launcher",
 	"category" : "Attachments | Grip",
+	"compatibleAmmo" : "/ammoGroup/gbgrenadeLauncher.json",
 
 	"price" : 0,
 	"attachment" : {

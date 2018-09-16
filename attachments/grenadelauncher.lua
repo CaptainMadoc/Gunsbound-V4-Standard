@@ -2,14 +2,14 @@ module = {
 	
 }
 
-function module:create(c, name)
-	local newClass = {special = true, config = c, type = name, canFire = os.clock() + 1} 
+function module:create(c, name, itm)
+	local _ = {special = true, config = c, type = name, attachmentItemConfig = copycat(itm), canFire = os.clock() + 1} 
 	
-	function newClass:update(dt)
-	
+	function _:update(dt)
+		
 	end
 	
-	function newClass:getAmmo()
+	function _:getAmmo()
 		local listComp = root.assetJson(self.config.compatibleAmmo, {})
 		for i,v in pairs(listComp) do
 			if player.hasItem({name = v, count = 1}) then
@@ -21,19 +21,19 @@ function module:create(c, name)
 		end
 	end
 	
-	function newClass:fireSpecial(a)
+	function _:fireSpecial(a)
 		if animation:isAnyPlaying() then
 			return
 		end
 		if self.canFire < os.clock() then
-			local ammo = newClass:getAmmo()
+			local ammo = self:getAmmo()
 			if ammo then
 				animator.playSound("grenadeSound")
 				world.spawnProjectile(
 					ammo.projectile or "grenadeimpact", 
-					vec2.add(mcontroller.position(),activeItem.handPosition(animator.partPoint(attachment.config[self.type].attachPart, attachment.config[self.type].gunTag))),
+					vec2.add(mcontroller.position(),activeItem.handPosition(animator.partPoint(attachment.config[name].attachPart, attachment.config[name].gunTag))),
 					activeItem.ownerEntityId(),
-					vec2.sub(activeItem.handPosition(animator.partPoint(attachment.config[self.type].attachPart, attachment.config[self.type].gunTagEnd)),activeItem.handPosition(animator.partPoint(attachment.config[self.type].attachPart, attachment.config[self.type].gunTag))),
+					vec2.sub(activeItem.handPosition(animator.partPoint(attachment.config[name].attachPart, attachment.config[name].gunTagEnd)),activeItem.handPosition(animator.partPoint(attachment.config[name].attachPart, attachment.config[name].gunTag))),
 					false,
 					ammo.projectileConfig or {}
 					)
@@ -44,9 +44,9 @@ function module:create(c, name)
 		end
 	end
 	
-	function newClass:uninit()
+	function _:uninit()
 	
 	end
 	
-	return newClass
+	return self
 end
