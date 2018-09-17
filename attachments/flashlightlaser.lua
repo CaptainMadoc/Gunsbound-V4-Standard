@@ -5,7 +5,7 @@ module = {
 function module:create(config, name)
 	local selfAttachment = {}
 	
-	flashlightmanager:add(attachment.config[name].attachPart, attachment.config[name].gunTag, attachment.config[name].gunTagEnd, config.lightColor)
+	flashlight:add(attachment.config[name].attachPart, attachment.config[name].gunTag, attachment.config[name].gunTagEnd, config.lightColor)
 	lasermanager:add(attachment.config[name].attachPart, attachment.config[name].gunTag, attachment.config[name].gunTagEnd, config.laserColor)
 
 	function selfAttachment:refreshStats()
