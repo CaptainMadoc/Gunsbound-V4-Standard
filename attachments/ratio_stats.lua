@@ -2,17 +2,21 @@ module = {
 	
 }
 
-function module:create(attachment)
+function module:create(config)
 	local selfAttachment = {} 
 
 	function selfAttachment:refreshStats()
-		for i,v in pairs(attachment.stats) do
+		local gottenStats = attachment:getStats()
+
+		for i,v in pairs(config.stats) do
 			if i == "fireSounds" then
 				animator.setSoundPool("fireSounds", v)
-			elseif gun.stats[i] then
-				gun.stats[i] = math.max(gun.stats[i] * v, 0)
+			elseif gottenStats[i] then
+				gottenStats[i] = math.max(gottenStats[i] * v, 0)
 			end
 		end	
+		
+		attachment:setStats(gottenStats)
 	end
 
 	function selfAttachment:update(dt)
