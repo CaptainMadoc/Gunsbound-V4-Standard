@@ -83,23 +83,23 @@
 	//animation to play from the animationsKeyFrames config
 	"gunAnimations" : {
 		//boom
-		"shoot" : "shoot",
-		"shoot_dry" : "shoot_dry",
+		"shoot" : "animation1",
+		"shoot_dry" : "animation2",
 
 		//Button W to eject a bullet from chamber
-		"cock" : "cock",
-		"cock_dry" : "cock_dry",
+		"cock" : "animation3",
+		"cock_dry" : "animation4",
 
 		//Initial animation
-		"draw" : "draw",
-		"draw_dry" : "draw_dry",
+		"draw" : "animation5",
+		"draw_dry" : "animation6",
 
 		//idle and dry
-		"dry" : "dry",
+		"dry" : "animation7",
 
 		//reloading
-		"reload" : "reload",
-		"reload_dry" : "reload_dry"
+		"reload" : "animation8",
+		"reload_dry" : "animation9"
 	},
 
 	"animationCustom" : {

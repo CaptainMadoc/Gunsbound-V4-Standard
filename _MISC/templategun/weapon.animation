@@ -21,21 +21,22 @@
 	*/
 
 
-	//note: for if you remove those animation with _dry prefix. it will play his normal one
+	//note: for if you remove those animation with _dry prefix. in will play his normal one
 
-	"reload" : [{"fireEvents":["remove_mag"]},{"fireEvents":["insert_mag"]}],
-	"reload_dry" : [{"fireEvents":["remove_mag"]},{"fireEvents":["insert_mag"]}],
+	"animation1" : [{"burstParticle":["spark"],"animationState":{"vapor":"timer","smoking":"timer"},"wait":0.0,"transforms":{}}],
+	"animation2" : [{"burstParticle":["spark"],"animationState":{"vapor":"timer","smoking":"timer"},"wait":0.0,"transforms":{}}],
 	
-	"shoot" : [{"burstParticle":["spark"],"animationState":{"vapor":"timer","smoking":"timer"},"wait":0.0,"transforms":{}}],
-	"shoot_dry" : [{"burstParticle":["spark"],"animationState":{"vapor":"timer","smoking":"timer"},"wait":0.0,"transforms":{}}],
-	
-	"cock" : [{"fireEvents":["eject_ammo"]},{"fireEvents":["load_ammo"]}],
-	"cock_dry" : [{"fireEvents":["eject_ammo"]},{"fireEvents":["load_ammo"]}],
+	"animation3" : [{"fireEvents":["eject_ammo"]},{"fireEvents":["load_ammo"]}],
+	"animation4" : [{"fireEvents":["eject_ammo"]},{"fireEvents":["load_ammo"]}],
 
-	"draw" : [],
-	"draw_dry" : [],
+	"animation5" : [{"fireEvents":["remove_mag"]},{"fireEvents":["insert_mag"]}],
+	"animation6" : [{"fireEvents":["remove_mag"]},{"fireEvents":["insert_mag"]}],
 	
-	"dry" : []
+	//draw
+	"animation7" : [],
+	"animation8" : [],
+	
+	"animation9" : []
 
 	
 }
