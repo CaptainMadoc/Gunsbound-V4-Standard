@@ -34,11 +34,37 @@
 			"item" : null,
 			
 			"transformationGroup" : "attachment_muzzle",
+			
 			"part" : "attachment_muzzle",
 			
-			"attachPart" : "attachment_muzzle_positioning",
-			"gunTag" : "offset",
-			"gunTagEnd" : "offset_end"
+			"attachPart" : "muzzle_positioning", "gunTag" : "offset", "gunTagEnd" : "offset_end" //we're reusing muzzle positioner from animated parts
+		},
+		"sight" : {
+			"item" : null,
+			
+			"transformationGroup" : "attachment_sight",
+
+			"part" : "attachment_sight",
+			
+			"attachPart" : "attachment_sight_positioning", "gunTag" : "offset", "gunTagEnd" : "offset_end"
+		},
+		"grip" : {
+			"item" : null,
+			
+			"transformationGroup" : "attachment_grip",
+
+			"part" : "attachment_grip",
+			
+			"attachPart" : "attachment_grip_positioning", "gunTag" : "offset", "gunTagEnd" : "offset_end"
+		},
+		"tactical" : {
+			"item" : null,
+			
+			"transformationGroup" : "attachment_tactical",
+
+			"part" : "attachment_tactical",
+			
+			"attachPart" : "attachment_tactical_positioning", "gunTag" : "offset", "gunTagEnd" : "offset_end"
 		}
 	},
 	
@@ -115,7 +141,7 @@
 		},
 		"animatedParts" : {
 			"parts" : {
-				//define some gun seperated parts here
+				//-- define some gun seperated parts here
 				"mag" : {
 					"properties" : {
 						"zLevel" : 18,
@@ -143,8 +169,10 @@
 						"transformationGroups" : ["gun", "base"]
 					}
 				},
-				
-				//this is a override over the api base animation
+				//--
+
+
+				//--this is a override over the api base.animation
 				"muzzleFlash" : {
 					"properties" : {
 						"transformationGroups" : ["p_muzzle","gun","base"],
@@ -160,6 +188,7 @@
 						}
 					}
 				},
+				//--
 				
 				//TAG POSITIONNERS attached with "gun"
 				"muzzle_positioning" : {
@@ -168,13 +197,28 @@
 				"casing_positioning" : {
 					"properties" : {"zLevel" : 0, "centered" : false, "offset" : [0.0, 0.0], "offset_end" : [0.125, 0.0], "transformationGroups" : ["p_casing", "gun", "base"]}
 				},
-				"attachment_muzzle_positioning" : {
-					"properties" : {"zLevel" : 0, "centered" : false, "offset" : [0.0, 0.0], "offset_end" : [0.125, 0.0], "transformationGroups" : ["p_attachment_muzzle", "gun", "base"]}
+				"attachment_sight_positioning" : {
+					"properties" : {"zLevel" : 0, "centered" : false, "offset" : [0.0, 0.0], "offset_end" : [0.125, 0.0], "transformationGroups" : ["p_sight", "gun", "base"]}
+				},
+				"attachment_grip_positioning" : {
+					"properties" : {"zLevel" : 0, "centered" : false, "offset" : [0.0, 0.0], "offset_end" : [0.125, 0.0], "transformationGroups" : ["p_grip", "gun", "base"]}
+				},
+				"attachment_tactical_positioning" : {
+					"properties" : {"zLevel" : 0, "centered" : false, "offset" : [0.0, 0.0], "offset_end" : [0.125, 0.0], "transformationGroups" : ["p_tactical", "gun", "base"]}
 				},
 
 				//for attachments to use
 				"attachment_muzzle" : {
 					"properties" : {"zLevel" : 23,"centered" : false,"image" : "<selfimage>", "offset" : [0.0, 0.0],"transformationGroups" : ["attachment_muzzle"]}
+				},
+				"attachment_sight" : {
+					"properties" : {"zLevel" : 23,"centered" : false,"image" : "<selfimage>", "offset" : [0.0, 0.0],"transformationGroups" : ["attachment_sight"]}
+				},
+				"attachment_grip" : {
+					"properties" : {"zLevel" : 23,"centered" : false,"image" : "<selfimage>", "offset" : [0.0, 0.0],"transformationGroups" : ["attachment_grip"]}
+				},
+				"attachment_tactical" : {
+					"properties" : {"zLevel" : 23,"centered" : false,"image" : "<selfimage>", "offset" : [0.0, 0.0],"transformationGroups" : ["attachment_tactical"]}
 				}
 			},
 			"stateTypes" : { //you can create you own effects for your own mod
@@ -284,10 +328,15 @@
 			//TAG POSITIONERS	
 			"p_casing":{},
 			"p_muzzle":{},
-			"p_attachment_muzzle":{},
+			"p_sight":{},
+			"p_grip":{},
+			"p_tactical":{},
 
 			//for attachments
-			"attachment_muzzle":{"ignore":true}
+			"attachment_muzzle":{"ignore":true},
+			"attachment_sight":{"ignore":true},
+			"attachment_grip":{"ignore":true},
+			"attachment_tactical":{"ignore":true}
 		}
 	}
 
