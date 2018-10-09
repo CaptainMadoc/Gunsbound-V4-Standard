@@ -73,7 +73,7 @@
 	"gunStats" : {
 		//Dmg
 		"damageMultiplier" : 1,
-		"chargedDamageMultiplier" : 1,
+		"bulletSpeedMultiplier" : 0.05,
 
 		//Ammo things
 		"maxMagazine" : 20,
@@ -96,7 +96,7 @@
 
 	//note: stats in this that does not have in gunStats may cause issues
 	"chargedGunStats" : {
-
+		"bulletSpeedMultiplier" : 1
 	},
 
 	//fire sounds here. can be overrided by silencers
@@ -118,23 +118,23 @@
 	//animation to play from the animationsKeyFrames config
 	"gunAnimations" : {
 		//boom
-		"shoot" : "animation1",
-		"shoot_dry" : "animation2",
+		"shoot" : "shoot",
+		"shoot_dry" : "shoot_dry",
 
 		//Button W to eject a bullet from chamber
-		"cock" : "animation3",
-		"cock_dry" : "animation4",
+		"cock" : "cock",
+		"cock_dry" : "cock_dry",
 
 		//Initial animation
-		"draw" : "animation5",
-		"draw_dry" : "animation6",
+		"draw" : "draw",
+		"draw_dry" : "draw_dry",
 
 		//idle and dry
-		"dry" : "animation7",
+		"dry" : "dry",
 
 		//reloading
-		"reload" : "animation8",
-		"reload_dry" : "animation9",
+		"reload" : "reload",
+		"reload_dry" : "reload_dry",
 
 		"charge" : "charge",
 		"charge_loop" : "charge_loop",
@@ -146,6 +146,10 @@
 			"magazine" : "image/mag.png" //do not remove
 		},
 		"sounds" : { //essential sounds included
+			"charge" : [],
+			"charging" : [],
+			"charged" : [],
+
 			"click" : ["sound/click.ogg"],
 			"tock" : ["sound/tock.ogg"],
 			"lever" : ["sound/lever.ogg"],
