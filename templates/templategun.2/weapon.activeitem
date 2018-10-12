@@ -3,33 +3,26 @@
 	"scriptClass" : "/gunsbound/base/scripts.json",
 	"scripts" : ["/gunsbound/scripts/main.lua"],
 	"animationScripts" : ["/gunsbound/gunUI/main.lua"],
-	"gunScript" : "/gunsbound/base/default.lua", 
 	"scriptDelta" : 1,
-	//API
 	"animation" : "/gunsbound/base/base.animation",
+	//
 
-	//UIinfo
+	//"gunScript" : "/gunsbound/base/default.lua", 
+
 	"itemName" : "gbtemplategun2",
 	"shortdescription" : "Name of your gun part2",
 	"description" : "Description here",
 	"category" : "Category of your gun",
 	"tooltipKind" : "base",
 	"inventoryIcon" : "image/icon.png",
-
-	//item settings
 	"rarity" : "common",
 	"maxStack" : 1,
 	"price" : 0,
 	"twoHanded" : true,
 	
-	//gun config
-	//animations for weapon
 	"animationsKeyFrames" : "weapon.animation",
-
-	//needed to shoot stuff with
 	"compatibleAmmo" : "/ammoGroup/gbdefault.json",
 
-	//attachment.lua
 	"attachments" : {
 		"muzzle" : {
 			"item" : null,
@@ -43,62 +36,40 @@
 		}
 	},
 	
-	//stats here are self explainatary 
 	"gunStats" : {
-		//Dmg
 		"damageMultiplier" : 1,
-
-		//Ammo things
 		"maxMagazine" : 15,
 		"rpm" : 1200,
 		"burst" : 3,
-
-		//accuracy & aim
 		"recoil" : 8,
 		"recoilRecovery" : 4,
 		"movingInaccuracy" : 10,
 		"standingInaccuracy" : 1,
 		"crouchInaccuracyMultiplier" : 0.25,
 		"aimLookRatio" : 0.0625,
-
-		//FX
 		"muzzleFlash" : 1
 	},
 
-	//fire sounds here. can be overrided by silencers
 	"fireSounds" : ["sound/shoot.ogg"],
-
-	//fire mode : auto burst semi
 	"fireTypes" : ["semi","burst","auto"],
-
-	//display falling shells
 	"casingFX" : true,
-
-	//turn this on if you want bolt rifle or similar
 	"bypassShellEject" : false,
 
-	//touch this if you're a pro at this
 	"muzzlePosition" : {"part" : "muzzle_positioning", "tag" : "offset", "tag_end" : "offset_end"},
 	"casing" :		{"part" : "casing_positioning", "tag" : "offset"},
 
-	//animation to play from the animationsKeyFrames config
 	"gunAnimations" : {
-		//boom
 		"shoot" : "shoot",
 		"shoot_dry" : "shoot_dry",
 
-		//Button W to eject a bullet from chamber
 		"cock" : "cock",
 		"cock_dry" : "cock_dry",
 
-		//Initial animation
 		"draw" : "draw",
 		"draw_dry" : "draw_dry",
 
-		//idle and dry
 		"dry" : "dry",
 
-		//reloading
 		"reload" : "reload",
 		"reload_dry" : "reload_dry"
 	},
@@ -116,7 +87,6 @@
 		},
 		"animatedParts" : {
 			"parts" : {
-				//define some gun seperated parts here
 				"mag" : {
 					"properties" : {
 						"zLevel" : 18,
@@ -145,7 +115,6 @@
 					}
 				},
 				
-				//this is a override over the api base animation
 				"muzzleFlash" : {
 					"properties" : {
 						"transformationGroups" : ["p_muzzle","gun","base"],
@@ -162,7 +131,6 @@
 					}
 				},
 				
-				//TAG POSITIONNERS attached with "gun"
 				"muzzle_positioning" : {
 					"properties" : {"zLevel" : 0, "centered" : false, "offset" : [0.0, 0.0], "offset_end" : [0.125, 0.0], "transformationGroups" : ["p_muzzle", "gun", "base"]}
 				},
@@ -173,12 +141,11 @@
 					"properties" : {"zLevel" : 0, "centered" : false, "offset" : [0.0, 0.0], "offset_end" : [0.125, 0.0], "transformationGroups" : ["p_attachment_muzzle", "gun", "base"]}
 				},
 
-				//for attachments to use
 				"attachment_muzzle" : {
 					"properties" : {"zLevel" : 23,"centered" : false,"image" : "<selfimage>", "offset" : [0.0, 0.0],"transformationGroups" : ["attachment_muzzle"]}
 				}
 			},
-			"stateTypes" : { //you can create you own effects for your own mod
+			"stateTypes" : {
 				"smoking" : {"default" : "off",
 					"states" : {
 						"on" : {
@@ -248,7 +215,7 @@
 				}
             }
 		},
-		"particleEmitters" : { //you can create you own effects for your own mod
+		"particleEmitters" : {
 			"smoke" : {
 				"transformationGroups" : ["p_casing", "gun", "base"],
 				"emissionRate" : 32.0,
