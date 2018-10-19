@@ -1,0 +1,42 @@
+{
+	/*
+	//APIS do not remove the comment stuff only copy what do you ned
+
+	"fireEvents" : [
+		"eject_ammo", //this is for manual chamber bullet eject
+		"load_ammo", //this is for loading ammo into chamber from the mag
+
+		"insert_bullet" //this is for adding a bullet
+
+		"reload_loop",  //enter into loop reload mode until full.
+
+		"remove_mag", //remove magazine bullet and gives back
+		"insert_mag", //steal some valid ammo from your backpack and magically insert ammo into magazine
+	]
+
+	//from reload_loop
+	reloadLoop" : [] 
+	reloadEnd" : []  
+
+	*/
+
+
+	//note: for if you remove those animation with _dry prefix. in will play his normal one
+
+	"animation1" : [{"burstParticle":["spark"],"animationState":{"vapor":"timer","smoking":"timer"},"wait":0.0,"transforms":{}}],
+	"animation2" : [{"burstParticle":["spark"],"animationState":{"vapor":"timer","smoking":"timer"},"wait":0.0,"transforms":{}}],
+	
+	"animation3" : [{"fireEvents":["eject_ammo"]},{"fireEvents":["load_ammo"]}],
+	"animation4" : [{"fireEvents":["eject_ammo"]},{"fireEvents":["load_ammo"]}],
+
+	"animation5" : [{"fireEvents":["remove_mag"]},{"fireEvents":["insert_mag"]}],
+	"animation6" : [{"fireEvents":["remove_mag"]},{"fireEvents":["insert_mag"]}],
+	
+	//draw
+	"animation7" : [],
+	"animation8" : [],
+	
+	"animation9" : []
+
+	
+}

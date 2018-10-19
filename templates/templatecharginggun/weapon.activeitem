@@ -1,112 +1,128 @@
 {
-	//API scripts
+	//CORE API scripts
 	"scriptClass" : "/gunsbound/base/scripts.json",
 	"scripts" : ["/gunsbound/scripts/main.lua"],
 	"animationScripts" : ["/gunsbound/gunUI/main.lua"],
 	"scriptDelta" : 1,
-	//API
 	"animation" : "/gunsbound/base/base.animation",
+	//
+	
+	"gunScript" : "main.lua",
 
-	//UIinfo
-	"itemName" : "gbtemplategun2",
-	"shortdescription" : "Name of your gun part2",
+	"itemName" : "gbtemplatecharginggun",
+	"shortdescription" : "Name of your gun",
 	"description" : "Description here",
 	"category" : "Category of your gun",
 	"tooltipKind" : "base",
 	"inventoryIcon" : "image/icon.png",
-
-	//item settings
 	"rarity" : "common",
 	"maxStack" : 1,
 	"price" : 0,
 	"twoHanded" : true,
 	
-	//gun config
-	//animations for weapon
 	"animationsKeyFrames" : "weapon.animation",
-
-	//needed to shoot stuff with
 	"compatibleAmmo" : "/ammoGroup/gbdefault.json",
 
-	//attachment.lua
 	"attachments" : {
 		"muzzle" : {
 			"item" : null,
 			
 			"transformationGroup" : "attachment_muzzle",
+			
 			"part" : "attachment_muzzle",
 			
-			"attachPart" : "attachment_muzzle_positioning",
-			"gunTag" : "offset",
-			"gunTagEnd" : "offset_end"
+			"attachPart" : "muzzle_positioning", "gunTag" : "offset", "gunTagEnd" : "offset_end"
+		},
+		"sight" : {
+			"item" : null,
+			
+			"transformationGroup" : "attachment_sight",
+
+			"part" : "attachment_sight",
+			
+			"attachPart" : "attachment_sight_positioning", "gunTag" : "offset", "gunTagEnd" : "offset_end"
+		},
+		"grip" : {
+			"item" : null,
+			
+			"transformationGroup" : "attachment_grip",
+
+			"part" : "attachment_grip",
+			
+			"attachPart" : "attachment_grip_positioning", "gunTag" : "offset", "gunTagEnd" : "offset_end"
+		},
+		"tactical" : {
+			"item" : null,
+			
+			"transformationGroup" : "attachment_tactical",
+
+			"part" : "attachment_tactical",
+			
+			"attachPart" : "attachment_tactical_positioning", "gunTag" : "offset", "gunTagEnd" : "offset_end"
 		}
 	},
 	
-	//stats here are self explainatary 
 	"gunStats" : {
-		//Dmg
 		"damageMultiplier" : 1,
+		"bulletSpeedMultiplier" : 0.05,
 
-		//Ammo things
-		"maxMagazine" : 15,
-		"rpm" : 1200,
+		"maxMagazine" : 20,
+		"rpm" : 850,
 		"burst" : 3,
 
-		//accuracy & aim
-		"recoil" : 8,
-		"recoilRecovery" : 4,
+		"recoil" : 3,
+		"recoilRecovery" : 12,
 		"movingInaccuracy" : 10,
 		"standingInaccuracy" : 1,
 		"crouchInaccuracyMultiplier" : 0.25,
-		"aimLookRatio" : 0.0625,
+		"aimLookRatio" : 0.125,
 
-		//FX
 		"muzzleFlash" : 1
 	},
 
-	//fire sounds here. can be overrided by silencers
+	"chargedTime" : 2.0,
+	"chargedGunStats" : {
+		"bulletSpeedMultiplier" : 1
+	},
+
 	"fireSounds" : ["sound/shoot.ogg"],
+	"fireTypes" : ["auto","burst","semi"],
 
-	//fire mode : auto burst semi
-	"fireTypes" : ["semi","burst","auto"],
-
-	//display falling shells
 	"casingFX" : true,
-
-	//turn this on if you want bolt rifle or similar
 	"bypassShellEject" : false,
 
-	//touch this if you're a pro at this
 	"muzzlePosition" : {"part" : "muzzle_positioning", "tag" : "offset", "tag_end" : "offset_end"},
-	"casing" :		{"part" : "casing_positioning", "tag" : "offset"},
+	"casing" :		{"part" : "casing_positioning", "tag" : "offset", "tag_end" : "offset_end"},
 
-	//animation to play from the animationsKeyFrames config
 	"gunAnimations" : {
-		//boom
 		"shoot" : "shoot",
 		"shoot_dry" : "shoot_dry",
 
-		//Button W to eject a bullet from chamber
 		"cock" : "cock",
 		"cock_dry" : "cock_dry",
 
-		//Initial animation
 		"draw" : "draw",
 		"draw_dry" : "draw_dry",
 
-		//idle and dry
 		"dry" : "dry",
 
-		//reloading
 		"reload" : "reload",
-		"reload_dry" : "reload_dry"
+		"reload_dry" : "reload_dry",
+
+		"charge" : "charge",
+		"charge_loop" : "charge_loop",
+		"charged" : "charged"
 	},
 
 	"animationCustom" : {
 		"globalTagDefaults" : {
-			"magazine" : "image/mag.png" //do not remove
+			"magazine" : "image/mag.png"
 		},
-		"sounds" : { //essential sounds included
+		"sounds" : {
+			"charge" : [],
+			"charging" : [],
+			"charged" : [],
+
 			"click" : ["sound/click.ogg"],
 			"tock" : ["sound/tock.ogg"],
 			"lever" : ["sound/lever.ogg"],
@@ -115,7 +131,6 @@
 		},
 		"animatedParts" : {
 			"parts" : {
-				//define some gun seperated parts here
 				"mag" : {
 					"properties" : {
 						"zLevel" : 18,
@@ -143,8 +158,7 @@
 						"transformationGroups" : ["gun", "base"]
 					}
 				},
-				
-				//this is a override over the api base animation
+
 				"muzzleFlash" : {
 					"properties" : {
 						"transformationGroups" : ["p_muzzle","gun","base"],
@@ -161,23 +175,37 @@
 					}
 				},
 				
-				//TAG POSITIONNERS attached with "gun"
 				"muzzle_positioning" : {
 					"properties" : {"zLevel" : 0, "centered" : false, "offset" : [0.0, 0.0], "offset_end" : [0.125, 0.0], "transformationGroups" : ["p_muzzle", "gun", "base"]}
 				},
 				"casing_positioning" : {
 					"properties" : {"zLevel" : 0, "centered" : false, "offset" : [0.0, 0.0], "offset_end" : [0.125, 0.0], "transformationGroups" : ["p_casing", "gun", "base"]}
 				},
-				"attachment_muzzle_positioning" : {
-					"properties" : {"zLevel" : 0, "centered" : false, "offset" : [0.0, 0.0], "offset_end" : [0.125, 0.0], "transformationGroups" : ["p_attachment_muzzle", "gun", "base"]}
+				"attachment_sight_positioning" : {
+					"properties" : {"zLevel" : 0, "centered" : false, "offset" : [0.0, 0.0], "offset_end" : [0.125, 0.0], "transformationGroups" : ["p_sight", "gun", "base"]}
+				},
+				"attachment_grip_positioning" : {
+					"properties" : {"zLevel" : 0, "centered" : false, "offset" : [0.0, 0.0], "offset_end" : [0.125, 0.0], "transformationGroups" : ["p_grip", "gun", "base"]}
+				},
+				"attachment_tactical_positioning" : {
+					"properties" : {"zLevel" : 0, "centered" : false, "offset" : [0.0, 0.0], "offset_end" : [0.125, 0.0], "transformationGroups" : ["p_tactical", "gun", "base"]}
 				},
 
-				//for attachments to use
+
 				"attachment_muzzle" : {
 					"properties" : {"zLevel" : 23,"centered" : false,"image" : "<selfimage>", "offset" : [0.0, 0.0],"transformationGroups" : ["attachment_muzzle"]}
+				},
+				"attachment_sight" : {
+					"properties" : {"zLevel" : 23,"centered" : false,"image" : "<selfimage>", "offset" : [0.0, 0.0],"transformationGroups" : ["attachment_sight"]}
+				},
+				"attachment_grip" : {
+					"properties" : {"zLevel" : 23,"centered" : false,"image" : "<selfimage>", "offset" : [0.0, 0.0],"transformationGroups" : ["attachment_grip"]}
+				},
+				"attachment_tactical" : {
+					"properties" : {"zLevel" : 23,"centered" : false,"image" : "<selfimage>", "offset" : [0.0, 0.0],"transformationGroups" : ["attachment_tactical"]}
 				}
 			},
-			"stateTypes" : { //you can create you own effects for your own mod
+			"stateTypes" : {
 				"smoking" : {"default" : "off",
 					"states" : {
 						"on" : {
@@ -247,7 +275,7 @@
 				}
             }
 		},
-		"particleEmitters" : { //you can create you own effects for your own mod
+		"particleEmitters" : {
 			"smoke" : {
 				"transformationGroups" : ["p_casing", "gun", "base"],
 				"emissionRate" : 32.0,
@@ -275,7 +303,25 @@
 				]
 			}
 		},
-		"transformationGroups" : {"muzzleFlashLight":{"ignore":true,"interpolated":true,"transform":{}},"attachment_muzzle":{"ignore":true,"transform":{}},"gun":{"transform":{"rotationPoint":[0.5625,0.4375],"rotation":0,"position":[-0.4375,-0.25]}},"L_offset":{"ignore":true,"interpolated":true,"transform":{"curve":1,"position":[0.125,0]}},"p_casing":{"transform":{"rotation":0,"position":[0.625,0.875]}},"lever":{"transform":{}},"p_attachment_muzzle":{"transform":{"position":[1.4375,0.875]}},"mag":{"transform":{"rotationPoint":[0.375,0.3125],"rotation":0,"position":[0,0]}},"R_hand":{"ignore":true,"interpolated":true,"transform":{}},"global":{"ignore":true,"interpolated":true,"transform":{}},"L_hand":{"ignore":true,"interpolated":true,"transform":{}},"base":{"interpolated":false,"transform":{"position":[0,0]}},"R_offset":{"ignore":true,"interpolated":true,"transform":{"curve":1}},"p_muzzle":{"transform":{"position":[1.4375,0.875]}},"R_arm1":{"ignore":true,"interpolated":true,"transform":{"rotation":15}},"R_arm2":{"ignore":true,"interpolated":true,"transform":{"rotation":-15}},"L_arm1":{"ignore":true,"interpolated":true,"transform":{}},"L_arm2":{"ignore":true,"interpolated":true,"transform":{}}}
+		"transformationGroups" : {
+			"gun": {},
+			"lever": {},
+			"mag": {},
+			"base": {"interpolated": false},
+
+			//TAG POSITIONERS	
+			"p_casing":{},
+			"p_muzzle":{},
+			"p_sight":{},
+			"p_grip":{},
+			"p_tactical":{},
+
+			//for attachments
+			"attachment_muzzle":{"ignore":true},
+			"attachment_sight":{"ignore":true},
+			"attachment_grip":{"ignore":true},
+			"attachment_tactical":{"ignore":true}
+		}
 	}
 
 }
