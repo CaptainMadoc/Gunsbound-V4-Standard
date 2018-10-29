@@ -394,7 +394,10 @@
 				}
 			},
 			"lever" : {
-				"interpolated" : false
+				"interpolated" : false,
+				"transform" : {
+					"rotationPoint" : [2.15625, 0.59375]
+				}
 			},
 			"mag" : {
 				"interpolated" : false
