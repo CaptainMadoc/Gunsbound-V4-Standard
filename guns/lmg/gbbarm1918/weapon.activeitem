@@ -91,6 +91,8 @@
 		"dry" : "dry",
 		"reload" : "reload",
 		
+		"draw" : "draw",
+		
 		"cock_dry" : "cock_dry",
 		"shoot_dry" : "shoot_dry",
 		"reload_dry" : "reload_dry"
