@@ -400,7 +400,11 @@
 				}
 			},
 			"mag" : {
-				"interpolated" : false
+				"interpolated" : false,
+				"transform" : {
+					"rotationPoint" : [0.5, 0.25],
+					"position" : [1.625, 0.625]
+				}
 			},
 
 			//attachments
