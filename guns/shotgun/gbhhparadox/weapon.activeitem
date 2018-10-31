@@ -19,7 +19,6 @@
 	"price" : 0,
 	"twoHanded" : true,
 	
-	"uiShell" : "ammo.png",
 
 	"animationsKeyFrames" : "default.animation",
 	"compatibleAmmo" : "/ammoGroup/gb12gauge.json",
@@ -101,7 +100,6 @@
 
 	"gunAnimations" : {
 		"shoot" : "shoot",
-		"cock" : "cock",
 		"dry" : "dry",
 		"reload" : "reload",
 		
