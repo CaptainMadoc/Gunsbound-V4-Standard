@@ -8,9 +8,9 @@
 	"inventoryIcon" : "icon.png",
 
 	//API scripts
-	"scriptClass" : "/gunsbound/base/scripts.json",
+	"scriptClass" : "/gunsbound/base/rotatingAmmo.json",
 	"scripts" : ["/gunsbound/scripts/main.lua"],
-	"animationScripts" : ["/gunsbound/gunUI/main.lua"],
+	"animationScripts" : ["/gunsbound/ui/main.lua"],
 	"scriptDelta" : 1,
 
 	//item settings
@@ -100,12 +100,11 @@
 
 	"gunAnimations" : {
 		"shoot" : "shoot",
-		"dry" : "dry",
+		"cock" : "cock",
+		"shoot_null" : "shoot_null",
+		"draw" : "draw",
 		"reload" : "reload",
-		
-		"cock_dry" : "cock_dry",
-		"shoot_dry" : "shoot_dry",
-		"reload_dry" : "reload_dry"
+		"shoot_dry" : "shoot_dry"
 	},
 
 
