@@ -97,7 +97,10 @@
 		"shoot_dry" : "shoot_dry",
 		"reload_dry" : "reload_dry"
 	},
-
+	"casing" : {
+		"part" : "gun",
+		"tag" : "casing_pos"
+	},
 	"animation" : "/gunsbound/base/base.animation",
 	"animationCustom" : {
 		"globalTagDefaults" : {
@@ -134,7 +137,7 @@
 						"centered" : false,
 						"image" : "gun.png",
 						"offset" : [0.0, 0.0],
-
+						"casing_pos" : [2.25, 1.25],
 						"attachment_muzzle_pos" : [4.375, 1.125],
 						"attachment_muzzle_end" : [4.5, 1.12500],
 
@@ -157,7 +160,7 @@
 				"muzzleFlash" : {
 					"properties" : {
 						"transformationGroups" : ["base"],
-						"offset" : [3, -0.175],
+						"offset" : [3.125, -0.375],
 						"zLevel" : 20,
 						"fullbright" : true,
 						"centered" : false
@@ -298,7 +301,7 @@
 				"emissionRate" : 32.0,
 				"zLevel" : 100,
 				"particles" : [
-					{ "particle" : "gbsmoke", "offset" : [2.25, 1.125]}
+					{ "particle" : "gbsmoke", "offset" : [2.25, 1.25]}
 				]
 			},
 			"vapor" : {
