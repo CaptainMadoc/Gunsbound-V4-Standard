@@ -94,6 +94,8 @@
 		"rpm" : 9999
 	},
 
+	"bypassShellEject" : true,
+
 	"fireSounds" : ["/sfx/gunsbound/12Gauge.ogg"],
 	"fireTypes" : ["semi"],
 	"gunPart" : "gun",
