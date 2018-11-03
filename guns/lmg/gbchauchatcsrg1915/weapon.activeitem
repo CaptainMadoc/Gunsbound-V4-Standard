@@ -68,7 +68,7 @@
 		"standingInaccuracy" : 1,
 		"crouchInaccuracyMultiplier" : 0.25,
 		"muzzleFlash" : 1,
-		"rpm" : 240
+		"rpm" : 400
 	},
 
 	"fireSounds" : ["/guns/lmg/gbchauchatcsrg1915/3006.ogg"],
@@ -86,6 +86,11 @@
 		"cock_dry" : "cock_dry",
 		"shoot_dry" : "shoot_dry",
 		"reload_dry" : "reload_dry"
+	},
+
+	"casing" : {
+		"part" : "gun",
+		"tag" : "casing_pos"
 	},
 
 	"animation" : "/gunsbound/base/base.animation",
@@ -124,6 +129,8 @@
 						"centered" : false,
 						"image" : "gun.png",
 						"offset" : [0.0, 0.0],
+
+						"casing_pos" : [2.625, 1.125],
 
 						"attachment_muzzle_pos" : [5.125, 1],
 						"attachment_muzzle_end" : [5.25, 1],
@@ -285,7 +292,7 @@
 				"emissionRate" : 32.0,
 				"zLevel" : 100,
 				"particles" : [
-					{ "particle" : "gbsmoke", "offset" : [2.25, 1.125]}
+					{ "particle" : "gbsmoke", "offset" : [2.625, 1.25]}
 				]
 			},
 			"vapor" : {

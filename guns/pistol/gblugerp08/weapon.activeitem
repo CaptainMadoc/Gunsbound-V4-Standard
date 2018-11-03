@@ -74,6 +74,11 @@
 		"reload_dry" : "reload_dry"
 	},
 
+	"casing" : {
+		"part" : "gun",
+		"tag" : "casing_pos"
+	},
+
 	"animation" : "/gunsbound/base/base.animation",
 	"animationCustom" : {
 		"globalTagDefaults" : {
@@ -128,6 +133,8 @@
 						"centered" : false,
 						"image" : "gun.png",
 						"offset" : [0.0, 0.0],
+
+						"casing_pos" : [0.5, 1.25],
 
 						"attachment_muzzle_pos" : [1.75, 1],
 						"attachment_muzzle_end" : [1.87500, 1],

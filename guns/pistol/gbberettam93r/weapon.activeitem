@@ -74,6 +74,11 @@
 		"reload_dry" : "reload_dry"
 	},
 
+	"casing" : {
+		"part" : "gun",
+		"tag" : "casing_pos"
+	},
+
 	"animation" : "/gunsbound/base/base.animation",
 	"animationCustom" : {
 		"globalTagDefaults" : {
@@ -110,6 +115,8 @@
 						"centered" : false,
 						"image" : "gun.png",
 						"offset" : [0.0, 0.0],
+
+						"casing_pos" : [0.625, 1],
 
 						"attachment_muzzle_pos" : [1.75, 1],
 						"attachment_muzzle_end" : [1.87500, 1],
@@ -171,6 +178,34 @@
 			}
 		},
 		"particleEmitters" : {
+			
+			"smoke" : {
+				"transformationGroups" : ["gun"],
+				"emissionRate" : 32.0,
+				"zLevel" : 100,
+				"particles" : [
+					{ "particle" : "gbsmoke", "offset" : [2.25, 1.125]}
+				]
+			},
+			"vapor" : {
+				"transformationGroups" : ["gun"],
+				"emissionRate" : 128.0,
+				"zLevel" : 100,
+				"particles" : [
+					{ "particle" : "gbvapor", "offset" : [6.0, 1.125]}
+				]
+			},
+			"spark" : {
+				"transformationGroups" : ["gun"],
+				"emissionRate" : 32.0,
+				"zLevel" : 100,
+				"particles" : [
+					{ "particle" : "gbspark1", "offset" : [6.0, 1.125]},
+					{ "particle" : "gbspark1", "offset" : [6.0, 1.125]},
+					{ "particle" : "gbspark1", "offset" : [6.0, 1.125]}
+				]
+			}
+
 		},
 		"transformationGroups" : {
 			

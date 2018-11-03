@@ -67,7 +67,7 @@
 		"standingInaccuracy" : 1,
 		"crouchInaccuracyMultiplier" : 0.25,
 		"muzzleFlash" : 1,
-		"rpm" : 600
+		"rpm" : 800
 	},
 
 	"fireSounds" : ["/guns/lmg/gbdp27/762x39mm.ogg"],
@@ -85,6 +85,11 @@
 		"cock_dry" : "cock_dry",
 		"shoot_dry" : "shoot_dry",
 		"reload_dry" : "reload_dry"
+	},
+
+	"casing" : {
+		"part" : "gun",
+		"tag" : "casing_pos"
 	},
 
 	"animation" : "/gunsbound/base/base.animation",
@@ -123,6 +128,8 @@
 						"centered" : false,
 						"image" : "gun.png",
 						"offset" : [0.0, 0.0],
+
+						"casing_pos" : [2.25, 0.625],
 
 						"attachment_muzzle_pos" : [6.25, 0.75],
 						"attachment_muzzle_end" : [6.5, 0.75],
@@ -284,7 +291,7 @@
 				"emissionRate" : 32.0,
 				"zLevel" : 100,
 				"particles" : [
-					{ "particle" : "gbsmoke", "offset" : [2.25, 1.125]}
+					{ "particle" : "gbsmoke", "offset" : [2.375, 0.75]}
 				]
 			},
 			"vapor" : {

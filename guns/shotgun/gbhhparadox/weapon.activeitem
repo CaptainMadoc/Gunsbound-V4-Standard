@@ -106,7 +106,7 @@
 
 	"gunAnimations" : {
 		"shoot" : "shoot",
-		"shoot_null" : "shoot_null",
+		"shoot_dry" : "shoot_dry",
 		"draw" : "draw",
 		"reload" : "reload"
 	},
