@@ -257,7 +257,7 @@
 				"emissionRate" : 32.0,
 				"zLevel" : 100,
 				"particles" : [
-					{ "particle" : "gbsmoke", "offset" : [2.25, 1.125]}
+					{ "particle" : "gbsmoke", "offset" : [0.625, 1]}
 				]
 			},
 			"vapor" : {
@@ -265,7 +265,7 @@
 				"emissionRate" : 128.0,
 				"zLevel" : 100,
 				"particles" : [
-					{ "particle" : "gbvapor", "offset" : [6.0, 1.125]}
+					{ "particle" : "gbvapor", "offset" : [1.75, 1.125]}
 				]
 			},
 			"spark" : {
@@ -273,9 +273,9 @@
 				"emissionRate" : 32.0,
 				"zLevel" : 100,
 				"particles" : [
-					{ "particle" : "gbspark1", "offset" : [6.0, 1.125]},
-					{ "particle" : "gbspark1", "offset" : [6.0, 1.125]},
-					{ "particle" : "gbspark1", "offset" : [6.0, 1.125]}
+					{ "particle" : "gbspark1", "offset" : [1.6250, 1.125]},
+					{ "particle" : "gbspark1", "offset" : [1.6250, 1.125]},
+					{ "particle" : "gbspark1", "offset" : [1.6250, 1.125]}
 				]
 			}
 

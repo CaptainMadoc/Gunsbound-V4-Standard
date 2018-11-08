@@ -117,8 +117,8 @@
 
 						"casing_pos" : [2.125, 0.875],
 
-						"muzzle_begin" : [6.125, 1.2],
-						"muzzle_end" : [6.13, 1.2], 
+						"muzzle_begin" : [5.25, 0.75],
+						"muzzle_end" : [5.255, 0.75], 
 						"attachment_sight_pos" : [2.5, 1],
 						"attachment_sight_end" : [2.675, 1], 
 						
