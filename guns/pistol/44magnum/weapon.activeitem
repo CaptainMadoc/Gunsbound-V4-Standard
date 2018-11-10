@@ -28,8 +28,8 @@
 		
 		"recoil" : 14,
 		"recoilRecovery" : 7,
-		"movingInaccuracy" : 25,
-		"standingInaccuracy" : 1,
+		"movingInaccuracy" : 10,
+		"standingInaccuracy" : 5,
 		"crouchInaccuracyMultiplier" : 0.25,
 		
 		"aimLookRatio" : 0.125,

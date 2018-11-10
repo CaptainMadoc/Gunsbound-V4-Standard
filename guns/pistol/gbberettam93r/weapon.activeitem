@@ -53,7 +53,7 @@
 		"recoil" : 2,
 		"recoilRecovery" : 3,
 		"movingInaccuracy" : 8,
-		"standingInaccuracy" : 1,
+		"standingInaccuracy" : 3,
 		"crouchInaccuracyMultiplier" : 0.25,
 		"muzzleFlash" : 1,
 		"rpm" : 1500
