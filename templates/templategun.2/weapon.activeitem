@@ -20,7 +20,7 @@
 	"price" : 0,
 	"twoHanded" : true,
 	
-	"animationsKeyFrames" : "weapon.animation",
+	"animationsKeyFrames" : "weapon.keyframes",
 	"compatibleAmmo" : "/ammoGroup/gbdefault.json",
 
 	"attachments" : {
@@ -50,13 +50,16 @@
 		"muzzleFlash" : 1
 	},
 
-	"fireSounds" : ["sound/shoot.ogg"],
-	"fireTypes" : ["semi","burst","auto"],
-	"casingFX" : true,
-	"bypassShellEject" : false,
+	"gunSettings" : {
+		"fireSounds" : ["sound/shoot.ogg"],
+		
+		"fireTypes" : ["semi","burst","auto"],
+		"showCasing" : true,
+		"chamberEjection" : false,
 
-	"muzzlePosition" : {"part" : "muzzle_positioning", "tag" : "offset", "tag_end" : "offset_end"},
-	"casing" :		{"part" : "casing_positioning", "tag" : "offset"},
+		"muzzlePosition" : {"part" : "muzzle_positioning", "tag" : "offset", "tag_end" : "offset_end"},
+		"casingPosition" : {"part" : "casing_positioning", "tag" : "offset"}
+	},
 
 	"gunAnimations" : {
 		"shoot" : "shoot",

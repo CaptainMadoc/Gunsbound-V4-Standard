@@ -31,9 +31,9 @@ function module:create(c, name, itm)
 				animator.playSound("grenadeSound")
 				world.spawnProjectile(
 					ammo.projectile or "grenadeimpact", 
-					vec2.add(mcontroller.position(),activeItem.handPosition(animator.partPoint(attachment.config[self.type].attachPart, attachment.config[self.type].gunTag))),
+					vec2.add(mcontroller.position(),activeItem.handPosition(animator.partPoint(attachmentSystem.config[self.type].attachPart, attachmentSystem.config[self.type].gunTag))),
 					activeItem.ownerEntityId(),
-					vec2.sub(activeItem.handPosition(animator.partPoint(attachment.config[self.type].attachPart, attachment.config[self.type].gunTagEnd)), activeItem.handPosition(animator.partPoint(attachment.config[self.type].attachPart, attachment.config[self.type].gunTag))),
+					vec2.sub(activeItem.handPosition(animator.partPoint(attachmentSystem.config[self.type].attachPart, attachmentSystem.config[self.type].gunTagEnd)), activeItem.handPosition(animator.partPoint(attachmentSystem.config[self.type].attachPart, attachmentSystem.config[self.type].gunTag))),
 					false,
 					ammo.projectileConfig or {}
 				)

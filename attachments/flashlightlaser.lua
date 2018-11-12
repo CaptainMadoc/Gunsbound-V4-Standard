@@ -3,24 +3,24 @@ module = {
 }
 
 function module:create(config, name)
-	local selfAttachment = {}
+	local attachment = {}
 	
-	flashlight:add(attachment.config[name].attachPart, attachment.config[name].gunTag, attachment.config[name].gunTagEnd, config.lightColor)
-	lasermanager:add(attachment.config[name].attachPart, attachment.config[name].gunTag, attachment.config[name].gunTagEnd, config.laserColor)
+	flashlight:add(attachmentSystem.config[name].attachPart, attachmentSystem.config[name].gunTag, attachmentSystem.config[name].gunTagEnd, config.lightColor)
+	lasermanager:add(attachmentSystem.config[name].attachPart, attachmentSystem.config[name].gunTag, attachmentSystem.config[name].gunTagEnd, config.laserColor)
 
-	function selfAttachment:refreshStats()
-		local gottenStats = attachment:getStats()
+	function attachment:refreshStats()
+		local gottenStats = attachmentSystem:getStats()
 
 		gottenStats.movingInaccuracy = gottenStats.movingInaccuracy / 2
 		gottenStats.standingInaccuracy = gottenStats.standingInaccuracy / 2
 		gottenStats.crouchInaccuracyMultiplier = gottenStats.crouchInaccuracyMultiplier / 2
 		
-		attachment:setStats(gottenStats)
+		attachmentSystem:setStats(gottenStats)
 	end
 
-	function selfAttachment:uninit()
+	function attachment:uninit()
 	
 	end
 	
-	return selfAttachment
+	return attachment
 end

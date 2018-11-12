@@ -28,7 +28,10 @@
 	// --gun config --
 
 	//animations for weapon
-	"animationsKeyFrames" : "weapon.animation", //the extentions can be .keyframes or any as you like as long it has a json in it
+	"animationsKeyFrames" : "weapon.keyframes", //the extentions can be .keyframes or any as you like as long it has a json in it
+
+	//ammo needed to shoot stuff with
+	"compatibleAmmo" : "/ammoGroup/gbdefault.json",
 
 	"attachments" : {
 		"muzzle" : {
@@ -92,25 +95,23 @@
 	},
 
 	"gunSettings" : {
-		//ammo needed to shoot stuff with
-		"compatibleAmmo" : "/ammoGroup/gbdefault.json",
 
 		//fire sounds here. can be overrided by silencers
 		"fireSounds" : ["sound/shoot.ogg"],
-
+		
 		//fire mode : auto burst semi
 		"fireTypes" : ["auto","burst","semi"],
 
 		//display falling shells
-		"casingFX" : true,
+		"showCasings" : true,
 
 		//turn this on if you want bolt rifle or similar
 		//example: When its fired when bypassShellEject is true, notice that the bullet casing is not ejected from the chamber and that requires manual cocking every shots.
-		"bypassShellEject" : false,
+		"chamberEjection" : false,
 
 		//this is used for calculate position and angle fom the 
 		"muzzlePosition" : {"part" : "muzzle_positioning", "tag" : "offset", "tag_end" : "offset_end"},
-		"casing" :		{"part" : "casing_positioning", "tag" : "offset"}
+		"casingPostion" :		{"part" : "casing_positioning", "tag" : "offset"}
 	},
 
 	//animation to play from the animationsKeyFrames config

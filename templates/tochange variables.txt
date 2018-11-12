@@ -1,0 +1,15 @@
+Theses variables are going into be merged into gunSettings : {}
+"fireTypes"
+"casingFX"
+"bypassShellEject"
+"muzzlePosition"
+"casing"
+
+Also those are going to be renamed
+
+bypassShellEject >> chamberEjection
+casing >> casingPosition
+casingFX >> showCasings
+
+these are going to be backwards compatible for not a long time.
+Make sure you have changes those before our release. -- Rexmeck

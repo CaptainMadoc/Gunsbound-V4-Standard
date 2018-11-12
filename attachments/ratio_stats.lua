@@ -3,10 +3,10 @@ module = {
 }
 
 function module:create(config)
-	local selfAttachment = {} 
+	local attachment = {} 
 
-	function selfAttachment:refreshStats()
-		local gottenStats = attachment:getStats()
+	function attachment:refreshStats()
+		local gottenStats = attachmentSystem:getStats()
 
 		for i,v in pairs(config.stats) do
 			if i == "fireSounds" then
@@ -19,13 +19,13 @@ function module:create(config)
 		attachment:setStats(gottenStats)
 	end
 
-	function selfAttachment:update(dt)
+	function attachment:update(dt)
 	
 	end
 	
-	function selfAttachment:uninit()
+	function attachment:uninit()
 	
 	end
 	
-	return selfAttachment
+	return attachment
 end

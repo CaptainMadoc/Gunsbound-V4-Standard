@@ -3,13 +3,13 @@ module = {
 }
 
 function module:create(config, name)
-	local selfAttachment = {}
+	local attachment = {}
 	
-	flashlight:add(attachment.config[name].attachPart, attachment.config[name].gunTag, attachment.config[name].gunTagEnd, config.lightColor)
+	flashlight:add(attachmentSystem.config[name].attachPart, attachmentSystem.config[name].gunTag, attachmentSystem.config[name].gunTagEnd, config.lightColor)
 	
-	function selfAttachment:uninit()
+	function attachment:uninit()
 	
 	end
 	
-	return selfAttachment
+	return attachment
 end

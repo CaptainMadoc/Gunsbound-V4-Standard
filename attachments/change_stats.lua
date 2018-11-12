@@ -3,23 +3,23 @@ module = {
 }
 
 function module:create(attachmentConfig)
-	local selfAttachment = {} 
+	local attachment = {} 
 	
 	if attachmentConfig.stats.fireSounds then
 		animator.setSoundPool("fireSounds", attachmentConfig.stats.fireSounds)
 	end
 	
-	function selfAttachment:refreshStats()
-		attachment:setStats(attachmentConfig.stats)
+	function attachment:refreshStats()
+		attachmentSystem:setStats(attachmentConfig.stats)
 	end
 
-	function selfAttachment:update(dt)
+	function attachment:update(dt)
 	
 	end
 	
-	function selfAttachment:uninit()
+	function attachment:uninit()
 	
 	end
 	
-	return selfAttachment
+	return attachment
 end

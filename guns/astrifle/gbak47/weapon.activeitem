@@ -13,15 +13,12 @@
 	"animationScripts" : ["/gunsbound/gunUI/main.lua"],
 	"scriptDelta" : 1,
 
-	//item settings
 	"rarity" : "common",
 	"maxStack" : 1,
 	"price" : 0,
 	"twoHanded" : true,
-	
-	"uiShell" : "ammo.png",
 
-	"animationsKeyFrames" : "default.animation",
+	"animationsKeyFrames" : "default.keyframes",
 	"compatibleAmmo" : "/ammoGroup/gb762x39mm.json",
 
 	"attachments" : {
@@ -95,9 +92,16 @@
 		"rpm" : 600
 	},
 
-	"fireSounds" : ["sounds/ak47.ogg"],
-	"fireTypes" : ["auto", "semi"],
-	"gunPart" : "gun",
+	"gunSettings" : {
+		"fireSounds" : ["sounds/ak47.ogg"],
+		"fireTypes" : ["auto", "semi"],
+
+		"showCasings" : true,
+		"chamberEjection" : false,
+
+		"muzzlePosition" : {"part":"gun", "tag" : "muzzle_pos"},
+		"casingPosition" : {"part" : "gun","tag" : "casing_pos"}
+	},
 
 	"gunAnimations" : {
 		"shoot" : "shoot",
@@ -110,11 +114,6 @@
 		"cock_dry" : "cock_dry",
 		"shoot_dry" : "shoot_dry",
 		"reload_dry" : "reload_dry"
-	},
-
-	"casing" : {
-		"part" : "gun",
-		"tag" : "casing_pos"
 	},
 
 	"animation" : "/gunsbound/base/base.animation",
