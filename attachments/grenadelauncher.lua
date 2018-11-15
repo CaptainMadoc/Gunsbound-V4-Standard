@@ -3,13 +3,11 @@ module = {
 }
 
 function module:create(c, name, itm)
-	local _ = {special = true, config = c, type = name, attachmentItemConfig = copycat(itm), canFire = os.clock() + 1} 
+	local attachment = {special = true, config = c, type = name, attachmentItemConfig = copycat(itm.parameters), canFire = os.clock() + 1, itemDirectory = root.itemConfig(itm).directory} 
 	
-	function _:update(dt)
-		
-	end
+	function attachment:update(dt) end
 	
-	function _:getAmmo()
+	function attachment:getAmmo()
 		local listComp = root.assetJson(self.config.compatibleAmmo, {})
 		for i,v in pairs(listComp) do
 			if player.hasItem({name = v, count = 1}) then
@@ -21,14 +19,22 @@ function module:create(c, name, itm)
 		end
 	end
 	
-	function _:fireSpecial(a)
+	function attachment:fireSpecial(a)
+
+		--we check if anything is playing 
 		if animation:isAnyPlaying() then
 			return
 		end
+
+		--a timer
 		if self.canFire < os.clock() then
-			local ammo = self:getAmmo()
+
+			local ammo = self:getAmmo() -- get ammo from the inv
+
 			if ammo then
-				animator.playSound("grenadeSound")
+
+				--valid ammo
+				customSounds:play(vDir(config.firingSound or "/sfx/gun/grenade2.ogg", self.itemDirectory))
 				world.spawnProjectile(
 					ammo.projectile or "grenadeimpact", 
 					vec2.add(mcontroller.position(),activeItem.handPosition(animator.partPoint(attachmentSystem.config[self.type].attachPart, attachmentSystem.config[self.type].gunTag))),
@@ -37,16 +43,19 @@ function module:create(c, name, itm)
 					false,
 					ammo.projectileConfig or {}
 				)
+
 			else
+				--no valid ammo
 				animator.playSound("dry")
 			end
+			--cooldown
 			self.canFire = os.clock() + 1
 		end
 	end
 	
-	function _:uninit()
+	function attachment:uninit()
 	
 	end
 	
-	return _
+	return attachment
 end

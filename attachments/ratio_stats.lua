@@ -16,7 +16,7 @@ function module:create(config)
 			end
 		end	
 		
-		attachment:setStats(gottenStats)
+		attachmentSystem:setStats(gottenStats)
 	end
 
 	function attachment:update(dt)
