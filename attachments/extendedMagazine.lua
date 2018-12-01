@@ -13,14 +13,14 @@ function module:create(attachmentConfig)
 		attachmentSystem:setStats(attachmentConfig.stats)
 	end
 	
-	animator.setGlobalTag("magazine","/assetmissing.png")
+	attachmentSystem:hideDefaultMagazine()
 	
 	function attachment:update(dt)
 	
 	end
 	
 	function attachment:uninit()
-		animator.setGlobalTag("magazine", "mag.png")
+		
 	end
 	
 	return attachment
