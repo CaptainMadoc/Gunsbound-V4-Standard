@@ -1,7 +1,7 @@
 {
 	//UIinfo
-	"itemName" : "44magnum",
-	"shortdescription" : ".44 Magnum",
+	"itemName" : "gbcoltanaconda",
+	"shortdescription" : "Colt Anaconda",
 	"description" : "description here",
 	"category" : "base",
 	"tooltipKind" : "base",
@@ -112,8 +112,8 @@
 						"image" : "gun.png",
 						"offset" : [0.0, 0.0],
 
-						"muzzle_begin" : [2.375, 1],
-						"muzzle_end" : [2.5, 1],
+						"muzzle_begin" : [2.5, 1.125],
+						"muzzle_end" : [2.625, 1.125],
 						"transformationGroups" : ["gun", "base"]
 					}
 				},
@@ -122,7 +122,7 @@
 				"muzzleFlash" : {
 					"properties" : {
 						"transformationGroups" : ["gun", "base"],
-						"offset" : [2.375, 0],
+						"offset" : [2.4, 0.125],
 						"zLevel" : 20,
 						"fullbright" : true,
 						"centered" : false
@@ -291,7 +291,7 @@
 				"transform" : {
 					"rotationPoint" : [0.9375, 0.4375],
 					"scale" : [0.875, 0.875],
-					"position" : [-0.59375, -0.3125]
+					"position" : [-0.34375, -0.125]
 				}
 			},
 			"lever" : {
