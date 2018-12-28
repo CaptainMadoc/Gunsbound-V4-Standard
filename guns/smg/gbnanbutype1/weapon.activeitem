@@ -80,10 +80,20 @@
 		"muzzleFlash" : 1,
 		"rpm" : 900
 	},
+	
+	"gunSettings" : {
+		"fireSounds" : ["/guns/smg/gbnanbutype1/8x22nanbu.ogg"],
+		"fireTypes" : ["auto"],
+		"gunPart" : "gun",
 
-	"fireSounds" : ["/guns/smg/gbnanbutype1/8x22nanbu.ogg"],
-	"fireTypes" : ["auto"],
-	"gunPart" : "gun",
+		"showCasings" : true,
+		"chamberEjection" : true,
+
+		"casingPosition" : {
+			"part" : "gun",
+			"tag" : "casing_pos"
+		}	
+	},
 
 	"gunAnimations" : {
 		"shoot" : "shoot",

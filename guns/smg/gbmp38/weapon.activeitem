@@ -80,11 +80,20 @@
 		"muzzleFlash" : 1,
 		"rpm" : 500
 	},
+	"gunSettings" : {
+		"fireSounds" : ["/guns/smg/gbmp38/9mmParabellum.ogg"],
+		"fireTypes" : ["auto"],
+		"gunPart" : "gun",
 
-	"fireSounds" : ["/guns/smg/gbmp38/9mmParabellum.ogg"],
-	"fireTypes" : ["auto"],
-	"gunPart" : "gun",
+		"showCasings" : true,
+		"chamberEjection" : true,
 
+		"casingPosition" : {
+			"part" : "gun",
+			"tag" : "casing_pos"
+		}	
+	},
+	
 	"gunAnimations" : {
 		"shoot" : "shoot",
 		"cock" : "cock",

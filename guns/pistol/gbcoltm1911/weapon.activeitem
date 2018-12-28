@@ -58,10 +58,22 @@
 		"muzzleFlash" : 1,
 		"rpm" : 666
 	},
+	
+	"gunSettings" : {
 
-	"fireSounds" : ["/guns/pistol/gbcoltm1911/45ACP.ogg"],
-	"fireTypes" : ["semi"],
-	"gunPart" : "gun",
+		"fireSounds" : ["/guns/pistol/gbcoltm1911/45ACP.ogg"],
+		"fireTypes" : ["semi"],
+		"gunPart" : "gun",
+			
+		"showCasings" : true,
+		"chamberEjection" : true,
+
+		"casingPosition" : {
+			"part" : "gun",
+			"tag" : "casing_pos"
+		}
+
+	},
 
 	"gunAnimations" : {
 		"shoot" : "shoot",
@@ -74,11 +86,6 @@
 		"cock_dry" : "cock_dry",
 		"shoot_dry" : "shoot_dry",
 		"reload_dry" : "reload_dry"
-	},
-
-	"casing" : {
-		"part" : "gun",
-		"tag" : "casing_pos"
 	},
 
 	"animation" : "/gunsbound/base/base.animation",

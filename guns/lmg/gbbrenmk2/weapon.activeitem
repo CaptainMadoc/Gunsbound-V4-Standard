@@ -69,11 +69,20 @@
 		"muzzleFlash" : 1,
 		"rpm" : 500
 	},
+	"gunSettings" : {
+		"fireSounds" : ["/guns/lmg/gbbrenmk2/303british.ogg"],
+		"fireTypes" : ["auto", "semi"],
+		"gunPart" : "gun",
 
-	"fireSounds" : ["/guns/lmg/gbbrenmk2/303british.ogg"],
-	"fireTypes" : ["auto", "semi"],
-	"gunPart" : "gun",
+		"chamberEjection" : true,
+		"showCasings" : true,
 
+		"casingPosition" : {
+			"part" : "gun",
+			"tag" : "casing_pos"
+		}
+	},
+	
 	"gunAnimations" : {
 		"shoot" : "shoot",
 		"cock" : "cock",
@@ -81,15 +90,10 @@
 		"reload" : "reload",
 
 		"draw" : "draw",
-		
+
 		"cock_dry" : "cock_dry",
 		"shoot_dry" : "shoot_dry",
 		"reload_dry" : "reload_dry"
-	},
-
-	"casing" : {
-		"part" : "gun",
-		"tag" : "casing_pos"
 	},
 
 	"animation" : "/gunsbound/base/base.animation",

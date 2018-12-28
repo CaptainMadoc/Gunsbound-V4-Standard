@@ -80,10 +80,20 @@
 		"muzzleFlash" : 1,
 		"rpm" : 900
 	},
+	
+	"gunSettings" : {
+		"fireSounds" : ["/guns/smg/gbppsh41/762x25tokarev.ogg"],
+		"fireTypes" : ["auto", "semi"],
+		"gunPart" : "gun",
 
-	"fireSounds" : ["/guns/smg/gbppsh41/762x25tokarev.ogg"],
-	"fireTypes" : ["auto", "semi"],
-	"gunPart" : "gun",
+		"showCasings" : true,
+		"chamberEjection" : true,
+
+		"casingPosition" : {
+			"part" : "gun",
+			"tag" : "casing_pos"
+		}	
+	},
 
 	"gunAnimations" : {
 		"shoot" : "shoot",

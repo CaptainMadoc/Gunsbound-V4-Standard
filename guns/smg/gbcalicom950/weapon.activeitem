@@ -80,11 +80,20 @@
 		"muzzleFlash" : 1,
 		"rpm" : 750
 	},
+	"gunSettings" : {
+		"fireSounds" : ["/guns/smg/gbcalicom950/9mmParabellum.ogg"],
+		"fireTypes" : ["auto", "semi"],
+		"gunPart" : "gun",
 
-	"fireSounds" : ["/guns/smg/gbcalicom950/9mmParabellum.ogg"],
-	"fireTypes" : ["auto", "semi"],
-	"gunPart" : "gun",
+		"showCasings" : true,
+		"chamberEjection" : true,
 
+		"casingPosition" : {
+			"part" : "gun",
+			"tag" : "casing_pos"
+		}		
+	},
+	
 	"gunAnimations" : {
 		"shoot" : "shoot",
 		"cock" : "cock",

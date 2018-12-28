@@ -48,10 +48,19 @@
 		"rpm" : 300
 	},
 	
-	"bypassShellEject" : true,
-	"fireSounds" : ["/guns/shotgun/gbithacam37/12Gauge.ogg"],
-	"fireTypes" : ["semi"],
-	"gunPart" : "gun",
+	"gunSettings" : {
+		"fireSounds" : ["/guns/shotgun/gbithacam37/12Gauge.ogg"],
+		"fireTypes" : ["semi"],
+		"gunPart" : "gun",
+
+		"showCasings" : true,
+		"chamberEjection" : false,
+
+		"casingPosition" : {
+			"part" : "gun",
+			"tag" : "casing_pos"
+		}	
+	},
 
 	"gunAnimations" : {
 		"shoot" : "shoot",

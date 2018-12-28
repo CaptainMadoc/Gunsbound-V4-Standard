@@ -80,11 +80,19 @@
 		"muzzleFlash" : 1,
 		"rpm" : 600
 	},
-
-	"fireSounds" : ["/guns/smg/gbblyskawica/9mmParabellum.ogg"],
-	"fireTypes" : ["auto", "semi"],
-	"gunPart" : "gun",
-
+	"gunSettings" : {
+		"fireSounds" : ["/guns/smg/gbblyskawica/9mmParabellum.ogg"],
+		"fireTypes" : ["auto", "semi"],
+		"gunPart" : "gun",
+		
+		"showCasings" : true,
+		"chamberEjection" : true,
+		
+		"casingPosition" : {
+			"part" : "gun",
+			"tag" : "casing_pos"
+		}	
+	},
 	"gunAnimations" : {
 		"shoot" : "shoot",
 		"cock" : "cock",

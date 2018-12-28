@@ -47,10 +47,20 @@
 		"muzzleFlash" : 1,
 		"rpm" : 800
 	},
+	
+	"gunSettings" : {
+		"fireSounds" : ["/guns/lmg/gbbarm1918/3006.ogg"],
+		"fireTypes" : ["semi"],
+		"gunPart" : "gun",
 
-	"fireSounds" : ["/guns/lmg/gbbarm1918/3006.ogg"],
-	"fireTypes" : ["semi"],
-	"gunPart" : "gun",
+		"showCasings" : true,
+		"chamberEjection" : true,
+
+		"casingPosition" : {
+			"part" : "gun",
+			"tag" : "casing_pos"
+		}
+	},
 
 	"gunAnimations" : {
 		"shoot" : "shoot",
@@ -60,10 +70,6 @@
 		"reload_dry" : "reload_dry"
 	},
 
-	"casing" : {
-		"part" : "gun",
-		"tag" : "casing_pos"
-	},
 
 	"animation" : "/gunsbound/base/base.animation",
 	"animationCustom" : {

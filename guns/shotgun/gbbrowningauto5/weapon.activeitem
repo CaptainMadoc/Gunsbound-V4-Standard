@@ -48,13 +48,23 @@
 		"rpm" : 300
 	},
 	
-	"fireSounds" : ["/guns/shotgun/gbbrowningauto5/12Gauge.ogg"],
-	"fireTypes" : ["semi"],
-	"gunPart" : "gun",
+	"gunSettings" : {
+		"fireSounds" : ["/guns/shotgun/gbbrowningauto5/12Gauge.ogg"],
+		"fireTypes" : ["semi"],
+		"gunPart" : "gun",
 
+		"showCasings" : true,
+		"chamberEjection" : true,
+
+		"casingPosition" : {
+			"part" : "gun",
+			"tag" : "casing_pos"
+		}
+	},
+	
 	"gunAnimations" : {
 		"shoot" : "shoot",
-		"dry" : "dry",
+		"dry" : "dry", 
 		"reload" : "reload",
 		"reloadLoop" : "reloadLoop",
 		"reloadEnd" : "reloadEnd",
@@ -96,6 +106,9 @@
 						
 						"attachment_sight_pos" : [2.5, 1],
 						"attachment_sight_end" : [2.675, 1], 
+						
+						"casing_pos" : [2.5, 0.875],
+						"casing_posa_end" : [2.675, 0.875], 
 						
 						"transformationGroups" : ["gun", "base"]
 					}

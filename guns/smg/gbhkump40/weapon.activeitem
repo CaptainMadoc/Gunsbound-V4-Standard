@@ -81,9 +81,19 @@
 		"rpm" : 650
 	},
 
-	"fireSounds" : ["/guns/sounds/shoot.wav"],
-	"fireTypes" : ["auto", "semi"],
-	"gunPart" : "gun",
+	"gunSettings" : {
+		"fireSounds" : ["/guns/sounds/shoot.wav"],
+		"fireTypes" : ["auto", "semi"],
+		"gunPart" : "gun",
+
+		"showCasings" : true,
+		"chamberEjection" : true,
+
+		"casingPosition" : {
+			"part" : "gun",
+			"tag" : "casing_pos"
+		}
+	},
 
 	"gunAnimations" : {
 		"shoot" : "shoot",

@@ -90,10 +90,20 @@
 		"muzzleFlash" : 1,
 		"rpm" : 700
 	},
+	
+	"gunSettings" : {
+		"fireSounds" : ["/guns/smg/gbmas38/763x25Mauser.ogg"],
+		"fireTypes" : ["auto", "semi"],
+		"gunPart" : "gun",
 
-	"fireSounds" : ["/guns/smg/gbmas38/763x25Mauser.ogg"],
-	"fireTypes" : ["auto", "semi"],
-	"gunPart" : "gun",
+		"showCasings" : true,
+		"chamberEjection" : true,
+
+		"casingPosition" : {
+			"part" : "gun",
+			"tag" : "casing_pos"
+		}
+	},
 
 	"gunAnimations" : {
 		"shoot" : "shoot",

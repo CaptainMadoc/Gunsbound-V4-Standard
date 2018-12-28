@@ -80,11 +80,22 @@
 		"muzzleFlash" : 1,
 		"rpm" : 950
 	},
+	
+	"gunSettings" : {
+		"fireSounds" : ["/guns/astrifle/gbfamasf1/556mm.ogg"],
+		"fireTypes" : ["auto", "semi"],
+		"gunPart" : "gun",
 
-	"fireSounds" : ["/guns/astrifle/gbfamasf1/556mm.ogg"],
-	"fireTypes" : ["auto", "semi"],
-	"gunPart" : "gun",
+		"chamberEjection" : true,
+		"showCasings" : true,
 
+		"casingPosition" : {
+			"part" : "gun",
+			"tag" : "casing_pos"
+		}
+	},
+
+	
 	"gunAnimations" : {
 		"shoot" : "shoot",
 		"cock" : "cock",
@@ -92,15 +103,10 @@
 		"reload" : "reload",
 
 		"draw" : "draw",
-		
+
 		"cock_dry" : "cock_dry",
 		"shoot_dry" : "shoot_dry",
 		"reload_dry" : "reload_dry"
-	},
-
-	"casing" : {
-		"part" : "gun",
-		"tag" : "casing_pos"
 	},
 
 	"animation" : "/gunsbound/base/base.animation",

@@ -47,10 +47,20 @@
 		"muzzleFlash" : 1,
 		"rpm" : 400
 	},
+	
+	"gunSettings" : {
+		"fireSounds" : ["/guns/rifle/gbsvt40/762x39mm.ogg"],
+		"fireTypes" : ["semi"],
+		"gunPart" : "gun",
 
-	"fireSounds" : ["/guns/rifle/gbsvt40/762x39mm.ogg"],
-	"fireTypes" : ["semi"],
-	"gunPart" : "gun",
+		"showCasings" : true,
+		"chamberEjection" : true,
+
+		"casingPosition" : {
+			"part" : "gun",
+			"tag" : "casing_pos"
+		}
+	},
 
 	"gunAnimations" : {
 		"shoot" : "shoot",
@@ -61,11 +71,6 @@
 		"cock_dry" : "cock_dry",
 		"shoot_dry" : "shoot_dry",
 		"reload_dry" : "reload_dry"
-	},
-
-	"casing" : {
-		"part" : "gun",
-		"tag" : "casing_pos"
 	},
 
 	"animation" : "/gunsbound/base/base.animation",

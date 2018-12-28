@@ -81,10 +81,20 @@
 		"rpm" : 450
 	},
 
-	"fireSounds" : ["/guns/smg/gbmp18/9mmParabellum.ogg"],
-	"fireTypes" : ["auto"],
-	"gunPart" : "gun",
+	"gunSettings" : {
+		"fireSounds" : ["/guns/smg/gbmp18/9mmParabellum.ogg"],
+		"fireTypes" : ["auto"],
+		"gunPart" : "gun",
 
+		"showCasings" : true,
+		"chamberEjection" : true,
+
+		"casingPosition" : {
+			"part" : "gun",
+			"tag" : "casing_pos"
+		}
+	},
+	
 	"gunAnimations" : {
 		"shoot" : "shoot",
 		"cock" : "cock",

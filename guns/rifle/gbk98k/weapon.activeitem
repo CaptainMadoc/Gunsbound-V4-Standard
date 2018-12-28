@@ -48,10 +48,19 @@
 		"rpm" : 300
 	},
 	
-	"bypassShellEject" : true,
-	"fireSounds" : ["/guns/rifle/gbk98k/8mmMauserNoAuto.ogg"],
-	"fireTypes" : ["semi"],
-	"gunPart" : "gun",
+	"gunSettings" : {
+		"fireSounds" : ["/guns/rifle/gbk98k/8mmMauserNoAuto.ogg"],
+		"fireTypes" : ["semi"],
+		"gunPart" : "gun",
+
+		"showCasings" : true,
+		"chamberEjection" : false,
+
+		"casingPosition" : {
+			"part" : "gun",
+			"tag" : "casing_pos"
+		}
+	},
 
 	"gunAnimations" : {
 		"shoot" : "shoot",
@@ -62,11 +71,7 @@
 		"reloadEnd" : "reloadEnd"
 	},
 
-	"casing" : {
-		"part" : "gun",
-		"tag" : "casing_pos"
-	},
-
+	
 	"animation" : "/gunsbound/base/base.animation",
 	"animationCustom" : {
 		"globalTagDefaults" : {},

@@ -59,10 +59,20 @@
 		"rpm" : 700
 	},
 
-	"fireSounds" : ["/guns/lmg/gblewis/303british.ogg"],
-	"fireTypes" : ["auto", "semi"],
-	"gunPart" : "gun",
+	"gunSettings" : {
+		"fireSounds" : ["/guns/lmg/gblewis/303british.ogg"],
+		"fireTypes" : ["auto", "semi"],
+		"gunPart" : "gun",
 
+		"chamberEjection" : true,
+		"showCasings" : true,
+	
+		"casing" : {
+			"part" : "gun",
+			"tag" : "casing_pos"
+		}
+	},
+	
 	"gunAnimations" : {
 		"shoot" : "shoot",
 		"cock" : "cock",
@@ -75,12 +85,7 @@
 		"shoot_dry" : "shoot_dry",
 		"reload_dry" : "reload_dry"
 	},
-
-	"casing" : {
-		"part" : "gun",
-		"tag" : "casing_pos"
-	},
-
+	
 	"animation" : "/gunsbound/base/base.animation",
 	"animationCustom" : {
 		"globalTagDefaults" : {

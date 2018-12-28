@@ -59,10 +59,6 @@
 		"rpm" : 666
 	},
 
-	"fireSounds" : ["/guns/pistol/gbberetta92/9mmParabellum.ogg"],
-	"fireTypes" : ["semi"],
-	"gunPart" : "gun",
-
 	"gunAnimations" : {
 		"shoot" : "shoot",
 		"cock" : "cock",
@@ -76,11 +72,20 @@
 		"reload_dry" : "reload_dry"
 	},
 
-	"casing" : {
-		"part" : "gun",
-		"tag" : "casing_pos"
+	"gunSettings" : {
+		"fireSounds" : ["/guns/pistol/gbberetta92/9mmParabellum.ogg"],
+		"fireTypes" : ["semi"],
+		"gunPart" : "gun",
+		
+		"chamberEjection" : true,
+		"showCasings" : true,
+	
+		"casingPosition" : {
+			"part" : "gun",
+			"tag" : "casing_pos"
+		}
 	},
-
+	
 	"animation" : "/gunsbound/base/base.animation",
 	"animationCustom" : {
 		"globalTagDefaults" : {

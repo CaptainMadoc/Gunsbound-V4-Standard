@@ -97,13 +97,21 @@
 		"muzzleFlash" : 1,
 		"rpm" : 9999
 	},
+	
+	"gunSettings" : {
+		"fireSounds" : ["/sfx/gunsbound/12Gauge.ogg"],
+		"fireTypes" : ["semi"],
+		"gunPart" : "gun",
+		
+		"showCasings" : true,
+		"chamberEjection" : false,
 
-	"bypassShellEject" : true,
-
-	"fireSounds" : ["/sfx/gunsbound/12Gauge.ogg"],
-	"fireTypes" : ["semi"],
-	"gunPart" : "gun",
-
+		"casingPosition" : {
+			"part" : "gun",
+			"tag" : "casing_pos"
+		}
+	},
+	
 	"gunAnimations" : {
 		"shoot" : "shoot",
 		"shoot_dry" : "shoot_dry",

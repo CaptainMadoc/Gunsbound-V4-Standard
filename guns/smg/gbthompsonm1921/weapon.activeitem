@@ -81,9 +81,19 @@
 		"rpm" : 1000
 	},
 
-	"fireSounds" : ["/guns/smg/gbthompsonm1921/45ACP.ogg"],
-	"fireTypes" : ["auto", "semi"],
-	"gunPart" : "gun",
+	"gunSettings" : {
+		"fireSounds" : ["/guns/smg/gbthompsonm1921/45ACP.ogg"],
+		"fireTypes" : ["auto", "semi"],
+		"gunPart" : "gun",
+
+		"showCasings" : true,
+		"chamberEjection" : true,
+
+		"casingPosition" : {
+			"part" : "gun",
+			"tag" : "casing_pos"
+		}
+	},
 
 	"gunAnimations" : {
 		"shoot" : "shoot",

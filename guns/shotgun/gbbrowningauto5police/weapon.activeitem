@@ -48,9 +48,19 @@
 		"rpm" : 300
 	},
 	
-	"fireSounds" : ["/guns/shotgun/gbbrowningauto5police/12Gauge.ogg"],
-	"fireTypes" : ["semi"],
-	"gunPart" : "gun",
+	"gunSettings" : {
+		"fireSounds" : ["/guns/shotgun/gbbrowningauto5police/12Gauge.ogg"],
+		"fireTypes" : ["semi"],
+		"gunPart" : "gun",
+
+		"showCasings" : true,
+		"chamberEjection" : true,
+
+		"casingPosition" : {
+			"part" : "gun",
+			"tag" : "casing_pos"
+		}
+	},
 
 	"gunAnimations" : {
 		"shoot" : "shoot",

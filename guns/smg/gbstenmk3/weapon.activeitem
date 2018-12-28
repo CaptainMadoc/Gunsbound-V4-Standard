@@ -81,9 +81,19 @@
 		"rpm" : 600
 	},
 
-	"fireSounds" : ["/guns/smg/gbstenmk3/9mmParabellum.ogg"],
-	"fireTypes" : ["auto"],
-	"gunPart" : "gun",
+	"gunSettings" : {
+		"fireSounds" : ["/guns/smg/gbstenmk3/9mmParabellum.ogg"],
+		"fireTypes" : ["auto"],
+		"gunPart" : "gun",
+		
+		"showCasings" : true,
+		"chamberEjection" : true,
+		
+		"casingPosition" : {
+			"part" : "gun",
+			"tag" : "casing_pos"
+		}
+	},
 
 	"gunAnimations" : {
 		"shoot" : "shoot",

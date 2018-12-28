@@ -70,28 +70,33 @@
 		"rpm" : 800
 	},
 
-	"fireSounds" : ["/guns/lmg/gbdp27/762x39mm.ogg"],
-	"fireTypes" : ["auto"],
-	"gunPart" : "gun",
+	"gunSettings" : {
+		"fireSounds" : ["/guns/lmg/gbdp27/762x39mm.ogg"],
+		"fireTypes" : ["auto"],
+		"gunPart" : "gun",
+
+		"chamberEjection" : true,
+		"showCasings" : true,
+
+		"casingPosition" : {
+			"part" : "gun",
+			"tag" : "casing_pos"
+		}
+	},
 
 	"gunAnimations" : {
 		"shoot" : "shoot",
 		"cock" : "cock",
 		"dry" : "dry",
 		"reload" : "reload",
-		
+
 		"draw" : "draw",
-		
+
 		"cock_dry" : "cock_dry",
 		"shoot_dry" : "shoot_dry",
 		"reload_dry" : "reload_dry"
 	},
-
-	"casing" : {
-		"part" : "gun",
-		"tag" : "casing_pos"
-	},
-
+	
 	"animation" : "/gunsbound/base/base.animation",
 	"animationCustom" : {
 		"globalTagDefaults" : {

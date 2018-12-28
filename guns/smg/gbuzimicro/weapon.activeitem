@@ -58,10 +58,20 @@
 		"muzzleFlash" : 1,
 		"rpm" : 950
 	},
+	
+	"gunSettings" : {
+		"fireSounds" : ["9mmParabellum.ogg"],
+		"fireTypes" : ["auto"],
+		"gunPart" : "gun",
 
-	"fireSounds" : ["9mmParabellum.ogg"],
-	"fireTypes" : ["auto"],
-	"gunPart" : "gun",
+		"showCasings" : true,
+		"chamberEjection" : true,
+
+		"casingPosition" : {
+			"part" : "gun",
+			"tag" : "casing_pos"
+		}	
+	},
 
 	"gunAnimations" : {
 		"shoot" : "shoot",
