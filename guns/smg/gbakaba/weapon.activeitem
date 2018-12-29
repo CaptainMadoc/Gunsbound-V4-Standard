@@ -88,8 +88,10 @@
 		"showCasings" : true,
 		"chamberEjection" : false,
 
-		"muzzlePosition" : {"part":"gun", "tag" : "muzzle_pos"},
-		"casingPosition" : {"part" : "gun","tag" : "casing_pos"}
+		"casingPosition" : {
+			"part" : "gun",
+			"tag" : "casing_pos"
+		}	
 	},
 
 	"gunAnimations" : {
