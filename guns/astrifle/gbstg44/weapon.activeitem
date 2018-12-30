@@ -102,10 +102,8 @@
 			"reload_dry" : "reload_dry"
 		},
 
-		"casingPosition" : {
-			"part" : "gun",
-			"tag" : "casing_pos"
-		}
+		"muzzlePosition" : {"part":"gun", "tag" : "muzzle_begin", "tag_end" : "muzzle_end"},
+		"casingPosition" : {"part" : "gun","tag" : "casing_pos"}
 	},
 	
 	"animation" : "/gunsbound/base/base.animation",

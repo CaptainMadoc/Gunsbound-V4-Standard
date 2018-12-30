@@ -100,7 +100,7 @@
 		"chamberEjection" : false,
 
 		"muzzlePosition" : {"part":"gun", "tag" : "muzzle_begin", "tag_end" : "muzzle_end"},
-		"casingPosition" : {"part" : "gun","tag" : "casing_pos"}
+		"casingPosition" : {"part" : "gun","tag" : "casingpos"}
 	},
 
 	"gunAnimations" : {
@@ -159,7 +159,7 @@
 						"image" : "gun.png",
 						"offset" : [0.0, 0.0],
 
-						"casing_pos" : [2.25, 1.125],
+						"casingpos" : [2.25, 1.125],
 
 						"attachment_muzzle_pos" : [4.125, 1],
 						"attachment_muzzle_end" : [4.25, 1], 
