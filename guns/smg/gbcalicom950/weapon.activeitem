@@ -141,7 +141,7 @@
 						"centered" : false,
 						"image" : "gun.png",
 						"offset" : [0.0, 0.0],
-
+						"casing_pos" : [1.125, 0.5],
 						"attachment_muzzle_pos" : [2.8750, 1.12500],
 						"attachment_muzzle_end" : [3, 1.12500],
 
@@ -164,7 +164,7 @@
 				"muzzleFlash" : {
 					"properties" : {
 						"transformationGroups" : ["base"],
-						"offset" : [1.75, -0.275],
+						"offset" : [1.8, -0.35],
 						"zLevel" : 20,
 						"fullbright" : true,
 						"centered" : false
@@ -225,10 +225,117 @@
 						"offset" : [0.0, 0.0],
 						"transformationGroups" : ["attachment_sight"]
 					}
+				},
+				
+				"attachment_magazine" : {
+					"properties" : {
+						"zLevel" : 17,
+						"centered" : false,
+						"image" : "<selfimage>",
+						"offset" : [0.0, 0.0],
+						"transformationGroups" : ["attachment_magazine"]
+					}
+				}
+			},
+			"stateTypes" : {
+				"smoking" : {
+					"default" : "off",
+					"states" : {
+						"on" : {
+							"frames" : 1,
+							"mode" : "end",
+							"cycle" : 0.5,
+							"properties" : {
+								"particleEmittersOn" : ["smoke"]
+							}
+						},
+						"timer" : {
+							"frames" : 1,
+							"mode" : "transition",
+							"cycle" : 0.5,
+							"transition" : "off",
+							"properties" : {
+								"particleEmittersOn" : ["smoke"]
+							}
+						},
+						"off" : {
+							"frames" : 1,
+							"mode" : "end",
+							"cycle" : 0.5,
+							"properties" : {
+								"particleEmittersOff" : ["smoke"]
+							}
+						}
+					}
+				},
+				"vapor" : {
+					"default" : "off",
+					"states" : {
+						"on" : {
+							"frames" : 1,
+							"mode" : "end",
+							"cycle" : 0.5,
+							"properties" : {
+								"particleEmittersOn" : ["vapor"]
+							}
+						},
+						"timer" : {
+							"frames" : 1,
+							"mode" : "transition",
+							"cycle" : 1,
+							"transition" : "vape",
+							"properties" : {
+								"particleEmittersOff" : ["vapor"]
+							}
+						},
+						"vape" : {
+							"frames" : 1,
+							"mode" : "transition",
+							"cycle" : 1,
+							"transition" : "off",
+							"properties" : {
+								"particleEmittersOn" : ["vapor"]
+							}
+						},
+						"off" : {
+							"frames" : 1,
+							"mode" : "end",
+							"cycle" : 0.5,
+							"properties" : {
+								"particleEmittersOff" : ["vapor"]
+							}
+						}
+					}
 				}
 			}
 		},
 		"particleEmitters" : {
+			"smoke" : {
+				"transformationGroups" : ["gun"],
+				"emissionRate" : 32.0,
+				"zLevel" : 100,
+				"particles" : [
+					{ "particle" : "gbsmoke", "offset" : [1.125, 0.5]}
+				]
+			},
+			"vapor" : {
+				"transformationGroups" : ["gun"],
+				"emissionRate" : 128.0,
+				"zLevel" : 100,
+				"particles" : [
+					{ "particle" : "gbvapor", "offset" : [2.150, 0.75]}
+				]
+			},
+			"spark" : {
+				"transformationGroups" : ["gun"],
+				"emissionRate" : 32.0,
+				"zLevel" : 100,
+				"particles" : [
+					{ "particle" : "gbspark1", "offset" : [2.150, 0.8]},
+					{ "particle" : "gbspark1", "offset" : [2.150, 0.8]},
+					{ "particle" : "gbspark1", "offset" : [2.150, 0.8]}
+				]
+			}
 		},
 		"transformationGroups" : {
 			
@@ -288,6 +395,11 @@
 			},
 			
 			"attachment_grip" : {
+				"ignore" : true,
+				"interpolated" : false
+			},
+			
+			"attachment_magazine" : {
 				"ignore" : true,
 				"interpolated" : false
 			},

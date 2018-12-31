@@ -1,7 +1,7 @@
 {
 	//UIinfo
-	"itemName" : "gbar10",
-	"shortdescription" : "Armalite AR-10 M1950",
+	"itemName" : "gbar10a2",
+	"shortdescription" : "Armalite AR-10A2",
 	"description" : "description here",
 	"category" : "base",
 	"tooltipKind" : "base",
@@ -93,7 +93,7 @@
 	},
 
 	"gunSettings" : {
-		"fireSounds" : ["/guns/astrifle/gbar10/762x39mm.ogg"],
+		"fireSounds" : ["/guns/astrifle/gbar10a2/762x39mm.ogg"],
 		"fireTypes" : ["auto", "semi"],
 
 		"showCasings" : true,
@@ -173,8 +173,8 @@
 						"attachment_grip_pos" : [2.875,0.875],
 						"attachment_grip_end" : [3,0.875],
 
-						"muzzle_begin" : [4.5, 1.125],
-						"muzzle_end" : [4.625, 1.125], 
+						"muzzle_begin" : [4.375, 1.125],
+						"muzzle_end" : [4.5, 1.125], 
 						"transformationGroups" : ["gun", "base"]
 					}
 				},
@@ -183,7 +183,7 @@
 				"muzzleFlash" : {
 					"properties" : {
 						"transformationGroups" : ["base"],
-						"offset" : [3.375, -0.375],
+						"offset" : [3.25, -0.375],
 						"zLevel" : 20,
 						"fullbright" : true,
 						"centered" : false
