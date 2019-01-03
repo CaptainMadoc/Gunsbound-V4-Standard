@@ -85,27 +85,27 @@
 		"fireSounds" : ["/guns/astrifle/gbstg44/792x33Kurz.ogg"],
 		"fireTypes" : ["auto", "semi"],
 		"gunPart" : "gun",
-		
+
 		"chamberEjection" : true,
 		"showCasings" : true,
-
-		"gunAnimations" : {
-			"shoot" : "shoot",
-			"cock" : "cock",
-			"dry" : "dry",
-			"reload" : "reload",
-
-			"draw" : "draw",
-
-			"cock_dry" : "cock_dry",
-			"shoot_dry" : "shoot_dry",
-			"reload_dry" : "reload_dry"
-		},
 
 		"muzzlePosition" : {"part":"gun", "tag" : "muzzle_begin", "tag_end" : "muzzle_end"},
 		"casingPosition" : {"part" : "gun","tag" : "casing_pos"}
 	},
+
+	"gunAnimations" : {
+		"shoot" : "shoot",
+		"cock" : "cock",
+		"dry" : "dry",
+		"reload" : "reload",
 	
+		"draw" : "draw",
+	
+		"cock_dry" : "cock_dry",
+		"shoot_dry" : "shoot_dry",
+		"reload_dry" : "reload_dry"
+	},
+
 	"animation" : "/gunsbound/base/base.animation",
 	"animationCustom" : {
 		"globalTagDefaults" : {
