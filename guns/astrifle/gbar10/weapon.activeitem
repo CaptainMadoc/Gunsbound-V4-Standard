@@ -97,7 +97,7 @@
 		"fireTypes" : ["auto", "semi"],
 
 		"showCasings" : true,
-		"chamberEjection" : false,
+		"chamberEjection" : true,
 
 		"muzzlePosition" : {"part":"gun", "tag" : "muzzle_begin", "tag_end" : "muzzle_end"},
 		"casingPosition" : {"part" : "gun","tag" : "casingpos"}

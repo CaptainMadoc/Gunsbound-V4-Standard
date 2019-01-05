@@ -41,17 +41,17 @@
 		"burst" : 3
 	},
 	
-	"casing" : {
-		"part" : "mag",
-		"tag"  : "casingpos"
+	"gunSettings" : {
+		"showCasings" : true,
+		"chamberEjection" : false,
+
+		"fireSounds" : ["fire.wav"],
+		"fireTypes" : ["semi", "auto"],
+		"gunPart" : "gun",
+
+		"muzzlePosition" : {"part":"gun", "tag" : "muzzle_begin", "tag_end" : "muzzle_end"},
+		"casingPosition" : {"part" : "mag","tag"  : "casingpos"}
 	},
-	
-	
-	"bypassShellEject" : true,
-	
-	"fireSounds" : ["fire.wav"],
-	"fireTypes" : ["semi"],
-	"gunPart" : "gun",
 
 	"gunAnimations" : {
 		"shoot" : "shoot",
