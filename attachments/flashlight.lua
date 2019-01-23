@@ -5,7 +5,9 @@ module = {
 function module:create(config, name)
 	local attachment = {}
 	
-	flashlight:add(attachmentSystem.config[name].attachPart, attachmentSystem.config[name].gunTag, attachmentSystem.config[name].gunTagEnd, config.lightColor)
+	local attach = attachmentSystem:getPart(name)
+
+	flashlight:add(attach.part, attach.partTag, attach.partTagEnd, config.lightColor)
 	
 	function attachment:uninit()
 	

@@ -5,7 +5,9 @@ module = {
 function module:create(config, name)
 	local attachment = {}
 	
-	laser:add(attachmentSystem.config[name].attachPart, attachmentSystem.config[name].gunTag, attachmentSystem.config[name].gunTagEnd, config.laserColor)
+	local attach = attachmentSystem:getPart(name)
+
+	laser:add(attach.part, attach.tag, attach.tagEnd, config.laserColor)
 
 	function attachment:refreshStats()
 		local gottenStats = attachmentSystem:getStats()
