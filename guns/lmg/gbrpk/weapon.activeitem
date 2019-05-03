@@ -143,7 +143,7 @@
 						"image" : "gun.png",
 						"offset" : [0.0, 0.0],
 
-						"casing_pos" : [2.125, 1.125],
+						"casing_pos" : [2.125, 1.25],
 
 						"attachment_muzzle_pos" : [5.5, 1],
 						"attachment_muzzle_end" : [5.51, 1],
@@ -157,8 +157,8 @@
 						"attachment_grip_pos" : [2.625,0.625],
 						"attachment_grip_end" : [2.75,0.625],
 
-						"muzzle_begin" : [5.5, 1],
-						"muzzle_end" : [5.51, 1], 
+						"muzzle_begin" : [5.375, 1.125],
+						"muzzle_end" : [5.38, 1.125], 
 						"transformationGroups" : ["gun", "base"]
 					}
 				},
@@ -167,7 +167,7 @@
 				"muzzleFlash" : {
 					"properties" : {
 						"transformationGroups" : ["base"],
-						"offset" : [4, -0.05],
+						"offset" : [3.75, -0.5],
 						"zLevel" : 20,
 						"fullbright" : true,
 						"centered" : false
@@ -316,7 +316,7 @@
 				"emissionRate" : 128.0,
 				"zLevel" : 100,
 				"particles" : [
-					{ "particle" : "gbvapor", "offset" : [5.5, 1]}
+					{ "particle" : "gbvapor", "offset" : [5.375, 1]}
 				]
 			},
 			"spark" : {
@@ -324,9 +324,9 @@
 				"emissionRate" : 32.0,
 				"zLevel" : 100,
 				"particles" : [
-					{ "particle" : "gbspark1", "offset" : [5.5, 1]},
-					{ "particle" : "gbspark1", "offset" : [5.5, 1]},
-					{ "particle" : "gbspark1", "offset" : [5.5, 1]}
+					{ "particle" : "gbspark1", "offset" : [5.375, 1]},
+					{ "particle" : "gbspark1", "offset" : [5.375, 1]},
+					{ "particle" : "gbspark1", "offset" : [5.375, 1]}
 				]
 			}
 		},
