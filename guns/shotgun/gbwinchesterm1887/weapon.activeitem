@@ -36,7 +36,7 @@
 	},
 	
 	"gunStats" : {
-		"maxMagazine" : 5,
+		"maxMagazine" : 6,
 		"aimLookRatio" : 0.25,
 		"burst" : 3,
 		"recoil" : 3,
