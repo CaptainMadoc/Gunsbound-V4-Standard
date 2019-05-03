@@ -1,7 +1,7 @@
 {
 	//UIinfo
-	"itemName" : "gbwinchesterm1887",
-	"shortdescription" : "Winchester M1887",
+	"itemName" : "gbrpk",
+	"shortdescription" : "RPK",
 	"description" : "description here",
 	"category" : "base",
 	"tooltipKind" : "base",
@@ -10,7 +10,7 @@
 	//API scripts
 	"scriptClass" : "/gunsbound/base/scripts.json",
 	"scripts" : ["/gunsbound/scripts/main.lua"],
-	"animationScripts" : ["/gunsbound/ui/main.lua"],
+	"animationScripts" : ["/gunsbound/gunUI/main.lua"],
 	"scriptDelta" : 1,
 
 	//item settings
@@ -20,9 +20,20 @@
 	"twoHanded" : true,
 	
 	"animationsKeyFrames" : "default.animation",
-	"compatibleAmmo" : "/ammoGroup/gb8mmmauser.json",
+	"compatibleAmmo" : "/ammoGroup/gb762x39mm.json",
 
 	"attachments" : {
+		"grip" : {
+			"item" : null,
+			
+			"transformationGroup" : "attachment_grip",
+			"part" : "attachment_grip",
+			
+			"attachPart" : "gun",
+			"gunTag" : "attachment_grip_pos",
+			"gunTagEnd" : "attachment_grip_end"
+		},
+		
 		"sight" : {
 			"item" : null,
 			
@@ -32,29 +43,51 @@
 			"attachPart" : "gun",
 			"gunTag" : "attachment_sight_pos",
 			"gunTagEnd" : "attachment_sight_end"
+		},
+		
+		"tactical" : {
+			"item" : null,
+			
+			"transformationGroup" : "attachment_tactical",
+			"part" : "attachment_tactical",
+			
+			"attachPart" : "gun",
+			"gunTag" : "attachment_tactical_pos",
+			"gunTagEnd" : "attachment_tactical_end"
+		},
+		
+		"muzzle" : {
+			"item" : null,
+			
+			"transformationGroup" : "attachment_muzzle",
+			"part" : "attachment_muzzle",
+			
+			"attachPart" : "gun",
+			"gunTag" : "attachment_muzzle_pos",
+			"gunTagEnd" : "attachment_muzzle_end"
 		}
 	},
 	
 	"gunStats" : {
-		"maxMagazine" : 6,
-		"aimLookRatio" : 0.25,
+		"maxMagazine" : 40,
+		"aimLookRatio" : 0.125,
 		"burst" : 3,
-		"recoil" : 3,
-		"recoilRecovery" : 6,
+		"recoil" : 4,
+		"recoilRecovery" : 2,
 		"movingInaccuracy" : 5,
-		"standingInaccuracy" : 2,
+		"standingInaccuracy" : 1,
 		"crouchInaccuracyMultiplier" : 0.25,
 		"muzzleFlash" : 1,
-		"rpm" : 300
+		"rpm" : 650
 	},
-	
-	"gunSettings" : {
-		"fireSounds" : ["/guns/shotgun/gbwinchesterm1887/12Gauge.ogg"],
-		"fireTypes" : ["semi"],
-		"gunPart" : "gun",
 
+	"gunSettings" : {
+		"fireSounds" : ["/guns/lmg/gbrpk/762x39mm.ogg"],
+		"fireTypes" : ["auto", "semi"],
+		"gunPart" : "gun",
+		
+		"chamberEjection" : true,
 		"showCasings" : true,
-		"chamberEjection" : false,
 
 		"muzzlePosition" : {"part":"gun", "tag" : "muzzle_begin", "tag_end" : "muzzle_end"},
 		"casingPosition" : {"part" : "gun","tag" : "casing_pos"}
@@ -65,31 +98,40 @@
 		"cock" : "cock",
 		"dry" : "dry",
 		"reload" : "reload",
-		"reloadLoop" : "reloadLoop",
-		"reloadEnd" : "reloadEnd"
+
+		"draw" : "draw",
+
+		"cock_dry" : "cock_dry",
+		"shoot_dry" : "shoot_dry",
+		"reload_dry" : "reload_dry"
 	},
 
-	
 	"animation" : "/gunsbound/base/base.animation",
 	"animationCustom" : {
-		"globalTagDefaults" : {},
-
-		"sounds" : {
-			"pump" : ["/guns/shotgun/gbwinchesterm1897/pump1.ogg"],
-			"pump2" : ["/guns/shotgun/gbwinchesterm1897/pump2.ogg"],
-			"cock" : ["/sfx/gun/reload/shotgun_reload_clip1.ogg"],
-			"cock2" : ["/guns/shotgun/gbwinchesterm1897/reloadingshotgun.ogg"]
+		"globalTagDefaults" : {
+			"magazine" : "mag.png"
 		},
-
+		"sounds" : {
+			"cock" : ["/sfx/gun/reload/shotgun_reload_clip1.ogg"],
+			"cock2" : ["/sfx/gun/reload/shotgun_reload_clip2.ogg"]
+		},
 		"animatedParts" : {
 			"parts" : {
-			
+				"mag" : {
+					"properties" : {
+						"zLevel" : 17,
+						"centered" : false,
+						"image" : "<magazine>",
+						"offset" : [0.0, 0.0],
+						"transformationGroups" : ["mag", "gun", "base"]
+					}
+				},
 				"gunlever" : {
 					"properties" : {
 						"zLevel" : 18,
 						"centered" : false,
 						"image" : "lever.png",
-						"offset" : [1.0, 0.0],
+						"offset" : [0.0, 0.0],
 						"transformationGroups" : ["lever", "gun", "base"]
 					}
 				},
@@ -101,36 +143,23 @@
 						"image" : "gun.png",
 						"offset" : [0.0, 0.0],
 
-						"casing_pos" : [2.25, 1.125],
+						"casing_pos" : [2.125, 1.125],
 
-						"muzzle_begin" : [4.25, 1.125],
-						"muzzle_end" : [4.26, 1.125], 
+						"attachment_muzzle_pos" : [5.5, 1],
+						"attachment_muzzle_end" : [5.51, 1],
+
+						"attachment_tactical_pos" : [2.75, 1],
+						"attachment_tactical_end" : [3, 1],
 						
-						"attachment_sight_pos" : [2.5, 1],
-						"attachment_sight_end" : [2.675, 1], 
+						"attachment_sight_pos" : [2.375, 1],
+						"attachment_sight_end" : [2.5, 1],
 						
+						"attachment_grip_pos" : [2.625,0.625],
+						"attachment_grip_end" : [2.75,0.625],
+
+						"muzzle_begin" : [5.5, 1],
+						"muzzle_end" : [5.51, 1], 
 						"transformationGroups" : ["gun", "base"]
-					}
-				},
-				
-				"gunlever2" : {
-					"properties" : {
-						"zLevel" : 20,
-						"centered" : false,
-						"image" : "lever2.png",
-						"offset" : [0.0, 0.0],
-						"transformationGroups" : ["lever2", "gun", "base"]
-					}
-				},
-				
-				//
-				"attachment_sight" : {
-					"properties" : {
-						"zLevel" : 23,
-						"centered" : false,
-						"image" : "<selfimage>",
-						"offset" : [0.0, 0.0],
-						"transformationGroups" : ["attachment_sight"]
 					}
 				},
 				
@@ -138,7 +167,7 @@
 				"muzzleFlash" : {
 					"properties" : {
 						"transformationGroups" : ["base"],
-						"offset" : [2.375, -0.375],
+						"offset" : [4, -0.05],
 						"zLevel" : 20,
 						"fullbright" : true,
 						"centered" : false
@@ -156,6 +185,48 @@
 								}
 							}
 						}
+					}
+				},
+				
+				
+				//
+				"attachment_muzzle" : {
+					"properties" : {
+						"zLevel" : 23,
+						"centered" : false,
+						"image" : "<selfimage>",
+						"offset" : [0.0, 0.0],
+						"transformationGroups" : ["attachment_muzzle"]
+					}
+				},
+				
+				"attachment_tactical" : {
+					"properties" : {
+						"zLevel" : 23,
+						"centered" : false,
+						"image" : "<selfimage>",
+						"offset" : [0.0, 0.0],
+						"transformationGroups" : ["attachment_tactical"]
+					}
+				},
+				
+				"attachment_grip" : {
+					"properties" : {
+						"zLevel" : 23,
+						"centered" : false,
+						"image" : "<selfimage>",
+						"offset" : [0.0, 0.0],
+						"transformationGroups" : ["attachment_grip"]
+					}
+				},
+				
+				"attachment_sight" : {
+					"properties" : {
+						"zLevel" : 23,
+						"centered" : false,
+						"image" : "<selfimage>",
+						"offset" : [0.0, 0.0],
+						"transformationGroups" : ["attachment_sight"]
 					}
 				}
 			},
@@ -229,7 +300,7 @@
 						}
 					}
 				}
-			}
+            }
 		},
 		"particleEmitters" : {
 			"smoke" : {
@@ -237,7 +308,7 @@
 				"emissionRate" : 32.0,
 				"zLevel" : 100,
 				"particles" : [
-					{ "particle" : "gbsmoke", "offset" : [1.375, 1]}
+					{ "particle" : "gbsmoke", "offset" : [2.125, 1.125]}
 				]
 			},
 			"vapor" : {
@@ -245,7 +316,7 @@
 				"emissionRate" : 128.0,
 				"zLevel" : 100,
 				"particles" : [
-					{ "particle" : "gbvapor", "offset" : [4.375, 1.125]}
+					{ "particle" : "gbvapor", "offset" : [5.5, 1]}
 				]
 			},
 			"spark" : {
@@ -253,9 +324,9 @@
 				"emissionRate" : 32.0,
 				"zLevel" : 100,
 				"particles" : [
-					{ "particle" : "gbspark1", "offset" : [4.375, 1.125]},
-					{ "particle" : "gbspark1", "offset" : [4.375, 1.125]},
-					{ "particle" : "gbspark1", "offset" : [4.375, 1.125]}
+					{ "particle" : "gbspark1", "offset" : [5.5, 1]},
+					{ "particle" : "gbspark1", "offset" : [5.5, 1]},
+					{ "particle" : "gbspark1", "offset" : [5.5, 1]}
 				]
 			}
 		},
@@ -263,37 +334,27 @@
 			
 			"L_offset" : {
 				"transform" : {
-					"position" : [0.96875, -0.03125]
-				}
-			},
-			"R_offset" : {
-				"transform" : {
-					"position" : [-0.15625, 0]
+					"position" : [1.34375, 0.15625]
 				}
 			},
 			"R_arm1" : {
 				"transform" : {
-					"rotation" : -14
+					"rotation" : 15
 				}
 			},
 			"R_arm2" : {
 				"transform" : {
-					"rotation" : 45
-				}
-			},
-			"R_hand" : {
-				"transform" : {
-					"rotation" : -30.75
+					"rotation" : -15
 				}
 			},
 			"L_arm1" : {
 				"transform" : {
-					"rotation" : 15
+					"rotation" : 0.5
 				}
 			},
 			"L_arm2" : {
 				"transform" : {
-					"rotation" : 0
+					"rotation" : 8.25
 				}
 			},
 			
@@ -301,25 +362,33 @@
 			"gun" : {
 				"interpolated" : false,
 				"transform" : {
-					"rotationPoint" : [1.6875, 0.5625],
-					"position" : [-1.8125, -0.3125]
+					"rotationPoint" : [1.5625, 0.8125],
+					"position" : [-1.40625, -0.6625]
 				}
 			},
 			"lever" : {
-				"interpolated" : false,
-				"transform" : {
-					"rotationPoint" : [2.125, 0.75]
-				}
-			},
-			"lever2" : {
 				"interpolated" : false
 			},
 			"mag" : {
 				"interpolated" : false
 			},
-			
-			
+
 			//attachments
+			"attachment_muzzle" : {
+				"ignore" : true,
+				"interpolated" : false
+			},
+			
+			"attachment_tactical" : {
+				"ignore" : true,
+				"interpolated" : false
+			},
+			
+			"attachment_grip" : {
+				"ignore" : true,
+				"interpolated" : false
+			},
+			
 			"attachment_sight" : {
 				"ignore" : true,
 				"interpolated" : false
